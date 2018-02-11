@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Scroll Indicator</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<h1></h1>
+
+<div class="row">
+
+    <!-- Start scroll Indicator -->
+    <div class="col-sm-12">            
+            
+           
+
+        
+        
+        <!-- end scroll Indicator div -->        
+    </div>    
+
+<script>
+
+
+
+</script>
+   
+</div>
+<!-- end row div -->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Sidebar File End Here |-->

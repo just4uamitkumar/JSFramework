@@ -1,0 +1,89 @@
+<div class="wrapper">
+
+  <!-- Start Sidebar -->
+  <div class="sidebar">  
+    <div class="panel">
+      <a href="Javascript:void();" class="level1 has-child"></a>
+      <div class="collapse">
+          <a href="tabs.shtml" class="level2">Tabs</a>
+          <a href="accordion.shtml" class="level2">Accordion</a>
+          <a href="ResponsiveTabs.shtml" class="level2">Responsive Tabs</a>     
+      </div>
+      <a href="dashSlider.shtml" class="level1"></a>   
+      <a href="tooltip.shtml" class="level1"></a>
+      <a href="FormValidation.shtml" class="level1"></a>
+      <a href="Javascript:void();" class="level1 has-child"></a>
+       <div class="collapse">
+          <a href="table.shtml" class="level2">Table</a>
+          <a href="accordion.shtml" class="level2">Accordion</a>
+      </div>
+      <a href="clock.shtml" class="level1"></a>
+      <a href="canvas.shtml" class="level1"></a>
+      <a href="marquee.shtml" class="level1"></a>
+      <a href="Javascript:void();" class="level1 has-child"></a>
+      <div class="collapse">
+          <a href="carousel1.shtml" class="level2">Carousel 1</a>
+          <a href="carousel2.shtml" class="level2">Carousel 2</a>
+          <a href="carousel3.shtml" class="level2">Carousel 3</a>
+      </div>
+      <a href="Javascript:void();" class="level1 has-child"></a>
+      <div class="collapse">
+          <a href="imagezoom.shtml" class="level2">Image Zoom</a>
+          <a href="imagezoom.shtml" class="level2">Image Magnifier</a>
+          <a href="imagezoom.shtml" class="level2">Image Compare</a>
+      </div>
+      <a href="fullvids.shtml" class="level1"></a>
+      <a href="scrollIndicator.shtml" class="level1"></a>    
+    </div>
+  </div>
+  <!-- End Sidebar -->
+
+  <script type="text/Javascript">
+  //SideBar Collapse
+  (function (){
+    var i, j;
+
+    //Add sidebar menu content
+    var FirstText = ['DashBoard Slider', 'Tooltip', 'Form Validation', 'Clock', 'CanVas', 
+    'Marquee', 'Full Screen Video', 'Scroll Indicator'];
+    var level1 = document.querySelectorAll('.level1:not(.has-child)');
+    var collapseDiv = document.querySelectorAll('.collapse');
+
+    for (j = 0; j < level1.length; j++) {
+      level1[j].innerHTML = FirstText[j];       
+    }
+
+    var parArr = ['UI Elements', 'Table', 'Carousel', 'Image Effect'];
+    var hasChild = document.getElementsByClassName("has-child");
+
+    function expand(){        
+      var collapseLevel = this.nextElementSibling;         
+
+      if(this.classList.contains('active')){
+        this.classList.remove('active');       
+        collapseLevel.classList.remove('active');           
+      }
+      else{
+        for (j = 0; j < hasChild.length; j++) { 
+          hasChild[j].classList.remove("active");
+        }
+       
+        for (k = 0; k < collapseDiv.length; k++) {
+          collapseDiv[k].classList.remove("active");                           
+        }
+
+        this.classList.add('active');
+        collapseLevel.classList.add('active');      
+      }
+    }    
+
+    for (i = 0; i < hasChild.length; i++) {
+      hasChild[i].innerHTML = parArr[i];
+      hasChild[i].onclick = expand;
+    }
+  }());
+  </script>
+
+  <!-- Start Content div  -->
+  <div class="content">
+   

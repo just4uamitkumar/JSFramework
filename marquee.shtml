@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Marquee Animation</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<h1></h1>
+
+<div class="row">
+
+    <!-- Start Digital Clock -->
+    <div class="col-sm-4">
+        <div class="well">
+            <ul>
+                <li>The animation-direction property defines whether an animation should be played forwards, backwards or in alternate cycles.</li>
+                <li>The numbers in the table specify the first browser version that fully supports the property.</li>
+                <li>Play the animation backwards first, then forwards:</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Digital Clock -->
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('digiClock1').innerHTML = 
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
+
+        startTime();
+    </script>
+   
+</div>
+<!-- end row div -->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Sidebar File End Here |-->

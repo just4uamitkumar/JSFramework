@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>DashBoard Slider</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<h1></h1>
+
+<div class="row">
+
+    <!-- Start Social Slider -->
+    <div class="col-sm-6">
+        <div class="SocialSlider">
+            <div class="facebook social"><span></span> <a href="javascript:void(0);"></a></div>
+            <div class="twitter social"><span></span> <a href="javascript:void(0);"></a></div>
+            <div class="google social"><span></span> <a href="javascript:void(0);"></a></div>
+            <div class="instagram social"><span></span> <a href="javascript:void(0);"></a></div>
+            <div class="youtube social"><span></span> <a href="javascript:void(0);"></a></div>
+        </div>       
+    </div>
+    <!-- End Social Slider -->
+<script>
+    //Social Slider 
+(function (){ 
+    var xSocial = [ "FB", "T", "G", "I", "Y" ];
+    var cSocial = [ "Facebook", "Twitter", "Google", "Instagram", "YouTube" ];
+    var BG = [ "#3b5998", "#1da1f2", "#679e37", "#262626", "#e42b26" ];
+    var social = document.getElementsByClassName('social');    
+    var i, j, k;
+
+    function moveSocial(){
+             
+
+        if(this.classList.contains('move')){
+            this.classList.remove('move');
+        }
+        else{  
+            for (j = 0; j < social.length; j++) { 
+                social[j].classList.remove("move");
+            }      
+            this.classList.add('move');
+        }      
+    }
+
+    for (i = 0; i < social.length; i++) {
+        social[i].children[0].style.backgroundColor = BG[i];
+        social[i].children[0].innerHTML = cSocial[i];
+        social[i].children[1].style.backgroundColor = BG[i];
+        social[i].children[1].innerHTML = xSocial[i];
+        social[i].onclick = moveSocial;   
+    } 
+ }());
+</script> 
+
+    <!-- Start DashBoard Slider -->
+    <div class="col-sm-6">
+        <div class="DashSlider">
+            <ul>
+                <li><a href="#dash-1">First Slide</a></li>
+                <li><a href="#dash-2">Second Slide</a></li>
+                <li><a href="#dash-3">Third Slide</a></li>
+                <li><a href="#dash-4">Fourth Slide</a></li>
+            </ul>
+            <div class="SlideDiv" id="dash-1">
+                <h4>First Slide </h4>
+                <p>More importantly, the callback is fired in the context of the current DOM element, so the keyword this refers to the element.</p>
+                <p>Suppose you have a simple unordered list on the page</p>
+            </div>
+            <div class="SlideDiv" id="dash-2">
+                <h4>Second Slide </h4>                
+                <p>Get the value of an attribute for the first element in the set of matched elements or set one or more.</p>
+                <p>Get the value of an attribute for the first element in the set of matched elements or set.</p>
+            </div>
+            <div class="SlideDiv" id="dash-3">
+                <h4>Third Slide </h4>               
+                <p>Create a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request.</p>
+                <p>Suppose you have a simple unordered list on the page</p>
+            </div>
+            <div class="SlideDiv" id="dash-4">
+                <h4>Fourth Slide </h4>              
+                <p>Store arbitrary data associated with the matched elements or return the value at the named data store for the first element.</p>
+                <p>Suppose you have a simple unordered list on the page</p>
+            </div>
+            
+        </div>
+    </div>
+    <!-- End DashBoard Slider -->
+   
+</div>
+<!-- end row div -->
+
+<script>
+
+(function(){
+    var i, j, k;
+    var dashDiv = document.getElementsByClassName('DashSlider')[0]
+    var dashDb = document.querySelectorAll('.DashSlider a'); 
+    slideDiv = document.querySelectorAll('.SlideDiv');    
+
+    function moveDashSlider(event){             
+        event.preventDefault();
+        var thisATTR = this.getAttribute('href');
+        thisATTR = thisATTR.replace('#','');
+        var slideDivId = document.getElementById(thisATTR);        
+       
+        if(this.classList.contains('active')){
+            this.classList.remove('active');
+            slideDivId.classList.remove('active');
+        }
+        else{
+
+            for (j = 0; j < dashDb.length; j++) { 
+                dashDb[j].classList.remove("active");
+            }
+
+            for (k = 0; k < slideDiv.length; k++) { 
+                slideDiv[k].classList.remove("active");
+            }            
+            this.classList.add('active');
+            slideDivId.classList.add('active');
+        } 
+    }
+
+    for (i = 0; i < dashDb.length; i++) {      
+        dashDb[i].onclick = moveDashSlider;
+    } 
+
+}());     
+</script>
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Sidebar File End Here |-->
