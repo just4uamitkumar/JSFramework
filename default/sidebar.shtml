@@ -5,7 +5,7 @@
     <div class="panel">
       <a href="Javascript:void();" class="level1 has-child"></a>
       <div class="collapse">
-          <a href="tabs.shtml" class="level2">Tabs</a>
+          <a href="tabsPage.shtml" class="level2">Tabs</a>
           <a href="accordion.shtml" class="level2">Accordion</a>
           <a href="ResponsiveTabs.shtml" class="level2">Responsive Tabs</a>     
       </div>
