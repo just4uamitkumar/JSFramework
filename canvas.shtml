@@ -12,12 +12,16 @@
 <!--#include virtual="./default/sidebar.shtml" -->
 <!--| Sidebar File End Here |-->
 
-<h1></h1>
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
 
-<div class="row">
 
-    <!-- Start Tab Section -->
-    <div class="col-sm-6">
+
+<!-- Start Tab Section -->
+<div class="col-sm-6">
+    <div class="contentBlock">  
         <canvas id="myCanvas" width="200" height="100"></canvas>
 
         <canvas id="myCanvas1" width="200" height="100"></canvas>
@@ -27,39 +31,40 @@
         <canvas id="myCanvas3" width="200" height="100"></canvas>
 
         <canvas id="myCanvas4" width="200" height="100"></canvas>
-
     </div>
+</div>
 
-    <script>
-    (function(){
-        var c1 = document.getElementById("myCanvas1");
-        var ctx1 = c1.getContext("2d");
-        ctx1.moveTo(0,0);
-        ctx1.lineTo(200,100);
-        ctx1.stroke();
+<script>
+(function(){
+    var c1 = document.getElementById("myCanvas1");
+    var ctx1 = c1.getContext("2d");
+    ctx1.moveTo(0,0);
+    ctx1.lineTo(200,100);
+    ctx1.stroke();
 
-        var c2 = document.getElementById("myCanvas2");
-        var ctx2 = c2.getContext("2d");
-        ctx2.beginPath();
-        ctx2.arc(95,50,40,0,2*Math.PI);
-        ctx2.stroke();
+    var c2 = document.getElementById("myCanvas2");
+    var ctx2 = c2.getContext("2d");
+    ctx2.beginPath();
+    ctx2.arc(95,50,40,0,2*Math.PI);
+    ctx2.stroke();
 
-        var c3 = document.getElementById("myCanvas3");
-        var ctx3 = c3.getContext("2d");
-        ctx3.font = "30px Arial";
-        ctx3.fillText("Hello World",20,50);
+    var c3 = document.getElementById("myCanvas3");
+    var ctx3 = c3.getContext("2d");
+    ctx3.font = "30px Arial";
+    ctx3.fillText("Hello World",20,50);
 
-        var c4 = document.getElementById("myCanvas4");
-        var ctx4 = c4.getContext("2d");
-        ctx4.font = "30px Arial";
-        ctx4.strokeText("Hello World",10,50);
-    }());
-        
-    </script>
-    <!-- End Tab Section -->
+    var c4 = document.getElementById("myCanvas4");
+    var ctx4 = c4.getContext("2d");
+    ctx4.font = "30px Arial";
+    ctx4.strokeText("Hello World",10,50);
+}());
+    
+</script>
+<!-- End Tab Section -->
 
-    <!-- Start Second Tab Section -->
-    <div class="col-sm-6">        
+<!-- Start Second Tab Section -->
+<div class="col-sm-6">
+    <div class="contentBlock">      
         <canvas id="myCanvas5" width="200" height="100"></canvas>
 
         <canvas id="myCanvas6" width="200" height="100"></canvas>
@@ -104,23 +109,12 @@
         }());
             
         </script>
-        
     </div>
-    <!-- End Tab Section -->
-
-    <div class="clearfix"></div>
-
-    <!-- Get Select Value -->
-    <div class="col-sm-6">
-        
-    </div>
-    <!-- End Get Select Value -->
-
     
-
-   
 </div>
-<!-- end row div -->
+<!-- End Tab Section -->
+
+
 
 
 <!--| Sidebar File Include Here |-->

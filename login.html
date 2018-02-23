@@ -16,7 +16,6 @@
 </body>
 
 <div class="loginWrap">
-<div class="circleWrap">
 	<div class="loginCont">
 		<h4>JavaScript FrameWork</h4>
 		<form id="loginForm" name="loginForm" action="index.shtml" onsubmit="return(login());">
@@ -35,65 +34,16 @@
 	            <button type="submit">Login</button>	            
 	        </div>
 		</form>
-
 	</div>
 </div>
-</div>
 
-<style>
-.loginCont:before {
-height: 518px;
-width: 650px;
-content:"";
-position: absolute; 
-background: #282c33 url(./images/slide-5.jpg);
-border-radius: 50%;
-top:50%; left:50%; transform:translate(-50%, -50%); z-index: -1;
-background-repeat: no-repeat;
-    background-size: cover;
-}
-</style>
 
 <script>
 
 
 
 
-function login (){
-	if( document.loginForm.username.value == "" ){
-        alert( "Please provide user name!" );
-        document.loginForm.username.focus() ;
-        return false;
-    }    
 
-    if( document.loginForm.password.value == "" ){
-        alert( "Please Enter Password!" );
-        document.loginForm.password.focus() ;
-        return false;
-    }
-
-    if( document.loginForm.password.value != "amit" && document.loginForm.username.value != "amit" ){
-        alert( "You Entered wrong Username/Password" );
-        document.loginForm.password.focus() ;
-        document.loginForm.username.focus() ;
-        return false;
-    }
-
-    return( true );	
-}
-
-(function (){
-    document.getElementById('showPass').onmousedown = function(){
-       if ( document.getElementById('password').value.length > 0) {       
-            document.getElementById('password').type = "text";        
-       } 
-     }
-
-    document.getElementById('showPass').onmouseup = function(){
-        document.getElementById('password').type = "password";
-    }
-
-}());
 
 
 

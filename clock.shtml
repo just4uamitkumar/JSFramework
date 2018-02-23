@@ -11,103 +11,98 @@
 <!--| Sidebar File Include Here |-->
 <!--#include virtual="./default/sidebar.shtml" -->
 <!--| Sidebar File End Here |-->
-
-<h1></h1>
-
-<div class="row">
-
-    <!-- Start Digital Clock -->
-    <div class="col-sm-6">
-        <div id="digiClock1"></div>
-    </div>
-    <!-- End Digital Clock -->
-
-    <script>
-        function startTime() {
-            var today = new Date();
-            var h = today.getHours();
-            var m = today.getMinutes();
-            var s = today.getSeconds();
-            m = checkTime(m);
-            s = checkTime(s);
-            document.getElementById('digiClock1').innerHTML = 
-            h + ":" + m + ":" + s;
-            var t = setTimeout(startTime, 500);
-        }
-        function checkTime(i) {
-            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-            return i;
-        }
-
-        startTime();
-    </script>
-
-    <!-- Start Digital Clock -->
-    <div class="col-sm-6">
-        <div id="digiClock2">&nbsp;</div>
-    </div>
-    <!-- End Digital Clock -->
-
-    <script type="text/javascript">
-
-    function updateClock() {
-      var today = new Date();
-      var h = today.getHours();
-      var m = today.getMinutes();
-      var s = today.getSeconds();
-
-      // Pad the minutes and seconds with leading zeros, if required
-      h = ( h < 10 ? "0" : "" ) + h;
-      m = ( m < 10 ? "0" : "" ) + m;
-      s = ( s < 10 ? "0" : "" ) + s;
-
-      // Choose either "AM" or "PM" as appropriate
-      var timeOfDay = ( h < 12 ) ? "AM" : "PM";
-
-      // Convert the hours component to 12-hour format if needed
-      h = ( h > 12 ) ? h - 12 : h;
-
-      // Convert an hours component of "0" to "12"
-      h = ( h == 0 ) ? 12 : h;
-
-      // Compose the string for display
-      var currentTimeString = h + ":" + m + ":" + s + " " + timeOfDay;
-
-      // Update the time display
-      document.getElementById("digiClock2").firstChild.nodeValue = currentTimeString;
-    }
-
-    updateClock();
-    setInterval('updateClock()', 1000 )
-   
-    </script>
-
-    
-
-    <div class="clearfix"></div>
-    <hr class="clearfix"/>
-    <!-- Start Clock -->
-    <div class="col-sm-6">
-        <div id="clock">
-            <div id="hour" style="transform: rotate(334.5deg);"><img src="http://demo.web3designs.com/images/hourhand.png"></div>
-            <div id="minute" style="transform: rotate(54deg);"><img src="http://demo.web3designs.com/images/minhand.png"></div>
-            <div id="second" style="transform: rotate(108deg);"><img src="http://demo.web3designs.com/images/sechand.png"></div>
-        </div>
-    </div>
-    <!-- End Clock -->
-
-    
-
-   
+<div class="pageHeader">
+    <h1></h1>
 </div>
-<!-- end row div -->
+<!--end Page Header -->
+
+    
+<!-- Start Digital Clock -->
+<div class="col-sm-6">
+  <div class="contentBlock">
+    <div id="digiClock1"></div>
+  </div>
+</div>
+<!-- End Digital Clock -->
 
 <script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('digiClock1').innerHTML = 
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }
 
-//Analog Clock
+    startTime();
+</script>
 
+<!-- Start Digital Clock -->
+<div class="col-sm-6">
+  <div class="contentBlock">
+    <div id="digiClock2">&nbsp;</div>
+  </div>
+</div>
+<!-- End Digital Clock -->
+
+<script type="text/javascript">
+
+function updateClock() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+  // Pad the minutes and seconds with leading zeros, if required
+  h = ( h < 10 ? "0" : "" ) + h;
+  m = ( m < 10 ? "0" : "" ) + m;
+  s = ( s < 10 ? "0" : "" ) + s;
+
+  // Choose either "AM" or "PM" as appropriate
+  var timeOfDay = ( h < 12 ) ? "AM" : "PM";
+
+  // Convert the hours component to 12-hour format if needed
+  h = ( h > 12 ) ? h - 12 : h;
+
+  // Convert an hours component of "0" to "12"
+  h = ( h == 0 ) ? 12 : h;
+
+  // Compose the string for display
+  var currentTimeString = h + ":" + m + ":" + s + " " + timeOfDay;
+
+  // Update the time display
+  document.getElementById("digiClock2").firstChild.nodeValue = currentTimeString;
+}
+
+updateClock();
+setInterval('updateClock()', 1000 )
 
 </script>
+
+    
+
+<div class="clearfix"></div>
+
+<!-- Start Clock -->
+<div class="col-sm-6">
+  <div class="contentBlock">
+    <div id="clock">
+        <div id="hour" style="transform: rotate(334.5deg);"><img src="http://demo.web3designs.com/images/hourhand.png"></div>
+        <div id="minute" style="transform: rotate(54deg);"><img src="http://demo.web3designs.com/images/minhand.png"></div>
+        <div id="second" style="transform: rotate(108deg);"><img src="http://demo.web3designs.com/images/sechand.png"></div>
+    </div>
+  </div>
+</div>
+<!-- End Clock -->
+
 
 <!--| Sidebar File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->

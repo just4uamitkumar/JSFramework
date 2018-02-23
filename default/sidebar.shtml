@@ -10,7 +10,7 @@
           <a href="ResponsiveTabs.shtml" class="level2">Responsive Tabs</a>     
       </div>
       <a href="dashSlider.shtml" class="level1"></a>   
-      <a href="tooltip.shtml" class="level1"></a>
+      <a href="tooltipPage.shtml" class="level1"></a>
       <a href="FormValidation.shtml" class="level1"></a>
       <a href="Javascript:void();" class="level1 has-child"></a>
        <div class="collapse">

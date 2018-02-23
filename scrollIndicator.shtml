@@ -12,28 +12,10 @@
 <!--#include virtual="./default/sidebar.shtml" -->
 <!--| Sidebar File End Here |-->
 
-<h1></h1>
-
-<div class="row">
-
-    <!-- Start scroll Indicator -->
-    <div class="col-sm-12">            
-            
-           
-
-        
-        
-        <!-- end scroll Indicator div -->        
-    </div>    
-
-<script>
-
-
-
-</script>
-   
+<div class="pageHeader">
+    <h1></h1>
 </div>
-<!-- end row div -->
+<!--end Page Header -->
 
 <!--| Sidebar File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
