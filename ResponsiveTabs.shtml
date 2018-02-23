@@ -12,19 +12,20 @@
 <!--#include virtual="./default/sidebar.shtml" -->
 <!--| Sidebar File End Here |-->
 
-<h1></h1>
-
-<div class="row">
-
-    <!-- Start First Accordion Section -->
-    <div class="col-sm-12">
-        <div class="ResTabs">           
-        </div>        
-    </div>
-    <!-- End First Accordion Section -->
-   
+<div class="pageHeader">
+    <h1></h1>
 </div>
-<!-- end row div -->
+<!--end Page Header -->
+
+<!-- Start First Accordion Section -->
+<div class="col-sm-12">
+    <div class="contentBlock">
+        <div class="ResTabs">           
+        </div>
+    </div>       
+</div>
+<!-- End First Accordion Section -->
+
 <script>
 //Responsive tabs
 (function(){

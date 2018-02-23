@@ -1,10 +1,18 @@
-//SidebarAligned
-function pageStyle(){    
+
+function pageStyle(){
+    //Add document title as main heading
     var pageTitle = document.title;
-    var sidePos = document.getElementsByTagName('header')[0].clientHeight;
-    document.getElementsByClassName('sidebar')[0].style.top = sidePos + 'px';
     document.getElementsByTagName('h1')[0].innerHTML = pageTitle;
+
+    //Sidebar Aligned
+    var sidePos = document.getElementsByTagName('header')[0].clientHeight;
+    document.getElementsByClassName('sidebar')[0].style.top = sidePos + 'px';    
     document.getElementsByClassName('wrapper')[0].style.paddingTop = sidePos + 'px';
+
+    //Body ClassName
+    var pathname = window.location.pathname.replace('/JSFrameWork/','').slice(0,-6);
+    var body = document.body;
+    body.classList.add(pathname);   
 }
 
 pageStyle();
@@ -97,7 +105,6 @@ function scrollFunction() {
     isScrolling = setTimeout(function() {
         // Run the callback
         document.getElementsByClassName('scrollVal')[0].classList.remove('show');
-
     }, 500);
 }
 
