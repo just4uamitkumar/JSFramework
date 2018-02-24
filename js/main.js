@@ -63,6 +63,7 @@ CollapseSidbar();
     var i, j, k;
 
     function openMenu(){
+
         var dropMenu = this.children[1];        
 
         if(this.classList.contains('active')){
