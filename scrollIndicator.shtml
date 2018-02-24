@@ -17,6 +17,60 @@
 </div>
 <!--end Page Header -->
 
+<!-- Start Tab Section -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+        <div class="range-slider">
+        	<div class="startPoint"></div>
+        	<div class="dragMe"></div>
+        	<div class="endPoint"></div>
+        	<div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+        	<div class="col-sm-6">
+		        <button class="btn btn-primary" id="firstLeft">Move Left</button>
+		        <button class="btn btn-primary" id="firstRight">Move right</button>
+		    </div>
+
+		    <div class="col-sm-6 text-right">
+		    	<button class="btn btn-primary">Move Left</button>	        
+		        <button class="btn btn-primary">Move Right</button>		        
+		    </div>
+        </div>
+        
+
+	    <div class="col-sm-12 text-center">
+	        <button class="btn btn-warning">Get Distance</button>	       
+	    </div>
+
+        <p>Distance between both the point is <span id="distance"></span> units.</p>        
+    </div>                
+</div>
+<!-- End Tab Section -->
+
+<script>
+	var A = document.getElementsByClassName('startPoint')[0];
+	var B = document.getElementsByClassName('endPoint')[0];
+	var Aw = A.clientWidth; //StartPoint Width;
+	var Bw = B.clientWidth; //EndPoint Width;
+
+	var Ax = A.offsetLeft - Aw/2; //StartPoint Left Position;
+	var Bx = B.offsetLeft - Bw/2; //EndPoint Left Position;	
+
+	console.log(Aw);
+	console.log(Bx - Ax);
+	document.getElementById('distance').innerHTML = Bx - Ax;
+
+	document.getElementById('firstLeft').onclick = function (){		
+		A.style.left = 30 + 'px';
+	}
+
+	document.getElementById('firstRight').onclick = function (){		
+		A.style.left = -30 + 'px';
+	}
+
+</script>
 <!--| Sidebar File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
 <!--| Sidebar File End Here |-->
