@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Table</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Form Validaton -->
+<div class="col-sm-12">        
+    <div class="contentBlock">
+
+        <div class="table-responsive">
+            <form>
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Emp ID</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Experience</th>
+                        <th>Technology</th>
+                        <th>Rating</th>
+                    </tr>            
+                </thead>
+                <tbody>
+                    <tr class="headRow">
+                        <td><a href="javascript:void();" class="expandRow"></a> </td>
+                        <td><span>5</span></td>
+                        <td><span>Vinay</span></td>
+                        <td><span>Deisgner</span></td>
+                        <td><span>5 years</span></td>
+                        <td><span>HTML</span></td>
+                        <td><span>Average</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>HTML5</span></td>
+                        <td><span>CSS</span></td>
+                        <td><span>JavaScript</span></td>
+                        <td><span>JQuery</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Illustrator</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>DotNet</span></td>
+                        <td><span>PHP</span></td>
+                        <td><span>Photoshp</span></td>
+                        <td><span>Python</span></td>
+                        <td><span>Microsoft Work</span></td>
+                        <td><span>Illustrator</span></td>
+                    </tr>             
+                    <tr class="headRow">
+                        <td><a href="javascript:void();" class="expandRow"></a></td>
+                        <td><span>92</span></td>
+                        <td><span>Sandeep</span></td>
+                        <td><span>Developer</span></td>
+                        <td><span>2 years</span></td>
+                        <td>P<span>HP</span></td>
+                        <td><span>Good</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>Android</span></td>
+                        <td><span>Volvo</span></td>
+                        <td><span>C-Shart</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Illustrator</span></td>
+                        <td><span>CSS</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>iPhone</span></td>
+                        <td><span>Material</span></td>
+                        <td><span>Bootstrap</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Foundation</span></td>
+                        <td><span>CSS</span></td>
+                    </tr>            
+                    <tr class="headRow">
+                        <td><a href="javascript:void();" class="expandRow"></a></td>
+                        <td><span>28</span></td>
+                        <td><span>Govind</span></td>
+                        <td><span>Deisgner</span></td>
+                        <td><span>5 years</span></td>
+                        <td><span>HTML</span></td>
+                        <td><span>Average</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>Bootstrap</span></td>
+                        <td><span>Material</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Foundation</span></td>
+                        <td><span>CSS</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>DotNet</span></td>
+                        <td><span>PHP</span></td>
+                        <td><span>Photoshp</span></td>
+                        <td><span>Python</span></td>
+                        <td><span>Microsoft Work</span></td>
+                        <td><span>Illustrator</span></td>
+                    </tr>            
+                </tbody>
+            </table>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Form Validaton -->
+
+<script>
+(function(){
+    var i, j, k;
+    var expandRow = document.querySelectorAll('.expandRow');
+    var headRow = document.querySelectorAll('.headRow');
+    var subrow = document.querySelectorAll('.subrow');
+    
+    function expandTable(){ 
+        var head = this.closest('tr');
+        
+        if(this.classList.contains('active')){
+            this.classList.remove('active');
+            head.classList.remove('active');
+        }
+
+        else{            
+            for(j = 0; j < expandRow.length; j++ ){
+                expandRow[j].classList.remove('active');
+            }
+
+            for(k = 0; k < headRow.length; k++ ){
+                headRow[k].classList.remove('active');
+            }
+
+            this.classList.add('active');
+            head.classList.add('active');
+        }
+    }
+
+    for(i = 0; i < expandRow.length; i++ ){
+        expandRow[i].onclick = expandTable;
+    }
+
+}());
+
+//change span value in td
+(function(){
+    var EditTd = document.querySelectorAll('td:not(:first-child)');
+    var i, j, k;
+
+    function editSpan(e){
+        e.preventDefault;       
+        var Span = this.getElementsByTagName('span')[0];
+        var Input = this.getElementsByTagName('input')[0];        
+        var spanValue = Span.innerHTML;       
+        Span.classList.add('hide');
+
+        if(this.contains(Input)) {
+            Input.parentNode.removeChild(Input);
+            Span.classList.remove('hide');                  
+        }
+
+        else{
+            var tdInput = document.createElement('input');
+            tdInput.setAttribute("type", "text");
+            tdInput.setAttribute("value", spanValue);
+            this.appendChild(tdInput);
+            tdInput.classList.add('tdValue');
+        }     
+    }
+    
+    for(i = 0; i < EditTd.length; i++ ){       
+        EditTd[i].addEventListener("dblclick", editSpan);       
+    }
+
+    
+}());
+
+
+
+</script>
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Sidebar File End Here |-->

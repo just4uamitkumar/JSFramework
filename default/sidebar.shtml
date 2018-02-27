@@ -14,7 +14,7 @@
       <a href="FormValidation.shtml" class="level1"></a>
       <a href="Javascript:void();" class="level1 has-child"></a>
        <div class="collapse">
-          <a href="table.shtml" class="level2">Table</a>
+          <a href="tablePage.shtml" class="level2">Table</a>
           <a href="accordion.shtml" class="level2">Accordion</a>
       </div>
       <a href="clock.shtml" class="level1"></a>
