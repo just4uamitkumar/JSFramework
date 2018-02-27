@@ -34,17 +34,16 @@
 		    </div>
 
 		    <div class="col-sm-6 text-right">
-		    	<button class="btn btn-primary">Move Left</button>	        
-		        <button class="btn btn-primary">Move Right</button>		        
+		    	<button class="btn btn-primary" id="secondLeft">Move Left</button>	        
+		        <button class="btn btn-primary" id="secondRight">Move Right</button>		        
 		    </div>
-        </div>
-        
+        </div>        
 
 	    <div class="col-sm-12 text-center">
-	        <button class="btn btn-warning">Get Distance</button>	       
+	        <button class="btn btn-warning" id="getDistance">Get Distance</button>	       
 	    </div>
 
-        <p>Distance between both the point is <span id="distance"></span> units.</p>        
+        <p>Distance between both the point is <span id="distance"></span></p>        
     </div>                
 </div>
 <!-- End Tab Section -->
@@ -60,15 +59,27 @@
 
 	console.log(Aw);
 	console.log(Bx - Ax);
-	document.getElementById('distance').innerHTML = Bx - Ax;
 
+
+	
+   
+    A.style.left = '0px';
+	
 	document.getElementById('firstLeft').onclick = function (){		
-		A.style.left = 30 + 'px';
+		A.style.left = parseInt(A.style.left) + 30 + 'px';		
 	}
 
 	document.getElementById('firstRight').onclick = function (){		
-		A.style.left = -30 + 'px';
+		A.style.left = parseInt(A.style.left) - 30 + 'px';		
 	}
+
+	document.getElementById('getDistance').onclick = function distance(){
+		document.getElementById('distance').innerHTML = Bx - Ax;
+	}
+
+	
+
+	
 
 </script>
 <!--| Sidebar File Include Here |-->
