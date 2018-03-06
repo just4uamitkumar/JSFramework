@@ -366,9 +366,10 @@ span.close {color: #fff; float: right; font-size: 28px; line-height:1; font-weig
 /*--------| RangeSlider |-------*/
 .scrollIndicator .contentBlock{ }
 .range-slider{position: relative; margin: 50px 0 40px;}
-.range-slider .startPoint{position: absolute; width: 40px; height: 40px; border-radius: 50%;
-  background: #9e1b1b; left: 0; }
-.range-slider .endPoint{position: absolute; width: 40px; height: 40px; border-radius: 50%;
-  background: #9e1b1b; right: 0;}
+.range-slider .startPoint, .range-slider .endPoint{position: absolute; width: 40px;
+  height: 32px; border-radius: 50%; background: #9e1b1b;  text-align: center;
+  padding: 8px 0 0; color: #fff;}
+.range-slider .startPoint{left: 0; }
+.range-slider .endPoint{right: 0;}
 .scrollIndicator .contentBlock p{padding: 30px 0; text-align: center;}
 .scrollIndicator .contentBlock p span{font-weight: 700;}
