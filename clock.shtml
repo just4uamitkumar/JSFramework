@@ -104,6 +104,6 @@ setInterval('updateClock()', 1000 )
 <!-- End Clock -->
 
 
-<!--| Sidebar File Include Here |-->
+<!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
-<!--| Sidebar File End Here |-->
+<!--| Footer File End Here |-->

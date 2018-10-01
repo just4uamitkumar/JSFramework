@@ -7,15 +7,18 @@
       <div class="collapse">
           <a href="tabsPage.shtml" class="level2">Tabs</a>
           <a href="accordion.shtml" class="level2">Accordion</a>
-          <a href="ResponsiveTabs.shtml" class="level2">Responsive Tabs</a>     
+          <a href="ResponsiveTabs.shtml" class="level2">Responsive Tabs</a>
+          <a href="Calculator.shtml" class="level2">Calculator</a>     
       </div>
       <a href="dashSlider.shtml" class="level1"></a>   
       <a href="tooltipPage.shtml" class="level1"></a>
       <a href="FormValidation.shtml" class="level1"></a>
       <a href="Javascript:void();" class="level1 has-child"></a>
-       <div class="collapse">
+      <div class="collapse">
           <a href="tablePage.shtml" class="level2">Table</a>
-          <a href="accordion.shtml" class="level2">Accordion</a>
+          <a href="employeeListOne.shtml" class="level2">Employee List 1</a>
+          <a href="employeeListTwo.shtml" class="level2">Employee List 2</a>
+          <a href="employeeListThree.shtml" class="level2">Employee List 3</a>
       </div>
       <a href="clock.shtml" class="level1"></a>
       <a href="canvas.shtml" class="level1"></a>

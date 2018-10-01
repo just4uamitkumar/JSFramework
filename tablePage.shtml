@@ -19,7 +19,7 @@
 <!-- Start Form Validaton -->
 <div class="col-sm-12">        
     <div class="contentBlock">
-
+        <h2>Employee List</h2>
         <div class="table-responsive">
             <form>
                 <table class="table">
@@ -123,7 +123,7 @@
     </div>
 </div>
 <!-- End Form Validaton -->
-
+<script src="./js/employee.json"></script>
 <script>
 (function(){
     var i, j, k;
@@ -196,6 +196,6 @@
 
 </script>
 
-<!--| Sidebar File Include Here |-->
+<!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
-<!--| Sidebar File End Here |-->
+<!--| Footer File End Here |-->

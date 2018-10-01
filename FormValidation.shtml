@@ -99,9 +99,9 @@
             </div>
 
             <div class="clearfix"></div>
-            <div class="col-sm-12 form-group">       
-                <button type="submit" class="btn btn-primary pull-right">Submit</button>
-                <button type="reset" class="btn btn-danger pull-right m-r-5">Reset</button>
+            <div class="col-sm-12 form-group text-right">
+                <button type="reset" class="btn btn-danger">Reset</button>       
+                <button type="submit" class="btn btn-primary">Submit</button>                
             </div>
         </form>
     </div>
@@ -147,6 +147,6 @@ checkList();
 
 <script src="./js/validate.js"></script>
 
-<!--| Sidebar File Include Here |-->
+<!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
-<!--| Sidebar File End Here |-->
+<!--| Footer File End Here |-->

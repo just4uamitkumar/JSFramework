@@ -27,7 +27,7 @@
 			<div class="form-group">
                 <i class="fa fa-eye" id="showPass"></i>				
 				<input type="password" name="password" id="password" placeholder="Enter Password" 
-					onfocus="this.placeholder = ''"
+					onfocus="this.placeholder = ''" 
 					onblur="this.placeholder = 'Enter Password'"/>                    
 			</div>
 			<div class="form-group">            
@@ -39,29 +39,37 @@
 
 <script type="text/javascript">
 function login (){
-	if( document.loginForm.username.value == "" ){
+    var username = document.loginForm.username;
+    var passcode = document.loginForm.password;
+	if( username.value == "" ){
         alert( "Please provide user name!" );
-        document.loginForm.username.focus() ;
+        username.focus() ;
         return false;
     }    
 
-    if( document.loginForm.password.value == "" ){
+    if( passcode.value == "" ){
         alert( "Please Enter Password!" );
-        document.loginForm.password.focus() ;
+        passcode.focus() ;
         return false;
     }
 
-    if( document.loginForm.password.value != "amit" && document.loginForm.username.value != "amit" ){
+    if( passcode.value != "amit" && username.value != "amit" ){
         alert( "You Entered wrong Username/Password" );
-        document.loginForm.password.focus() ;
-        document.loginForm.username.focus() ;
+        passcode.focus() ;
+        username.focus() ;
         return false;
     }
 
     return( true );	
 }
 
-(function (){    
+(function (){ 
+
+   document.getElementById('password').oninput = function(){       
+        document.getElementById('showPass').classList.add('show');     
+    }
+    
+
     document.getElementById('showPass').onmousedown = function() {
        if ( document.getElementById('password').value.length > 0) {       
             document.getElementById('password').type = "text";        

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Calcultor</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Tab Section -->
+<div class="col-sm-4">        
+    <div class="contentBlock clearfix">
+        <div class="calculator">
+            <input type="text" value=""/ id="calcVal">
+            <div class="calcWrapper">
+                <ul>
+                    <li ><button type="button" class="btn btn-warning count" id="delAll">C</button></li>
+                    <li ><button type="button" class="btn btn-warning count">CE</button></li>
+                    <li ><button type="button" class="btn btn-warning count" id="del">Del</button></li>
+                    <li ><button type="button" class="btn btn-warning count">/</button></li>
+
+                    <li ><button type="button" class="btn btn-info numb">7</button></li>
+                    <li ><button type="button" class="btn btn-info numb">8</button></li>
+                    <li ><button type="button" class="btn btn-info numb">9</button></li>
+                    <li ><button type="button" class="btn btn-warning count">X</button></li>
+
+                    <li ><button type="button" class="btn btn-info numb">4</button></li>
+                    <li ><button type="button" class="btn btn-info numb">5</button></li>
+                    <li ><button type="button" class="btn btn-info numb">6</button></li>
+                    <li ><button type="button" class="btn btn-warning count">-</button></li>
+
+                    <li ><button type="button" class="btn btn-info numb">1</button></li>
+                    <li ><button type="button" class="btn btn-info numb">2</button></li>
+                    <li ><button type="button" class="btn btn-info numb">3</button></li>
+                    <li ><button type="button" class="btn btn-warning count">+</button></li>
+
+                    <li ><button type="button" class="btn btn-info numb">0</button></li>
+                    <li ><button type="button" class="btn btn-info numb">0</button></li>
+                    <li ><button type="button" class="btn btn-info numb">.</button></li>
+                    <li ><button type="button" class="btn btn-primary" id="result">=</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>                
+</div>
+<!-- End Tab Section -->
+
+
+ <script>
+
+//Tab Function
+(function (){
+    var i, j, k, x, y;
+    var numbBtn = document.querySelectorAll('.numb');
+    var countBtn = document.querySelectorAll('.count');
+    var result = document.getElementById('result');
+    var calcVal = document.getElementById('calcVal');
+    
+   
+    for (i = 0; i < numbBtn.length; i++) {       
+        numbBtn[i].addEventListener("click", EnterKey);
+    }  
+    
+    function EnterKey(){        
+        var btnText = this.innerHTML;
+        calcVal.value = '';
+        calcVal.value += btnText;
+    }
+
+    document.getElementById('del').onclick = function(){
+        if (calcVal.value.length > 0){
+           calcVal.value = calcVal.value.substring(0, calcVal.value.length - 1); 
+        } 
+    }
+
+    document.getElementById('delAll').onclick = function(){
+        if (calcVal.value.length > 0){
+           calcVal.value = 0; 
+        } 
+    }
+
+}());
+  
+
+ </script>
+
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
