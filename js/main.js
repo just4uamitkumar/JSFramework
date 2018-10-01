@@ -10,9 +10,10 @@ function pageStyle(){
     document.getElementsByClassName('wrapper')[0].style.paddingTop = sidePos + 'px';
 
     //Body ClassName
-    var pathname = window.location.pathname.replace('/JSFrameWork/','').slice(0,-6);
+    var pathname = window.location.pathname.replace('/JSFramework/', '').slice(0,-6);
     var body = document.body;
-    body.classList.add(pathname);   
+    body.classList.add(pathname); 
+    body.classList.replace('index', 'home')  
 }
 
 pageStyle();
@@ -49,7 +50,6 @@ function CollapseSidbar(){
     window.onresize = function() {
         sidebarToggle();
     }
-
 }
 
 CollapseSidbar();

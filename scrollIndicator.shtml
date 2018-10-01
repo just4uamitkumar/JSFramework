@@ -43,21 +43,30 @@
 	        <button class="btn btn-warning" id="getDistance">Get Distance</button>	       
 	    </div>
 
-        <p>Distance between both the point is <span id="distance"></span></p>        
+        <p>Distance between both the point is <strong id="distance"></strong></p>        
     </div>                
 </div>
 <!-- End Tab Section -->
 
 <script>
+(function(){
 	var A = document.getElementsByClassName('startPoint')[0];
 	var B = document.getElementsByClassName('endPoint')[0];
 	A.innerHTML = 0;
 	B.innerHTML = 460;
 
-	var Aw = A.clientWidth; //StartPoint Width;
-	var Bw = B.clientWidth; //EndPoint Width;
-	var Ax = A.offsetLeft - Aw/2; //StartPoint Left Position;
-	var Bx = B.offsetLeft - Bw/2; //EndPoint Left Position;	
+	function getWidth(){
+		var Aw = A.clientWidth; //StartPoint Width;
+		var Bw = B.clientWidth; //EndPoint Width;
+		var Ax = A.offsetLeft - Aw/2; //StartPoint Left Position;
+		var Bx = B.offsetLeft - Bw/2; //EndPoint Left Position;
+		return {
+				 Aw:Aw,
+				 Bw:Bw,
+				 Ax:Ax,
+				 Bx:Bx
+			}
+	}	
 	  
     A.style.left = '0px';
     B.style.left = '460px';
@@ -89,8 +98,7 @@
 		else{
 			B.style.left = (parseInt(B.style.left) - 30) + 'px';
 			B.innerHTML = B.style.left.slice(0,-2);	
-		}
-			
+		}			
 	}
 
 	document.getElementById('secondRight').onclick = function (){
@@ -104,15 +112,11 @@
 	}
 
 	document.getElementById('getDistance').onclick = function distance(){
-		var Aw = A.clientWidth; //StartPoint Width;
-		var Bw = B.clientWidth; //EndPoint Width;
-		var Ax = A.offsetLeft - Aw/2; //StartPoint Left Position;
-		var Bx = B.offsetLeft - Bw/2; //EndPoint Left Position;	
-
-		document.getElementById('distance').innerHTML = Bx - Ax;
+		var getData = getWidth();
+		document.getElementById('distance').innerHTML = getData.Bx - getData.Ax;
 	}
-
+})()
 </script>
-<!--| Sidebar File Include Here |-->
+<!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
-<!--| Sidebar File End Here |-->
+<!--| Footer File End Here |-->

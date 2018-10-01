@@ -12,13 +12,10 @@
 <!--#include virtual="./default/sidebar.shtml" -->
 <!--| Sidebar File End Here |-->
 
-
 <div class="pageHeader">
     <h1></h1>
 </div>
 <!--end Page Header -->
-
-
 
 <div class="col-sm-12">
     <div class="contentBlock">
@@ -103,6 +100,6 @@
 </script> 
 
 
-<!--| Sidebar File Include Here |-->
+<!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
-<!--| Sidebar File End Here |-->
+<!--| Footer File End Here |-->
