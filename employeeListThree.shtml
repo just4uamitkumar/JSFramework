@@ -17,76 +17,88 @@
 </div>
 <!--end Page Header -->
 
-<!-- Start Form Validaton -->
-<div class="col-sm-12">        
-    <div class="contentBlock">    
-        <button class="btn-primary m-b-10 pull-right">Get Data</button>
-        <p id="demo"></p>
-        <table id="employee_table" class="table">
-            <thead>
-                <tr>
-                    <th>Emp ID</th>
-                    <th>Name</th>
-                    <th>Designation</th>
-                    <th>Experience</th>
-                    <th>Technology</th>
-                    <th>Rating</th>
-                </tr>
-            </thead>
-            <tbody>
+<!-- Start Get Data -->
 
-            </tbody>            
-        </table>
+<div class="col-sm-3">        
+    <div class="contentBlock">    
+        
+        <ul class="list-group"></ul>
      
     </div>
 </div>
-<!-- End Form Validaton -->
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-9">        
+    <div class="contentBlock">    
+        
+       <div class="postCont"></div>
+     
+    </div>
+</div>
+<!-- End Get Data -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
+//$(document).ready(function(){
 
-/*var text = '{"employees":[' +
-                '{"empID":"5","name":"Vinay","designation":"Software Developer","experience":"2 Years","technology":"PHP","rating":"Average" },' +
-                '{"empID":"8","name":"Sandeep","designation":"HTML Developer","experience":"3 Years","technology":"CSS","rating":"Good" },' +
-                '{"empID":"12","name":"Jitender","designation":"Web Developer","experience":"1 Year","technology":"HTML","rating":"Above Average" },' +
-                '{"empID":"13","name":"Arya Bhushan","designation":"Graphic Designer","experience":"5 Year","technology":"Photoshop","rating":"Average" },' +
-                '{"empID":"14","name":"Govind","designation":"Web Developer","experience":"4 Year","technology":"HTML5","rating":"Good" }]}';*/
+    $(function(){
+        var $listgroup = $('.list-group');
+        var $listItem = $('.list-group-item');
 
 
-/*var obj = JSON.parse(text);
-document.getElementById("demo").innerHTML =
-obj.employees[1].empID + " " + obj.employees[2].name;*/
+        function getPost() {           
 
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "./js/employee.json", true);
-  xhttp.send();
-}
+            $.ajax({
+                url:'https://jsonplaceholder.typicode.com/posts',
+                method: 'GET',
+                success: function(data) {
+                    var newData = data.slice(0, 10);
+                    var listItem = [];
+                    var spanItem = [];
+                    newData.forEach(function(newItem) {
+                        console.log('newItem', newItem);
+                         var $li = $('<li/>', {
+                            class : 'list-group-item',
+                            'data-id' :newItem.id,                           
+                            html:newItem.title
+                            
+                        });                         
 
-loadDoc();
+                         listItem.push($li);                         
+                    });
 
-// var obj, dbParam, xmlhttp, myObj, x, txt = "";
-// obj = { "table":"employees", "limit":20 };
-// dbParam = JSON.stringify(obj);
-// xmlhttp = new XMLHttpRequest();
-// xmlhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//         myObj = JSON.parse(this.responseText);
-//         txt += "<table border='1'>"
-//         for (x in myObj) {
-//             txt += "<tr><td>" + myObj[x].name + "</td></tr>";
-//         }
-//         txt += "</table>"        
-//         document.getElementById("demo").innerHTML = txt;
-//     }
-// };
-// xmlhttp.open("GET", "./js/employee.json", true);
-// xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-// xmlhttp.send("x=" + dbParam);
+                    $listgroup.append(listItem);                   
+                },
+
+                error : function( err ) {
+                    console.log('err')
+                }
+
+            });
+        }
+
+        getPost();
+
+        $listgroup.on('click', '.list-group-item', function(e){
+            var id = $(e.target).attr('data-id');
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/posts/' + id,
+                method: 'GET',
+                success:function(data){
+                    console.log('data', data);
+                    $('.postCont').html(data.body);
+                },
+                error:function(){
+
+                }
+            });
+        });
+    });
+//});
+
   
 
 </script>

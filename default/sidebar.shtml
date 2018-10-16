@@ -36,7 +36,9 @@
           <a href="imagezoom.shtml" class="level2">Image Compare</a>
       </div>
       <a href="fullvids.shtml" class="level1"></a>
-      <a href="scrollIndicator.shtml" class="level1"></a>    
+      <a href="scrollIndicator.shtml" class="level1"></a>
+      <a href="HCF.shtml" class="level1"></a>     
+      <a href="HCF2.shtml" class="level1"></a>
     </div>
   </div>
   <!-- End Sidebar -->
@@ -48,7 +50,7 @@
 
     //Add sidebar menu content
     var FirstText = ['DashBoard Slider', 'Tooltip', 'Form Validation', 'Clock', 'CanVas', 
-    'Marquee', 'Full Screen Video', 'Scroll Indicator'];
+    'Marquee', 'Full Screen Video', 'Scroll Indicator', 'Highest Common Factor', 'Highest Common Factor2'];
     var level1 = document.querySelectorAll('.level1:not(.has-child)');
     var collapseDiv = document.querySelectorAll('.collapse');
 

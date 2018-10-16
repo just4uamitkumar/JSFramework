@@ -93,9 +93,10 @@ window.onscroll = function() {scrollFunction(event)};
 function scrollFunction() {
   var isScrolling;
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  
   var s = document.documentElement.scrollHeight;
   var c = document.documentElement.clientHeight;
+  var height = s - c;
   var scrolled = (winScroll / height) * 100;
   var n = scrolled.toFixed(0)
     console.log(height);

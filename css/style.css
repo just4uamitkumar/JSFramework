@@ -14,6 +14,7 @@ li { list-style: none}
 .m-l-10{margin-left: 10px;}
 .text-center{text-align: center;}
 .text-right{text-align: right;}
+.text-danger{color: #e60a0a;}
 .pull-right{float: right;}
 
 .hide {display: none !important}
@@ -101,7 +102,7 @@ h4 { padding: 0 0 5px; font-size: 1.2rem}
 /*------| Columns |-----*/
 .row {margin: 0 -15px}
 .col-sm-12 { width: calc(100% - 30px); padding:15px; float: none;}
-.col-sm-9 { width: calc(80% - 30px); padding:15px; float: left}
+.col-sm-9 { width: calc(75% - 30px); padding:15px; float: left}
 .col-sm-6 {width: calc(50% - 30px); padding:15px; float: left}
 .col-sm-4 {width: calc(33.333% - 30px); padding:15px;  float: left}
 .col-sm-3 {width: calc(25% - 30px); padding:15px; float: left}
@@ -385,3 +386,15 @@ text-transform: uppercase; font-family: Impact;}
 .calcWrapper ul{margin:10px -9px 5px; font-size: 0;}
 .calcWrapper ul li{width:calc(25% - 18px); padding: 5px 9px; display: inline-block;}
 .calcWrapper ul li button{width: 100%; font-size: 18px; font-weight: 700;}
+
+
+/*--------| Employee List 3 |-------*/
+.list-group{}
+.list-group-item{padding: 5px 0; border-bottom: 1px solid #000;}
+
+
+/*--------| HCF |-------*/
+.commonFact label{font-weight: 700;}
+#va{width: 50px}
+#new1{display: inline-block; vertical-align: top;}
+#new1 input{width: 50px; margin: 0 3px 0 0 ;}

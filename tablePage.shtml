@@ -11,6 +11,7 @@
 <!--| Sidebar File Include Here |-->
 <!--#include virtual="./default/sidebar.shtml" -->
 <!--| Sidebar File End Here |-->
+
 <div class="pageHeader">
     <h1></h1>
 </div>
@@ -93,7 +94,7 @@
                         <td><a href="javascript:void();" class="expandRow"></a></td>
                         <td><span>28</span></td>
                         <td><span>Govind</span></td>
-                        <td><span>Deisgner</span></td>
+                        <td><span>Designer</span></td>
                         <td><span>5 years</span></td>
                         <td><span>HTML</span></td>
                         <td><span>Average</span></td>
@@ -111,7 +112,7 @@
                         <td></td>
                         <td><span>DotNet</span></td>
                         <td><span>PHP</span></td>
-                        <td><span>Photoshp</span></td>
+                        <td><span>Photoshop</span></td>
                         <td><span>Python</span></td>
                         <td><span>Microsoft Work</span></td>
                         <td><span>Illustrator</span></td>
