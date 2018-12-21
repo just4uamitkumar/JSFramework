@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Change Alphabet</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<div class="col-sm-12">
+    
+    <div class="contentBlock clearfix">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label>Enter Name : </label>
+          <input type="text" class="form-control" value="amit" placeholder="Enter Value">          
+        </div>
+        <div class="form-group">
+          <label></label>         
+          <button type="submit" class="btn btn-info">Submit</button>
+        </div>
+        
+        
+        <div class="nameChange"></div>
+      </div>
+          
+     
+    </div>
+</div>
+<!-- End col-sm-12 -->
+
+
+<script>
+
+(function(){
+  var a, b, c, d, e;
+  var alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    
+  var inVal = document.getElementsByTagName('input')[0].value;
+
+  return {
+         inVal:inVal
+      }
+
+  document.getElementsByTagName('button')[0].onclick = function(){ 
+    console.log(inVal)
+    document.getElementsByClassName('nameChange')[0].innerHtml == inVal 
+  }
+  
+})();
+
+
+
+
+
+
+ 
+</script> 
+
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

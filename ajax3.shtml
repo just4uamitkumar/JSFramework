@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Ajax Example 3</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<div class="col-sm-12">
+  <div class="contentBlock">
+    <h2>The responseXML Property</h2>
+        <p>The XML HttpRequest object has an in-built XML parser.</p>
+
+        <p>The <strong>responseXML</strong> property returns the server response as an XML DOM object.</p>
+        <p>Using this property you can parse the response as an XML DOM object:</p>
+  </div>
+</div>
+
+<!-- Start Get Data -->
+<div class="col-sm-3">        
+    <div class="contentBlock">    
+        <h2>responseXML 1</h2>
+        <div id="demo1" class="m-b-10"></div> 
+        <button type="button" class="btn btn-primary" onclick="loadDoc1()">Get XML Content</button>      
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-3">        
+    <div class="contentBlock">
+      <h2>responseXML 2</h2>
+        <div id="demo2" class="m-b-10"></div>
+        <button type="button" class="btn btn-primary" onclick="loadDoc2()">Get XML Content</button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-3">        
+    <div class="contentBlock">
+      <h2>responseXML 3</h2>
+        <div id="demo3" class="m-b-10"></div>
+        <button type="button" class="btn btn-primary" onclick="loadDoc3()">Get XML Content</button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-3">        
+    <div class="contentBlock">
+      <h2>responseXML 4</h2>
+        <div id="demo4" class="m-b-10"></div>
+        <button type="button" class="btn btn-primary" onclick="loadDoc4()">Get XML Content</button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<script>
+function loadDoc1(){
+  var xhttp, xmlDoc, txt, x, i;
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      xmlDoc = this.responseXML;
+      txt = "";
+      x = xmlDoc.getElementsByTagName("ARTIST");
+      for (i = 0; i < x.length; i++) {
+        txt = txt + x[i].childNodes[0].nodeValue + "<br>";
+      }
+      document.getElementById("demo1").innerHTML = txt;
+    }
+  };
+  xhttp.open("GET", "./js/cd_catalog.xml", true);
+  xhttp.send();
+};
+
+function loadDoc2(){
+  var xhttp, xmlDoc, txt, x, i;
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      xmlDoc = this.responseXML;
+      txt = "";
+      x = xmlDoc.getElementsByTagName("COUNTRY");
+      for (i = 0; i < x.length; i++) {
+        txt = txt + x[i].childNodes[0].nodeValue + "<br>";
+      }
+      document.getElementById("demo2").innerHTML = txt;
+    }
+  };
+  xhttp.open("GET", "./js/cd_catalog.xml", true);
+  xhttp.send();
+}
+
+function loadDoc3(){
+  var xhttp, xmlDoc, txt, x, i;
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      xmlDoc = this.responseXML;
+      txt = "";
+      x = xmlDoc.getElementsByTagName("COMPANY");
+      for (i = 0; i < x.length; i++) {
+        txt = txt + x[i].childNodes[0].nodeValue + "<br>";
+      }
+      document.getElementById("demo3").innerHTML = txt;
+    }
+  };
+  xhttp.open("GET", "./js/cd_catalog.xml", true);
+  xhttp.send();
+}
+
+function loadDoc4(){
+  var xhttp, xmlDoc, txt, x, i;
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      xmlDoc = this.responseXML;
+      txt = "";
+      x = xmlDoc.getElementsByTagName("PRICE");
+      for (i = 0; i < x.length; i++) {
+        txt = txt + x[i].childNodes[0].nodeValue + "<br>";
+      }
+      document.getElementById("demo4").innerHTML = txt;
+    }
+  };
+  xhttp.open("GET", "./js/cd_catalog.xml", true);
+  xhttp.send();
+}
+
+
+</script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
