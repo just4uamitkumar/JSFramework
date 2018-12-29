@@ -1,6 +1,7 @@
 <div class="wrapper">
 
   <!-- Start Sidebar -->
+  <!-- Start Sidebar -->
   <div class="sidebar">  
     <div class="panel">
       <a href="Javascript:void();" class="level1 has-child"></a>
@@ -11,7 +12,9 @@
           <a href="fullvids.shtml" class="level2">Full Screen Vids</a>
           <a href="scrollIndicator.shtml" class="level2">Scroll Indicator</a>
           <a href="Calculator.shtml" class="level2">Calculator</a>
-          <a href="imagezoom.shtml" class="level2">Image Zoom</a>    
+          <a href="imagezoom.shtml" class="level2">Image Zoom</a>
+          <a href="gallery.shtml" class="level2">Gallery 1</a>
+          <a href="gallery2.shtml" class="level2">Gallery 2</a>     
       </div>
 
       <a href="Javascript:void();" class="level1 has-child"></a>
@@ -53,6 +56,7 @@
       <a href="HCF2.shtml" class="level1"></a> 
     </div>
   </div>
+  <!-- End Sidebar -->
   <!-- End Sidebar -->
 
   <script type="text/Javascript">
