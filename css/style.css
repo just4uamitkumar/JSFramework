@@ -307,7 +307,7 @@ transform: translate(-50%, -50%); width: 340px; left: 50%; top:50%; }
 .loginCont h4{ font-size: 1.8rem; text-align: center; margin-bottom: 40px}
 .loginCont .form-group{ margin-bottom: 20px; position: relative;}
 .loginCont  .form-group i{ position: absolute; right: 5px; color: #8e8e8e; top: 8px;
-  cursor: pointer; display: none;} 
+  cursor: pointer;} 
 .loginCont  .form-group input{background: transparent;  width: calc(100% - 40px);  border-width: 0 0 1px;
   border-color: #e0e0e0;  color: #bdbdbd;  padding: 11px 40px 11px 0;}
 .loginCont  .form-group input:focus{ border-width: 0 0 1px; border-color:#bdbdbd; outline: 0; }
