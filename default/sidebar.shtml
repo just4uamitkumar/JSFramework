@@ -8,8 +8,36 @@
           <a href="tabsPage.shtml" class="level2">Tabs</a>
           <a href="accordion.shtml" class="level2">Accordion</a>
           <a href="ResponsiveTabs.shtml" class="level2">Responsive Tabs</a>
-          <a href="Calculator.shtml" class="level2">Calculator</a>     
+          <a href="fullvids.shtml" class="level2">Full Screen Vids</a>
+          <a href="scrollIndicator.shtml" class="level2">Scroll Indicator</a>
+          <a href="Calculator.shtml" class="level2">Calculator</a>
+          <a href="imagezoom.shtml" class="level2">Image Zoom</a>    
       </div>
+
+      <a href="Javascript:void();" class="level1 has-child"></a>
+      <div class="collapse">
+          <a href="Ajax1.shtml" class="level2">Ajax 1</a>
+          <a href="Ajax2.shtml" class="level2">Ajax 2</a>
+          <a href="Ajax3.shtml" class="level2">Ajax 3</a>
+          <a href="Ajax4.shtml" class="level2">Ajax 4</a>
+          <a href="Ajax5.shtml" class="level2">Ajax 5</a>
+          <a href="Ajax6.shtml" class="level2">Ajax 6</a>
+          <a href="Ajax7.shtml" class="level2">Ajax 7</a>
+          <a href="Ajax8.shtml" class="level2">Ajax 8</a>      
+      </div>
+
+      <a href="Javascript:void();" class="level1 has-child"></a>
+      <div class="collapse">
+          <a href="json1.shtml" class="level2">JSON 1</a>
+          <a href="json2.shtml" class="level2">JSON 2</a>
+          <a href="json3.shtml" class="level2">JSON 3</a>
+          <a href="json4.shtml" class="level2">JSON 4</a>
+          <a href="json5.shtml" class="level2">JSON 5</a>
+          <a href="json6.shtml" class="level2">JSON 6</a>
+          <a href="json7.shtml" class="level2">JSON 7</a>
+          <a href="json8.shtml" class="level2">JSON 8</a>      
+      </div>
+
       <a href="dashSlider.shtml" class="level1"></a>   
       <a href="tooltipPage.shtml" class="level1"></a>
       <a href="FormValidation.shtml" class="level1"></a>
@@ -21,24 +49,8 @@
           <a href="employeeListThree.shtml" class="level2">Employee List 3</a>
       </div>
       <a href="clock.shtml" class="level1"></a>
-      <a href="canvas.shtml" class="level1"></a>
-      <a href="marquee.shtml" class="level1"></a>
-      <a href="Javascript:void();" class="level1 has-child"></a>
-      <div class="collapse">
-          <a href="carousel1.shtml" class="level2">Carousel 1</a>
-          <a href="carousel2.shtml" class="level2">Carousel 2</a>
-          <a href="carousel3.shtml" class="level2">Carousel 3</a>
-      </div>
-      <a href="Javascript:void();" class="level1 has-child"></a>
-      <div class="collapse">
-          <a href="imagezoom.shtml" class="level2">Image Zoom</a>
-          <a href="imagezoom.shtml" class="level2">Image Magnifier</a>
-          <a href="imagezoom.shtml" class="level2">Image Compare</a>
-      </div>
-      <a href="fullvids.shtml" class="level1"></a>
-      <a href="scrollIndicator.shtml" class="level1"></a>
-      <a href="HCF.shtml" class="level1"></a>     
-      <a href="HCF2.shtml" class="level1"></a>
+      <a href="canvas.shtml" class="level1"></a> 
+      <a href="HCF2.shtml" class="level1"></a> 
     </div>
   </div>
   <!-- End Sidebar -->
@@ -50,7 +62,7 @@
 
     //Add sidebar menu content
     var FirstText = ['DashBoard Slider', 'Tooltip', 'Form Validation', 'Clock', 'CanVas', 
-    'Marquee', 'Full Screen Video', 'Scroll Indicator', 'Highest Common Factor', 'Highest Common Factor2'];
+      'Highest Common Factor'];
     var level1 = document.querySelectorAll('.level1:not(.has-child)');
     var collapseDiv = document.querySelectorAll('.collapse');
 
@@ -58,7 +70,7 @@
       level1[j].innerHTML = FirstText[j];       
     }
 
-    var parArr = ['UI Elements', 'Table', 'Carousel', 'Image Effect'];
+    var parArr = ['UI Elements', 'Ajax', 'JSON', 'Table'];
     var hasChild = document.getElementsByClassName("has-child");
 
     function expand(){        

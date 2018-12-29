@@ -64,6 +64,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
+//The XMLHttpRequest Object
 function loadDoc1() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -76,6 +77,8 @@ function loadDoc1() {
   xhttp.send();
 }
 
+
+//Load Text File Using JQuery
 $(document).ready(function(){
     $('.loadFile').click(function(){
         $("#demo2").load("./js/ajax_info.txt");
@@ -83,6 +86,7 @@ $(document).ready(function(){
 });
 
 
+//Post Request
 function loadDoc2() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -94,14 +98,13 @@ function loadDoc2() {
   xhttp.send();
 }
 
-
+//Synchronous Request
 function loadDoc3() {
   var xhttp = new XMLHttpRequest();
   xhttp.open("GET", "./js/ajax_info.txt", false);
   xhttp.send();
   document.getElementById("demo4").innerHTML = xhttp.responseText;
 }
-
 
 </script>
 
