@@ -12,16 +12,21 @@
 <!--#include virtual="./default/sidebar.shtml" -->
 <!--| Sidebar File End Here |-->
 
-<h1></h1>
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
 
 <div class="row">
     <!-- Start Full Screen Video -->
     <div class="col-sm-12">
-        <p>Mouse over the image:</p>
+      <div class="contentBlock clearfix">
+        <h2>Mouse over the image:</h2>
         <div class="img-zoom-container">
           <img id="myimage" src="./images/img_fjords.jpg">
           <div id="myresult" class="img-zoom-result"></div>
         </div>
+      </div>
     </div>   
 
 <script>
