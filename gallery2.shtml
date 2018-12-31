@@ -71,7 +71,7 @@
     var zoomOut = document.createElement('a');
     zoomOut.setAttribute('class','zoomOut');
     zoomOut.setAttribute('href','javascript:void(0);');
-    zoomOut.innerHTML = '-'
+    zoomOut.innerHTML = '<i class="fa fa-search-minus"></i>'
     zoomAr[z2].appendChild(zoomOut);   
   }
 
@@ -80,7 +80,7 @@
     var zoomIn = document.createElement('a');
     zoomIn.setAttribute('class','zoomIn');
     zoomIn.setAttribute('href','javascript:void(0);');
-    zoomIn.innerHTML = '+'
+    zoomIn.innerHTML = '<i class="fa fa-search-plus"></i>'
     zoomAr[z1].appendChild(zoomIn);   
   }
 
@@ -128,10 +128,10 @@
     mShadow.innerHTML = '<div class="gModal">' +
                           '<div class="modalDialog">' +
 
-                            '<div class="modaldHeader">' +
+                            '<div class="modalHeader">' +
 
                               '<button type="button" class="close" data-dismiss="modal">' +
-                                '<span>×</span>' +
+                                '<i class="fa fa-times"></i>' +
                               '</button>'+
                               '<h4></h4>' +
                             '</div>' +
