@@ -1,6 +1,7 @@
 <div class="wrapper">
 
   <!-- Start Sidebar -->
+  <!-- Start Sidebar -->
   <div class="sidebar">  
     <div class="panel">
       <a href="Javascript:void();" class="level1 has-child"></a>
@@ -55,6 +56,7 @@
       <a href="HCF2.shtml" class="level1"></a> 
     </div>
   </div>
+  <!-- End Sidebar -->
   <!-- End Sidebar -->
 
   <script type="text/Javascript">
