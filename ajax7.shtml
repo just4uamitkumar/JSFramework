@@ -30,14 +30,6 @@
 </div>
 <!-- End Get Data -->
 
-<!-- Start Get Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">    
-        <p id='showCD1'></p>
-    </div>
-</div>
-<!-- End Get Data -->
-
 
 <script> 
 var x,xmlhttp,xmlDoc
