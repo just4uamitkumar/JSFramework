@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Ajax Example 1</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">    
+        <h2>The XMLHttpRequest Object</h2>
+        <div id="demo1" class="m-b-10"></div>
+        <button type="button" class="btn btn-primary" onclick="loadDoc1()">Get Content</button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+       <h2>Load Text File Using JQuery</h2>
+        <div id="demo2" class="m-b-10"></div>
+        <button type="button" class="btn btn-primary loadFile">Load Content</button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<div class="clearfix"></div>
+
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+       <h2>Post Request</h2>
+        <div id="demo3" class="m-b-10"></div>
+        <button type="button" class="btn btn-primary"  onclick="loadDoc2()">Load Content</button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+       <h2>Synchronous Request</h2>
+        <div id="demo4" class="m-b-10"></div>
+        <button type="button" class="btn btn-primary"  onclick="loadDoc3()">Load Content</button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+//The XMLHttpRequest Object
+function loadDoc1() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo1").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "./js/ajax_info.txt", true);
+  xhttp.send();
+}
+
+
+//Load Text File Using JQuery
+$(document).ready(function(){
+    $('.loadFile').click(function(){
+        $("#demo2").load("./js/ajax_info.txt");
+    });
+});
+
+
+//Post Request
+function loadDoc2() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo3").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("POST", "./js/ajax_info.txt", true);
+  xhttp.send();
+}
+
+//Synchronous Request
+function loadDoc3() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "./js/ajax_info.txt", false);
+  xhttp.send();
+  document.getElementById("demo4").innerHTML = xhttp.responseText;
+}
+
+</script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

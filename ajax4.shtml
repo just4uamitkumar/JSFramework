@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Ajax Example 4</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">    
+        <h2>The getAllResponseHeaders() Method 1</h2>
+        <p>The getAllResponseHeaders() method returns all header information from the server response.</p>
+        <div id="demo1" class="m-b-10"></div> 
+        <button type="button" class="btn btn-primary" onclick="loadDoc1()">Get Content</button>      
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+      <h2>The getAllResponseHeaders() Method 2</h2>
+      <p>The getAllResponseHeaders() method returns all header information from the server response.</p>
+        <div id="demo2" class="m-b-10"></div>
+        <button type="button" class="btn btn-primary" onclick="loadDoc2()">Get Content</button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+      <h2>getResponseHeader()</h2>
+      <p>The getResponseHeader() method returns specific header information from the server response.</p>
+         <p class="m-b-10" ><strong>Last Modified:</strong> <span id="demo3"></span></p>
+        <button type="button" class="btn btn-primary" onclick="loadDoc3()">Get Content</button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+      <h2>getResponseHeader()</h2>
+      <p>The getResponseHeader() method returns specific header information from the server response.</p>
+      <p class="m-b-10" ><strong>Last Modified:</strong> <span id="demo4"></span></p>
+        <button type="button" class="btn btn-primary" onclick="loadDoc4()">Get Content</button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<script>
+function loadDoc1(){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo1").innerHTML =
+      this.getAllResponseHeaders();
+    }
+  };
+  xhttp.open("GET", "./js/ajax_info.txt", true);
+  xhttp.send();
+}
+
+function loadDoc2(){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo2").innerHTML =
+      this.getAllResponseHeaders();
+    }
+  };
+  xhttp.open("GET", "./js/cd_catalog.xml", true);
+  xhttp.send();
+}
+
+function loadDoc3(){
+  var xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo3").innerHTML =
+      this.getResponseHeader("Last-Modified");
+    }
+  };
+  xhttp.open("GET", "./js/ajax_info.txt", true);
+  xhttp.send();
+}
+
+
+function loadDoc4(){
+  var xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo4").innerHTML =
+      this.getResponseHeader("Last-Modified");
+    }
+  };
+  xhttp.open("GET", "./js/cd_catalog.xml", true);
+  xhttp.send();
+}
+
+
+
+
+</script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
