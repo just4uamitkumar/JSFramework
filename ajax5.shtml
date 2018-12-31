@@ -24,7 +24,9 @@
         <h2>AJAX XML Example</h2>
         <p>The following example will demonstrate how a web page can fetch
         information from an XML file with AJAX:</p>
-        <button type="button" class="btn btn-primary  m-b-10" onclick="loadDoc()">Get Content</button>  
+        <button type="button" class="btn btn-primary m-b-10" onclick="loadDoc()">
+          Get Content
+        </button>  
         <table id="demo" class="table"></table>            
     </div>
 </div>
