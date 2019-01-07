@@ -31,8 +31,6 @@
 </div>
 <!-- End Get Data -->
 
-
-
 <!-- Start Get Data -->
 <div class="col-sm-12">        
     <div class="contentBlock">    
@@ -44,8 +42,6 @@
     </div>
 </div>
 <!-- End Get Data -->
-
-
 
 <!-- Start Get Data -->
 <div class="col-sm-6">        
@@ -70,8 +66,6 @@
 </div>
 <!-- End Get Data -->
 
-
-
 <!-- Start Get Data -->
 <div class="col-sm-6">        
     <div class="contentBlock">    
@@ -83,10 +77,6 @@
     </div>
 </div>
 <!-- End Get Data -->
-
-
-
-
 
 <script>
  
@@ -129,9 +119,6 @@ function getData5(){
   document.getElementById("demo5").innerHTML += myObj.cars.car2 + ' and ' + myObj.cars["car3"];
 
 }
-
-
-
 
 </script>
 
