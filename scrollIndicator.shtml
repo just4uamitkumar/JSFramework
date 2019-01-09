@@ -52,11 +52,19 @@
 <div class="col-sm-4">        
     <div class="contentBlock">
     	<div class="scrollArray form-group">
-	        <button class="prev btn btn-primary"><i class="fa fa-thumbs-down" onclick="prev();"></i></button>
+	        <button class="prev btn btn-primary" id="getPrev"><i class="fa fa-thumbs-down"></i></button>
 	        <input type="text" class="form-control" value="" />
-	        <button class="next btn btn-primary" onclick="next();"><i class="fa fa-thumbs-up"></i></button>
+	        <button class="next btn btn-primary" id="getNext"><i class="fa fa-thumbs-up"></i></button>
 	    </div>
-    </div>                
+    </div>
+
+    <div class="contentBlock">
+    	<div class="scrollArray form-group">
+	        <button class="prev btn btn-primary" id="Prev"><i class="fa fa-thumbs-down"></i></button>
+	        <input type="text" id="getVal" class="form-control" value="" />
+	        <button class="next btn btn-primary" id="Next"><i class="fa fa-thumbs-up"></i></button>
+	    </div>
+    </div>                  
 </div>
 <!-- End Scroll section -->
 
@@ -64,30 +72,76 @@
 
 <script>
 
+
 (function(){
+	var i = 0, len;
+	var myArray = ['HTML', 'CSS', 'JavaScript', 'Photosop', 'Illustrator', 'ReactJs', 'Angular'];
+	len = myArray.length;
+
+	var x = document.getElementById('getVal');
+
+	function getElem(i){
+	  x.value = myArray[i];
+	}
+	
+	getElem(0);
+
+	document.getElementById('Next').onclick = function(){
+	  if (i < len-1) {
+	    i++;
+	    getElem(i);
+	  }	  
+	}
+	
+	document.getElementById('Prev').onclick = function(){
+		if (i > 0) {
+	    	i--;
+	    	getElem(i);
+	  	}
+	}	
+})();
+
+
+(function(){
+	var i = 0, len;
 	var myArray = ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'];
+	len = myArray.length;
 
 	var x = document.getElementsByClassName('scrollArray')[0].childNodes[3];
-	console.log(x);
-	var j = x.value;
 
-	x.value = myArray[0];
-	var len = myArray.length;
+	function getElem(i){
+	  x.value = myArray[i];
+	}
 	
+	getElem(0);
 
-	function next() {
-    if (j < len-1) {
-      j++;      
-    }
-  }
+	document.getElementById('getNext').onclick = function(){
+		if(i == len - 1){
+	      i = 0;
+	      getElem(0);
+	  }
 
-  function prev() {
-    if (j > 0) {
-      j--;
-    }
-  }
+	  else if (i < len-1) {
+	    i++;
+	    getElem(i);
+	  }
+	}
 
+	
+	document.getElementById('getPrev').onclick = function(){
+		if (i > 0) {
+	    i--;
+	    getElem(i);
+	  }
+
+	  else if (i == 0) {
+	    i = (len-1);
+	     getElem(len-1);
+	  }
+	}
+	
 })();
+
 
 (function(){
 	var A = document.getElementsByClassName('startPoint')[0];
