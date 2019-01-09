@@ -27,7 +27,6 @@
 </div>
 <!-- End Get Data -->
 
-
 <!-- Start Get Data -->
 <div class="col-sm-6">        
     <div class="contentBlock">    
@@ -82,11 +81,6 @@
     var obj = JSON.parse(txt);
     document.getElementById("demo3").innerHTML = obj.name + ", " + obj.age;
   }
-
-
-
-
-
 
 </script>
 

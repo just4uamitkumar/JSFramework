@@ -17,7 +17,6 @@
 </div>
 <!--end Page Header -->
 
-
 <!-- Start Get Data -->
 <div class="col-sm-12">        
     <div class="contentBlock">    
@@ -42,7 +41,6 @@
 </div>
 <!-- End Get Data -->
 
-
 <!-- Start Get Data -->
 <div class="col-sm-6">        
     <div class="contentBlock">    
@@ -56,8 +54,6 @@
 </div>
 <!-- End Get Data -->
 
-
-
 <!-- Start Get Data -->
 <div class="col-sm-6">        
     <div class="contentBlock">    
@@ -68,10 +64,6 @@
     </div>
 </div>
 <!-- End Get Data -->
-
-
-
-
 
 <script>
  
@@ -135,10 +127,6 @@
     }
     document.getElementById("demo4").innerHTML = x;
   }
-
-
-
-
 </script>
 
 <!--| Footer File Include Here |-->
