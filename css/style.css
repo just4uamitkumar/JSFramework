@@ -368,7 +368,8 @@ span.close {color: #fff; float: right; font-size: 28px; line-height:1; font-weig
 
 
 /*--------| RangeSlider |-------*/
-.scrollIndicator .contentBlock{ }
+.scrollIndicator .contentBlock{}
+.contentBlock +  .contentBlock{margin-top: 15px;}
 .range-slider{position: relative; margin: 50px 0 40px;}
 .range-slider .startPoint, .range-slider .endPoint{position: absolute; width: 40px;
   height: 32px; border-radius: 50%; background: #9e1b1b;  text-align: center;
