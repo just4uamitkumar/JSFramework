@@ -41,6 +41,20 @@
           <a href="json8.shtml" class="level2">JSON 8</a>      
       </div>
 
+       <a href="Javascript:void();" class="level1 has-child"></a>
+      <div class="collapse">
+          <a href="setTimeout.shtml" class="level2">setTimeout</a>
+          <a href="setInterval.shtml" class="level2">setInterval</a>
+          <a href="clearTimeout.shtml" class="level2">clearTimeout</a>
+      </div>
+
+      <a href="Javascript:void();" class="level1 has-child"></a>
+      <div class="collapse">
+          <a href="localStorage1.shtml" class="level2">Local Storage 1</a>
+      </div>
+
+     
+
       <a href="dashSlider.shtml" class="level1"></a>   
       <a href="tooltipPage.shtml" class="level1"></a>
       <a href="FormValidation.shtml" class="level1"></a>
@@ -74,7 +88,7 @@
       level1[j].innerHTML = FirstText[j];       
     }
 
-    var parArr = ['UI Elements', 'Ajax', 'JSON', 'Table'];
+    var parArr = ['UI Elements', 'Ajax', 'JSON', 'Timer', 'Local Storage', 'Table'];
     var hasChild = document.getElementsByClassName("has-child");
 
     function expand(){        
