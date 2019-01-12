@@ -37,8 +37,42 @@
                     </tr>            
                 </thead>
                 <tbody>
-                                
-                               
+                    <tr class="headRow">
+                        <td><span>5</span></td>
+                        <td><span>Vinay</span></td>
+                        <td><span>Deisgner</span></td>
+                        <td><span>5 years</span></td>
+                        <td><span>HTML</span></td>
+                        <td><span>Average</span></td>
+                        <td>
+                            <button class="btn btn-warning openModal"><i class="fa fa-trash"></i></button>
+                            <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                        </td>
+                    </tr>             
+                    <tr class="headRow">
+                        <td><span>92</span></td>
+                        <td><span>Sandeep</span></td>
+                        <td><span>Developer</span></td>
+                        <td><span>2 years</span></td>
+                        <td>P<span>HP</span></td>
+                        <td><span>Good</span></td>
+                        <td>
+                            <button class="btn btn-warning openModal"><i class="fa fa-trash"></i></button>
+                            <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                        </td>
+                    </tr>           
+                    <tr class="headRow">
+                        <td><span>28</span></td>
+                        <td><span>Govind</span></td>
+                        <td><span>Designer</span></td>
+                        <td><span>5 years</span></td>
+                        <td><span>HTML</span></td>
+                        <td><span>Average</span></td>
+                        <td>
+                            <button class="btn btn-warning openModal"><i class="fa fa-trash"></i></button>
+                            <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                        </td>
+                    </tr>           
                 </tbody>
             </table>
             
@@ -77,7 +111,7 @@
             </button>
             <h4>Add Student Info</h4>
         </div>
-        <form name="MyForm" id="addTodo">
+        <form name="MyForm">
         <div class="modalBody">            
             
                 <div class="form-group">
@@ -120,19 +154,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script id="listItemTemplate" type="text/x-handlebars-template"">   
-    <tr class="headRow"  id={{id}}>
-        <td><span>{{text}}</span></td>
-        <td><span>{{text}}</span></td>
-        <td><span>{{text}}</span></td>
-        <td><span>{{text}}</span></td>
-        <td><span>{{text}}</span></td>
-        <td><span>{{text}}</span></td>
-        <td>
-            <button class="btn btn-warning openModal"><i class="fa fa-trash"></i></button>
-            <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-        </td>
-    </tr> 
+<script id="listItemTemplate" type="text/x-handlebars-template"">
+    <li class="list-group-item" id={{id}}>
+        <div class="content">
+            <div class="text">{{text}}</div>
+            <button class="btn btn-danger deleteBtn">Delete</button>
+            <button class="btn btn-warning editBtn">EDIT</button>
+        </div>      
+    </li>
 </script>
 <script src="./js/tablePage.js"></script>
 
