@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Table</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Form Validaton -->
+<div class="col-sm-12">        
+    <div class="contentBlock">
+        <h2 class="pull-left">Example Table</h2>
+        <button class="btn btn-primary pull-right addRecord">Add Record</button>
+        <div class="table-responsive">
+            <form>
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th>Emp ID</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Experience</th>
+                        <th>Technology</th>
+                        <th>Rating</th>
+                        <th>Action</th>
+                    </tr>            
+                </thead>
+                <tbody>
+                    <tr class="headRow">
+                        <td><span>5</span></td>
+                        <td><span>Vinay</span></td>
+                        <td><span>Deisgner</span></td>
+                        <td><span>5 years</span></td>
+                        <td><span>HTML</span></td>
+                        <td><span>Average</span></td>
+                        <td>
+                            <button class="btn btn-warning openModal"><i class="fa fa-trash"></i></button>
+                            <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                        </td>
+                    </tr>             
+                    <tr class="headRow">
+                        <td><span>92</span></td>
+                        <td><span>Sandeep</span></td>
+                        <td><span>Developer</span></td>
+                        <td><span>2 years</span></td>
+                        <td>P<span>HP</span></td>
+                        <td><span>Good</span></td>
+                        <td>
+                            <button class="btn btn-warning openModal"><i class="fa fa-trash"></i></button>
+                            <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                        </td>
+                    </tr>           
+                    <tr class="headRow">
+                        <td><span>28</span></td>
+                        <td><span>Govind</span></td>
+                        <td><span>Designer</span></td>
+                        <td><span>5 years</span></td>
+                        <td><span>HTML</span></td>
+                        <td><span>Average</span></td>
+                        <td>
+                            <button class="btn btn-warning openModal"><i class="fa fa-trash"></i></button>
+                            <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                        </td>
+                    </tr>           
+                </tbody>
+            </table>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Form Validaton -->
+
+
+<!-- Start 5th Modal -->
+<div class="gModal modalSM hide" id="deleteRowModal">
+    <div class="modalDialog">
+        <div class="modalHeader">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4>Delete a Row</h4>
+        </div>
+        <div class="modalBody">
+            Are you sure you want to delete the selected row?
+        </div>
+        <div class="modalFooter text-right">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>              
+            <button type="button" class="btn btn-primary deleteRow">Confirm Delete</button>                    
+        </div>
+    </div>
+</div>
+<!-- End 5th Modal -->
+
+<!-- Start 5th Modal -->
+<div class="gModal modalSM hide" id="addRecord">
+    <div class="modalDialog">
+        <div class="modalHeader">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4>Add Student Info</h4>
+        </div>
+        <div class="modalBody">            
+            <form name="MyForm">
+                <div class="form-group">
+                    <label>Name :</label>
+                    <input type="text" class="form-control" name="name">
+                </div>
+                <div class="form-group">
+                    <label>Designation :</label>
+                    <input type="text" class="form-control" name="design">
+                </div>
+                <div class="form-group">
+                    <label>Exprience :</label>
+                    <input type="text" class="form-control" name="expert">
+                </div>
+                <div class="form-group">
+                    <label>Technology :</label>
+                    <input type="text" class="form-control" name="tech">
+                </div>
+                <div class="form-group">
+                    <label>Rating :</label>
+                    <select class="form-control" name="rate">
+                        <option value="-1">Select Rating</option>
+                        <option value="1">Below Average</option>
+                        <option value="2">Average Average</option>
+                        <option value="3">Above Average</option>
+                        <option value="4">Good</option>                          
+                    </select>
+                </div>
+            </form>            
+        </div>
+        <div class="modalFooter text-right">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>              
+            <button type="button" class="btn btn-primary save" onclick="formValidate();">Save</button>                    
+        </div>
+    </div>
+</div>
+<!-- End 5th Modal -->
+
+
+<script src="./js/tablePage.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
