@@ -23,25 +23,18 @@
         <h2 class="pull-left">Example Table</h2>
         <button class="btn btn-primary pull-right addRecord">Add Record</button>
         <div class="table-responsive">
-           
-                <table class="table">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Emp ID</th>
                         <th>Name</th>
-                        <th>Designation</th>
-                        <th>Experience</th>
-                        <th>Technology</th>
-                        <th>Rating</th>
                         <th>Action</th>
                     </tr>            
                 </thead>
-                <tbody>
-                                
+                <tbody>       
                                
                 </tbody>
-            </table>
-            
+            </table>            
         </div>
     </div>
 </div>
@@ -78,40 +71,16 @@
             <h4>Add Student Info</h4>
         </div>
         <form name="MyForm" id="addTodo">
-        <div class="modalBody">            
-            
+            <div class="modalBody"> 
                 <div class="form-group">
                     <label>Name :</label>
                     <input type="text" class="form-control" name="name">
-                </div>
-                <div class="form-group">
-                    <label>Designation :</label>
-                    <input type="text" class="form-control" name="design">
-                </div>
-                <div class="form-group">
-                    <label>Exprience :</label>
-                    <input type="text" class="form-control" name="expert">
-                </div>
-                <div class="form-group">
-                    <label>Technology :</label>
-                    <input type="text" class="form-control" name="tech">
-                </div>
-                <div class="form-group">
-                    <label>Rating :</label>
-                    <select class="form-control" name="rate">
-                        <option value="-1">Select Rating</option>
-                        <option value="1">Below Average</option>
-                        <option value="2">Average Average</option>
-                        <option value="3">Above Average</option>
-                        <option value="4">Good</option>                          
-                    </select>
-                </div>
-                     
-        </div>
-        <div class="modalFooter text-right">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>              
-            <button type="submit" class="btn btn-primary save">Save</button>                    
-        </div>
+                </div>  
+            </div>
+            <div class="modalFooter text-right">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>              
+                <button type="submit" class="btn btn-primary save">Save</button>                    
+            </div>
         </form>   
     </div>
 </div>
@@ -122,18 +91,21 @@
 
 <script id="listItemTemplate" type="text/x-handlebars-template"">   
     <tr class="headRow"  id={{id}}>
-        <td><span>{{text}}</span></td>
-        <td><span>{{text}}</span></td>
-        <td><span>{{text}}</span></td>
-        <td><span>{{text}}</span></td>
-        <td><span>{{text}}</span></td>
+        <td><span>{{id}}</span></td>
         <td><span>{{text}}</span></td>
         <td>
-            <button class="btn btn-warning openModal"><i class="fa fa-trash"></i></button>
+            <button class="btn btn-warning deleteModal" onclick="deleteModal($(this));"><i class="fa fa-trash"></i></button>
             <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
         </td>
     </tr> 
 </script>
+
+<script>
+   
+
+   
+</script>
+
 <script src="./js/tablePage.js"></script>
 
 <!--| Footer File Include Here |-->
