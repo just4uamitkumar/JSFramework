@@ -92,18 +92,37 @@
 <script id="listItemTemplate" type="text/x-handlebars-template"">   
     <tr class="headRow"  id={{id}}>
         <td><span>{{id}}</span></td>
-        <td><span>{{text}}</span></td>
+        <td><span class="text">{{text}}</span></td>
         <td>
-            <button class="btn btn-warning deleteModal" onclick="deleteModal($(this));"><i class="fa fa-trash"></i></button>
-            <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+            <button class="btn btn-warning deleteModal" onclick="deleteModal(event);"><i class="fa fa-trash"></i></button>
+            <button class="btn btn-warning editBtn"><i class="fa fa-pencil"></i></button>
         </td>
     </tr> 
 </script>
 
-<script>
-   
-
-   
+<script id="editTemplate" type="text/x-handlebars-template"">
+   <form class="gModal modalSM" id="editTodo">
+        <div class="modalDialog">
+            <div class="modalHeader">
+                <button type="button" class="close" data-dismiss="modal">
+                  <i class="fa fa-times"></i>
+                </button>
+                <h4>Edit Student Info</h4>
+            </div>
+            
+            <div class="modalBody"> 
+                <div class="form-group">
+                    <label>Name :</label>
+                     <input value="{{value}}" type="text" class="form-control"
+                        placeholder="Enter Todo"> 
+                </div>  
+            </div>
+            <div class="modalFooter text-right">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>              
+                <button type="submit" class="btn btn-primary">Save Changes</button>               
+            </div>           
+        </div>
+    </form>
 </script>
 
 <script src="./js/tablePage.js"></script>

@@ -18,23 +18,20 @@
     }
 
     for(i = 0; i < addRecordBtn.length; i++ ){
-        addRecordBtn[i].addEventListener("click", addRecord); 
-        //deleteBtn[i].onclick = openModal;
+        addRecordBtn[i].addEventListener("click", addRecord);
     }
       
 })();
 
 
+//Open Delete Row Modal 
 var tRow = 'null';
-function deleteModal(self){
-  debugger;
-  //var thisClass = document.
-  //Add color Behind selected row
-  //var data = "$("+self+")";
-  //data = data.replace(/"/,"");
-  tRow = self.closest('.headRow');
+
+function deleteModal(event){
+  var x = event.target;  
+  tRow = x.closest('.headRow');
   tRow.classList.add('active');
- //e.preventDefault();
+
   var activeM = document.getElementById('deleteRowModal');
 
   //Show Modal
@@ -45,20 +42,14 @@ function deleteModal(self){
   var mShadow = document.createElement('div');
   mShadow.setAttribute('class','mShadow');    
   activeM.parentNode.insertBefore(mShadow, activeM);   
-  mShadow.appendChild(activeM);
-
-  
-   
+  mShadow.appendChild(activeM);   
 }
-
-
 
 
 //Close Modal
 $("[data-dismiss='modal']").click(function(){
+  
   var thisModal = this.closest('.gModal');
-
-
 
   thisModal.classList.add('hide');
   document.body.removeAttribute('style');
@@ -75,10 +66,13 @@ $("[data-dismiss='modal']").click(function(){
 
   // remove the empty element
   mParent.removeChild(mShadow);
+
+  //Remove active from tRow
+  if(tRow.classList.contains('active')){
+    tRow.classList.remove('active')
+  } 
+
 });
-
-
-
 
 
 //Delete a row from table
@@ -216,38 +210,110 @@ $(function(){
 
 
   //Delete
-  // $tbody.on('click', '.deleteRow', function(e){
-  //   //console.log(e.target)
-  //   var listItem = $(e.target).closest('li');
-  //   var id = listItem.attr('id')
-  //   listItem.remove();
+  $('#deleteRowModal').on('click', '.deleteRow', function(e){    
+    var id = tRow.getAttribute('id')
+    tRow.remove();
     
-  //   console.log('id', id)
+    console.log('id', id)
 
-  //   $.ajax({
-  //     url:url + '/' + id,
-  //     method:'DELETE',
-  //   });
-  // });
+    $.ajax({
+      url:url + '/' + id,
+      method:'DELETE',
+    });
 
-  //var editSource = $('#editTemplate').html();
-  //var editTemplate = Handlebars.compile(editSource);
+
+    var thisModal = this.closest('.gModal');
+
+    thisModal.classList.add('hide');
+    document.body.removeAttribute('style');
+
+    // remove Shadow
+    // select element to unwrap
+    var mShadow = document.querySelector('.mShadow');
+
+    // get the element's parent node       
+    var mParent = mShadow.parentNode;
+
+    // move all children out of the element
+    while (mShadow.firstChild) mParent.insertBefore(mShadow.firstChild, mShadow);         
+
+    // remove the empty element
+    mParent.removeChild(mShadow);
+
+    //Remove active from tRow
+    if(tRow.classList.contains('active')){
+      tRow.classList.remove('active')
+    } 
+
+  });
+
+  var editSource = $('#editTemplate').html();
+  var editTemplate = Handlebars.compile(editSource);  
+
+  //Edit
+  $tbody.on('click', '.editBtn', function(event){
+
+    var x = event.target;    
+    tRow = $(x).closest('tr');
+    tRow.addClass('active');
+
+
+    //add content of List item
+    var content = tRow.find('.text').html();
+
+
+    //Submit edit form
+    var edithtml = editTemplate({
+      value: content
+    })
+
+    $('body').append(edithtml);
+
+    var $editTodoForm = $('#editTodo');
+
+
+    $("[data-dismiss='modal']").click(function(){
+  
+      var thisModal = this.closest('.gModal');
+
+      thisModal.classList.add('hide');      
+
+      $(tRow).removeClass('active')
+
+    });
+
+    $editTodoForm.on('submit', function(e){
+      e.preventDefault();
+
+      //replace new value with list item content
+      var newContent = $editTodoForm.find('input').val();
+
+      tRow.find('.text').html(newContent);
+
+      //Show List item
+      tRow.find('.text').show();
+      tRow.removeClass('active');
+
+      $editTodoForm.remove();
+
+      //var id = tr.attr('id');
+      var id = tRow.attr('id')
+
+      $.ajax({
+        url: url + '/' + id,
+        method: 'PUT',
+        data:{
+          text:newContent
+        }
+      })
+    });   
+    
+  });
 
 
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
 
 
 

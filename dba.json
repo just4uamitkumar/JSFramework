@@ -1,77 +1,16 @@
 {
   "todos": [
     {
-      "text": "Amit",
-      "id": 1
-    },
-    {
-      "text2": "Muzahid",
-      "text3": "DotNet Developer",
-      "text4": "3 Years",
-      "text5": "ASP, MVC",
-      "id": 2
-    },
-    {
-      "text2": "Muzahid",
-      "text3": "DotNet Developer",
-      "text4": "3 Years",
-      "text5": "ASP, MVC",
-      "id": 3
-    },
-    {
-      "text2": "Joginder",
-      "text3": "Graphic Designer",
-      "text4": "7 Years",
-      "text5": "HTML, CSS, Photoshop",
-      "id": 4
-    },
-    {
-      "text2": "Feature Pa",
-      "text3": "Designer",
-      "text4": "6 Year",
-      "text5": "ASP, MVC",
-      "text6": "1",
-      "id": 5
-    },
-    {
-      "text2": "Feature Pa",
-      "text3": "Designer",
-      "text4": "6 Year",
-      "text5": "HTML",
-      "text6": "1",
-      "id": 6
-    },
-    {
-      "text1": "Feature Pa",
-      "text2": "Designer",
-      "text3": "6 Year",
-      "text4": "HTML",
-      "text5": "1",
-      "id": 7
-    },
-    {
-      "text": "Feature Pa",
-      "id": 8
-    },
-    {
-      "text": "Feature Pa",
-      "id": 9
-    },
-    {
-      "text": "Muzahid",
-      "id": 10
-    },
-    {
-      "text": "Joginder",
-      "id": 11
-    },
-    {
-      "text": "Sumit",
+      "text": "SumitE",
       "id": 12
     },
     {
-      "text": "Muzahid",
-      "id": 13
+      "text": "ManishE",
+      "id": 14
+    },
+    {
+      "text": "JaiRaj",
+      "id": 15
     }
   ]
 }
