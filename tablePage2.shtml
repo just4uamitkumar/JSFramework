@@ -125,7 +125,7 @@
     </form>
 </script>
 
-<script src="./js/tablePage.js"></script>
+<script src="./js/tablePage2.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
