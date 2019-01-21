@@ -257,10 +257,8 @@ $(function(){
     tRow = $(x).closest('tr');
     tRow.addClass('active');
 
-
     //add content of List item
     var content = tRow.find('.text').html();
-
 
     //Submit edit form
     var edithtml = editTemplate({

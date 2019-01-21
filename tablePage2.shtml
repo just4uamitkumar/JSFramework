@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
-<title>Table</title>
+<title>Table Example 2</title>
 
 <!--| Header File Include Here |-->
 <!--#include virtual="./default/header.shtml" -->
@@ -20,7 +20,7 @@
 <!-- Start Form Validaton -->
 <div class="col-sm-12">        
     <div class="contentBlock">
-        <h2 class="pull-left">Example Table</h2>
+        <h2 class="pull-left">HandelBar Example 1</h2>
         <button class="btn btn-primary pull-right addRecord">Add Record</button>
         <div class="table-responsive">
             <table class="table">
