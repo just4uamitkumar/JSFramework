@@ -138,11 +138,7 @@ function checkList (){
         });
     }
 }
-
 checkList();
-
-
-
 </script>   
 
 <script src="./js/validate.js"></script>
