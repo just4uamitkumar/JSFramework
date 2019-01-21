@@ -1,0 +1,28 @@
+{
+  "datas": [
+    {
+      "name": "Ravi",
+      "designation": "DotNet Developer",
+      "experience": "3 Year",
+      "technology": "ASP",
+      "rating": "Good",
+      "id": 5
+    },
+    {
+      "name": "Upendra",
+      "designation": "DotNet Developer",
+      "experience": "6 Year",
+      "technology": "ASP, MVC",
+      "rating": "Good",
+      "id": 7
+    },
+    {
+      "name": "MuzahidA",
+      "designation": "DotNet DevelperA",
+      "experience": "3.5 Year",
+      "technology": "ASP, JavaScript, Java",
+      "rating": "Good",
+      "id": 8
+    }
+  ]
+}
