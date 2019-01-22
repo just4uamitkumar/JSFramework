@@ -218,6 +218,7 @@ button, .btn { box-shadow:1px 1px 2px rgba(0,0,0,0.4); padding: 6px 14px; cursor
 .btn-warning{background: #dc5e22; border-color: #b14614;}
 .btn-danger{background: #F00; border-color: #941010;}
 .btn-default{background: #3ea909;  border-color: #329402;}
+.btn[disable]{pointer-events: none; opacity: 0.5;}
 
 /*--------| Table  |-------*/
 .table-responsive {width: 100%; overflow-x: auto;}

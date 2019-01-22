@@ -20,8 +20,8 @@
 <!-- Start Form Validaton -->
 <div class="col-sm-12">        
     <div class="contentBlock">
-        <h2 class="pull-left">HandelBar Example 1</h2>
-        <button class="btn btn-primary pull-right addRecord">Add Record</button>
+        <h2>HandelBar Example 1 <button class="btn btn-primary pull-right addRecord">Add Record</button></h2>
+        
         <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -31,15 +31,12 @@
                         <th>Action</th>
                     </tr>            
                 </thead>
-                <tbody>       
-                               
-                </tbody>
+                <tbody></tbody>
             </table>            
         </div>
     </div>
 </div>
 <!-- End Form Validaton -->
-
 
 <!-- Start 5th Modal -->
 <div class="gModal modalSM hide" id="deleteRowModal">

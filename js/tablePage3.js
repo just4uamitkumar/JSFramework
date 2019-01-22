@@ -62,13 +62,58 @@ $(function(){
   //Add TodoList
   $addDataForm.on('submit', function(e){
     e.preventDefault();
-    //alert('test');
+    //alert('test');       
+    
     var newName = $addDataForm.find('input[name="name"]').val();
     var newDesign = $addDataForm.find('input[name="design"]').val();
     var newExpert = $addDataForm.find('input[name="expert"]').val();
     var newTech = $addDataForm.find('input[name="tech"]').val();
     var newRate = $addDataForm.find('select[name="rate"]').val();
-    
+
+    if( newName == "" ){
+        alert( "Please provide Name!" );
+        $addDataForm.name.focus() ;
+        return false;
+    }
+
+    if( newDesign == "" ){
+        alert( "Please provide Designation!" );
+        $addDataForm.newDesign.focus() ;
+        return false;
+    }
+
+    if( newExpert == "" ){
+        alert( "Please provide Experience!" );
+        $addDataForm.newExpert.focus() ;
+        return false;
+    }
+
+    if( isNaN( newExpert ) ){
+        alert( "Enter enter only numberic digits in Experience" );
+        $addDataForm.newExpert.focus() ;
+        return false;
+    }
+
+    if( newExpert.length > 2 ){
+        alert( "Enter Valid Experience!" );
+        $addDataForm.newExpert.focus() ;
+        return false;
+    }
+
+    if( newTech == "" ){
+        alert( "Please provide Technology!" );
+        $addDataForm.newTech.focus() ;
+        return false;
+    }
+
+    if( newRate == "-1" ){
+        alert( "Please provide Rating!" );
+        return false;
+    }
+
+    //return( true ); 
+
+
     $addDataForm.find('input').val('');
     $addDataForm.find('select').val('-1');
 
@@ -142,13 +187,13 @@ $(function(){
   var editSource = $('#editRow').html();
   var editTemplate = Handlebars.compile(editSource);  
 
-  //Edit
-  if($('#editData').length == 1){
-    alert('test')
-  }
+  //Edit  
   $tbody.on('click', '.editRow', function(event){
+
+    $('.editRow').attr('disable','disabled');
+    $('.deleteRow').attr('disable','disabled');
     //alert('test');
-    var x = event.target;    
+    var x = event.target;
     tRow = $(x).closest('tr');
     $(tRow).addClass('hide');
 
@@ -188,6 +233,8 @@ $(function(){
      $editData.on('reset', function(e){
         $editData.remove();
         $(tRow).removeClass('hide');
+        $('.editRow').removeAttr('disable');
+        $('.deleteRow').removeAttr('disable'); 
      });
 
     //Perform Edit Submit
@@ -208,7 +255,9 @@ $(function(){
       tRow.find('.rate').html(newContent5);
 
       //Show List item
-      $(tRow).removeClass('hide');      
+      $(tRow).removeClass('hide');
+      $('.editRow').removeAttr('disable');
+      $('.deleteRow').removeAttr('disable');      
 
       $editData.remove();
 
