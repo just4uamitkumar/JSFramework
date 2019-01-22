@@ -30,7 +30,7 @@
                     <input type="text" class="form-control" name="design" placeholder="Enter Designation" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Designation'">
                 </div>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" name="expert" placeholder="Experience" onfocus="this.placeholder=''" onblur="this.placeholder='Experience'">
+                    <input type="text" class="form-control" name="expert" placeholder="Experience(in Months)" onfocus="this.placeholder=''" onblur="this.placeholder='Experience(in Months)'">
                 </div>
                 <div class="col-sm-2">
                     <input type="text" class="form-control" name="tech" placeholder="Technology" onfocus="this.placeholder=''" onblur="this.placeholder='Technology'">
