@@ -20,8 +20,7 @@
 <!-- Start Form Validaton -->
 <div class="col-sm-12">        
     <div class="contentBlock">    
-        <button id="showData" class="btn-primary m-b-10 pull-right">Get Data</button>
-    
+        <button id="showData" class="btn-primary m-b-10 pull-right">Get Data</button>    
         <table id="employee_table" class="table">
             <thead>
                 <tr>
@@ -34,7 +33,6 @@
                 </tr>
             </thead>
             <tbody>
-
             </tbody>            
         </table>
      
@@ -48,7 +46,7 @@
 
 $("document").ready(function() {
     function getData(){
-       $.getJSON("./js/employee.json", function(data){
+       $.getJSON("./js/db/employee.json", function(data){
             var employee_data = '';
             for(var i = 0; i < data.employees.length; i++){
                 employee_data += '<tr class="headRow">';
@@ -63,9 +61,7 @@ $("document").ready(function() {
             $('#employee_table tbody').append(employee_data);
         }); 
     }
-
-    $("#showData").click(getData);
-   
+    $("#showData").click(getData);   
 });
 
 </script>

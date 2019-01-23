@@ -17,13 +17,12 @@
 </div>
 <!--end Page Header -->
 
-
 <!-- Start Get Data -->
 <div class="col-sm-6">        
     <div class="contentBlock">    
         <h2>Display the First CD in an HTML div Element</h2>
         <p>This example uses a function to display the first CD element in an HTML element with id="showCD":</p>
-        <button type="button" class="btn btn-primary  m-b-10" onclick="displayCD1(1)">
+        <button type="button" class="btn btn-primary  m-b-10" onclick="displayCD1(2)">
           Get Content
         </button>  
         <div id='showCD1'></div>            
@@ -46,77 +45,7 @@
 <!-- End Get Data -->
 
 
-<script> 
-
-  function displayCD1(i) {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        myFunction1(this, i);
-      }
-    };
-    xmlhttp.open("GET", "./js/cd_catalog.xml", true);
-    xmlhttp.send();
-  }
-
-  function myFunction1(xml, i) {
-    var xmlDoc = xml.responseXML; 
-    x = xmlDoc.getElementsByTagName("CD");
-    document.getElementById("showCD1").innerHTML =
-    "Artist: " +
-    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-    "<br>Title: " +
-    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "<br>Year: " + 
-    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
-  }
- 
-
-
-  var j = 0, len;
-  displayCD2(j);
-
-  function displayCD2(j) {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        myFunction2(this, j);
-      }
-    };
-    xmlhttp.open("GET", "./js/cd_catalog.xml", true);
-    xmlhttp.send();
-  }
-
-  function myFunction2(xml, j) {
-    var xmlDoc = xml.responseXML; 
-    y = xmlDoc.getElementsByTagName("CD");
-    len = y.length;
-    document.getElementById("showCD2").innerHTML =
-    "<b>Artist:</b> " +
-    y[j].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-    "<br><b>Title:</b> " +
-    y[j].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "<br><b>Year:</b> " + 
-    y[j].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
-  }
-
-  function next() {
-    if (j < len-1) {
-      j++;
-      displayCD2(j);
-    }
-  }
-
-  function previous() {
-    if (j > 0) {
-      j--;
-      displayCD2(j);
-    }
-  }
-
- 
-
-</script>
+<script src="./js/ajax/ajax6.js"></script>
 
 
 
