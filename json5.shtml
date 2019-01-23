@@ -34,50 +34,14 @@
 <div class="col-sm-12">        
     <div class="contentBlock">    
         <h2>JSON HTML</h2>
-        <p>JavaScript can be used to make HTML in your web pages:</p>
-        
+        <p>JavaScript can be used to make HTML in your web pages:</p>        
         <button type="button" class="btn btn-primary m-b-10" onclick="getData2()">Get Content</button>
         <div id="demo2" class="m-b-10"></div>
     </div>
 </div>
 <!-- End Get Data -->
 
-<script>
- 
-  function getData1(){
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        myObj = JSON.parse(this.responseText);
-        document.getElementById("demo1").innerHTML = myObj.name;
-      }
-    };
-    xmlhttp.open("GET", "./js/demo_file.php", true);
-    xmlhttp.send();
-  }
-
-  function getData2(){
-    var obj, dbParam, xmlhttp, myObj, x, txt = "";
-    obj = { table: "customers", limit: 20 };
-    dbParam = JSON.stringify(obj);
-    xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        myObj = JSON.parse(this.responseText);
-        txt += "<table border='1'>"
-        for (x in myObj) {
-          txt += "<tr><td>" + myObj[x].name + "</td></tr>";
-        }
-        txt += "</table>"    
-        document.getElementById("demo2").innerHTML = txt;
-      }
-    };
-    xmlhttp.open("POST", "json_demo_db_post.php", true);
-    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xmlhttp.send("x=" + dbParam);
-  }
-  
-</script>
+<script src="./js/json/json5.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
