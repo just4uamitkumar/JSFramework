@@ -373,14 +373,17 @@ span.close {color: #fff; float: right; font-size: 28px; line-height:1; font-weig
 /*--------| RangeSlider |-------*/
 .scrollIndicator .contentBlock{}
 .contentBlock +  .contentBlock{margin-top: 15px;}
-.range-slider{position: relative; margin: 50px 0 40px;}
+.range-slider{position: relative; padding: 30px 0;}
 .range-slider .startPoint, .range-slider .endPoint{position: absolute; width: 40px;
-  height: 32px; border-radius: 50%; background: #9e1b1b;  text-align: center;
+  height: 32px; border-radius: 50%; background: #9e1b1b;  text-align: center; top:10px;
   padding: 8px 0 0; color: #fff;}
 .range-slider .startPoint{left: 0; }
 .range-slider .endPoint{right: 0;}
-.scrollIndicator .contentBlock p{padding: 30px 0; text-align: center;}
+.scrollIndicator .contentBlock p{padding: 18px 0 0; text-align: center;}
 .scrollIndicator .contentBlock p span{font-weight: 700;}
+
+.scrollIndicator .contentBlock p.myValue{padding: 5px 10px; padding: 5px 10px;
+    width: 50px; text-align: center; margin: 0 auto;}
 
 /*--------| Calculator |-------*/
 #calcVal{padding:5px 10px; width: calc(100% - 25px); border: 3px #ddd ridge;

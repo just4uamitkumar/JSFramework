@@ -1,5 +1,34 @@
+//Array Use
+(function(){
+	var x = document.getElementsByClassName('reverseArray')[0];
+	var y = document.getElementsByClassName('breakArray')[0];
+	var myBtn1 = x.childNodes[3];
+	var myBtn2 = y.childNodes[3];
+	//var myInput = 'null';	
+
+	myBtn1.onclick = function(){
+		xInput = x.childNodes[1].value;
+		var xChars = xInput.split('').reverse().join('');
+		y.childNodes[1].value = xChars
+		//document.getElementById('myValue').innerHTML = chars
+	}
+
+	myBtn2.onclick = function(){
+		var i= 0, z='';
+		yInput = y.childNodes[1].value;
+		var yChars = yInput.split('');
+		console.log(yChars);
+
+		for (i in yChars) {
+		    z += yChars[i] + "<br>";
+		  }	
+		document.getElementById('myValue').innerHTML = z 
+	}
+
+})();
 
 
+//Array Use
 (function(){
 	var i = 0, len;
 	var myArray = ['HTML', 'CSS', 'JavaScript', 'Photosop', 'Illustrator', 'ReactJs', 'Angular'];
@@ -28,7 +57,7 @@
 	}	
 })();
 
-
+//Array Use
 (function(){
 	var i = 0, len;
 	var myArray = ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'];
@@ -69,7 +98,7 @@
 	
 })();
 
-
+//Scrolling function
 (function(){
 	var A = document.getElementsByClassName('startPoint')[0];
 	var B = document.getElementsByClassName('endPoint')[0];
