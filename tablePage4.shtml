@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Table Example 4</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Form Validaton -->
+<div class="col-sm-12">        
+    <div class="contentBlock">
+    	<h2>Employee List <button class="btn-primary pull-right">Get Data</button></h2>
+    	<div class="table-responsive">
+    		<table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Date of Birth</th>
+                        <th>Profession</th>
+                        <th>Action</th>
+                    </tr>            
+                </thead>
+                <tbody></tbody>
+            </table>
+    	</div>
+        <div id="showData"></div>     
+    </div>
+</div>
+<!-- End Form Validaton -->
+
+
+<script src="./js/tablePage4.js"></script>
+
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
