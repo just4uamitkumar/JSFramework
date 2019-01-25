@@ -1,0 +1,39 @@
+{
+	"users":[
+		{
+			"ID":"1",
+			"firstname":"Vinay",
+			"lastname":"Narvaria",
+			"age":"30",
+			"dob":"PHP",
+			"occupatoin":"Web Designer"
+		},
+
+		{
+			"ID":"2",
+			"firstname":"Sandeep",
+			"lastname":"Nagraj",
+			"age":"20",
+			"dob":"PHP",
+			"occupatoin":"Web Developer"
+		},
+
+		{
+			"ID":"3",
+			"firstname":"Naveen",
+			"lastname":"Pataudi",
+			"age":"25",
+			"dob":"PHP",
+			"occupatoin":"HR"
+		},
+
+		{
+			"ID":"4",
+			"firstname":"Govind",
+			"lastname":"Mahor",
+			"age":"28",
+			"dob":"PHP",
+			"occupatoin":"PHP Developer"
+		}		
+	]
+}
