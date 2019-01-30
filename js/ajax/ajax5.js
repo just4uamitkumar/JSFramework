@@ -8,6 +8,8 @@ function loadDoc() {
   xhttp.open("GET", "./js/db/cd_catalog.xml", true);
   xhttp.send();
 }
+
+
 function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;

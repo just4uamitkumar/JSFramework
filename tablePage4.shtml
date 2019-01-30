@@ -19,29 +19,30 @@
 <!-- Start Form Validaton -->
 <div class="col-sm-12">        
     <div class="contentBlock">
-    	<h2>Employee List <button class="btn-primary pull-right">Get Data</button></h2>
+    	<h2>Employee List <button class="btn-primary pull-right" onclick="loadDoc();">Get Data</button></h2>
     	<div class="table-responsive">
-    		<table class="table">
+           <table class="table">
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Age</th>
-                        <th>Date of Birth</th>
-                        <th>Profession</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Experience</th>
+                        <th>Technology</th>
+                        <th>Rating</th>
                         <th>Action</th>
                     </tr>            
                 </thead>
-                <tbody></tbody>
+                <tbody>                   
+                </tbody>
             </table>
-    	</div>
-        <div id="showData"></div>     
+        </div>
     </div>
 </div>
 <!-- End Form Validaton -->
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./js/tablePage4.js"></script>
 
 
