@@ -67,7 +67,7 @@ function loadDoc(){
         }
     }
 
-    var divContainer = document.getElementByid("showData");
+    var divContainer = document.getElementById("showData");
     divContainer.innerHTML = "";
     divContainer.appendChild(table);
 

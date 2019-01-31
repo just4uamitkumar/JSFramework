@@ -1,48 +1,43 @@
-{
-	"users":[
-		{
-			"id":"1",
-			"firstname":"Vinay",
-			"lastname":"Narvaria",
-			"age":"30",
-			"dob":"PHP",
-			"occupatoin":"Web Designer"
-		},
-
-		{
-			"id":"2",
-			"firstname":"Sandeep",
-			"lastname":"Nagraj",
-			"age":"20",
-			"dob":"PHP",
-			"occupatoin":"Web Developer"
-		},
-
-		{
-			"id":"3",
-			"firstname":"Naveen",
-			"lastname":"Pataudi",
-			"age":"25",
-			"dob":"PHP",
-			"occupatoin":"HR"
-		},
-
-		{
-			"id":"4",
-			"firstname":"Govind",
-			"lastname":"Mahor",
-			"age":"28",
-			"dob":"PHP",
-			"occupatoin":"PHP Developer"
-		}
-
-		{
-			"id":"5",
-			"firstname":"Manish",
-			"lastname":"Tripathi",
-			"age":"36",
-			"dob":"Graphc",
-			"occupatoin":"Graphic Designer"
-		}		
-	]
+{"users":[
+	{
+		"id":"1",
+		"firstname":"Vinay",
+		"lastname":"Narvaria",
+		"age":"30",
+		"dob":"PHP",
+		"occupatoin":"Web Designer"
+	},
+	{
+		"id":"2",
+		"firstname":"Sandeep",
+		"lastname":"Nagraj",
+		"age":"20",
+		"dob":"PHP",
+		"occupatoin":"Web Developer"
+	},
+	{
+		"id":"3",
+		"firstname":"Naveen",
+		"lastname":"Pataudi",
+		"age":"25",
+		"dob":"PHP",
+		"occupatoin":"HR"
+	},
+	{
+		"id":"4",
+		"firstname":"Govind",
+		"lastname":"Mahor",
+		"age":"28",
+		"dob":"PHP",
+		"occupatoin":"PHP Developer"
+	},
+	{
+		"id":"5",
+		"firstname":"Manish",
+		"lastname":"Tripathi",
+		"age":"36",
+		"dob":"Graphc",
+		"occupatoin":"Graphic Designer"
+	}
+]
 }

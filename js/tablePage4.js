@@ -1,17 +1,17 @@
 
 
-function loadDoc() {	
-	var i,  xhttp, myObj, txt='',
+function loadDoc() {
+	var i, xhttp, tbody, myObj, txt='',
    	xhttp = new XMLHttpRequest();
 
 	xhttp.onreadystatechange = function() {
-
+	
 	if (this.readyState == 4 && this.status == 200) {
-
+		
 	  	myObj = JSON.parse(this.responseText);
 
 	  	for (i=0; i < myObj.users.length; i++) {
-	  		txt += "<tr>" +
+	  		txt += "<tr id=row_"+ myObj.users[i].id + ">" +
 	  			"<td>" + myObj.users[i].id + "</td>" + 
 	  			"<td>" + myObj.users[i].firstname + "</td>" +
 	  			"<td>" + myObj.users[i].lastname + "</td>" +
@@ -20,8 +20,8 @@ function loadDoc() {
 	  			"<td>" + myObj.users[i].occupatoin + "</td>" +
 	  			"<td>" + "<button class='btn btn-warning deleteRow' onclick='deleteRow(event);'><i class='fa fa-trash'></i></button>" +
             "<button class='btn btn-warning editRow'><i class='fa fa-pencil'></i></button>" + "</td>" +
-	  		  "</tr>";	
-		}
+	  		  "</tr>";
+	  	}		
 
 		document.getElementById("myTable").tBodies[0].innerHTML = txt;
 	}
@@ -30,15 +30,33 @@ function loadDoc() {
 	xhttp.send();
 }
 
+loadDoc();
+
+
+(function(){
+	var table = document.getElementById( "myTable" );	
+	var tableArr = [];
+	for ( var i = 1; i < table.rows.length; i++ ) {
+	    tableArr.push({
+	        fName: table.rows[i].cells[1].innerHTML       
+	    });
+	}
+})();
+
 
 function deleteRow(event){
 	var x = event.target;
 	var tRow = x.closest('tr')
 	console.log(tRow);
 
-	//var id = tRow.getAttribute('id')
+	var id = tRow.getAttribute('id')
     tRow.remove();
+    console.log(id);
 
     xhttp.open("DELETE", "./js/db/user4.json", true);
-	xhttp.send();
+	xhttp.send("x=" + id);
 }
+
+
+
+
