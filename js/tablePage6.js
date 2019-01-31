@@ -1,7 +1,7 @@
 function loadDoc(){
 	var users = [
 		{
-			"ID":"1",
+			"id":"1",
 			"firstname":"Vinay",
 			"lastname":"Narvaria",
 			"age":"30",
@@ -10,7 +10,7 @@ function loadDoc(){
 		},
 
 		{
-			"ID":"2",
+			"id":"2",
 			"firstname":"Sandeep",
 			"lastname":"Nagraj",
 			"age":"20",
@@ -19,7 +19,7 @@ function loadDoc(){
 		},
 
 		{
-			"ID":"3",
+			"id":"3",
 			"firstname":"Naveen",
 			"lastname":"Pataudi",
 			"age":"25",
@@ -28,7 +28,7 @@ function loadDoc(){
 		},
 
 		{
-			"ID":"4",
+			"id":"4",
 			"firstname":"Govind",
 			"lastname":"Mahor",
 			"age":"28",
@@ -67,7 +67,7 @@ function loadDoc(){
         }
     }
 
-    var divContainer = document.getElementById("showData");
+    var divContainer = document.getElementByid("showData");
     divContainer.innerHTML = "";
     divContainer.appendChild(table);
 
