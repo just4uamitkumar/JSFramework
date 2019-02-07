@@ -1,4 +1,4 @@
-
+var url = "./js/db/user4.json";
 
 function loadDoc() {
 	var i, xhttp, tbody, myObj, txt='',
@@ -26,36 +26,13 @@ function loadDoc() {
 		document.getElementById("myTable").tBodies[0].innerHTML = txt;
 	}
 	};
-	xhttp.open("GET", "./js/db/user4.json", true);
+	xhttp.open("GET", url , true);
 	xhttp.send();
 }
 
 loadDoc();
 
 
-(function(){
-	var table = document.getElementById( "myTable" );	
-	var tableArr = [];
-	for ( var i = 1; i < table.rows.length; i++ ) {
-	    tableArr.push({
-	        fName: table.rows[i].cells[1].innerHTML       
-	    });
-	}
-})();
-
-
-function deleteRow(event){
-	var x = event.target;
-	var tRow = x.closest('tr')
-	console.log(tRow);
-
-	var id = tRow.getAttribute('id')
-    tRow.remove();
-    console.log(id);
-
-    xhttp.open("DELETE", "./js/db/user4.json", true);
-	xhttp.send("x=" + id);
-}
 
 
 
