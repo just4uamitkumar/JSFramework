@@ -120,7 +120,7 @@ h4 { padding: 0 0 5px; font-size: 1.2rem}
 .tabCont .tabWrapper.active, .tabCont .tabWrap.active, .tabContainer .tabWrapper.active,
 .tabContainer .tabWrap.active {display: block}
 .tabSelect {width: 100%; padding: 4px 9px; font-size: 1rem; width: 100%; margin: 0 0 10px}
-.tabSelect option { padding: 4px 9px}
+.tabSelect option { padding: 4px 9px; color: #f00;}
 
 #demoForm select, #demoForm input[type=text]{width: 48%; margin-bottom: 10px; padding: 5px;}
 #demoForm input[type="button"]{padding: 5px;}
@@ -197,7 +197,11 @@ left: calc(50% - 8px); position: absolute; width: 0}
 .form-group {margin-bottom: 10px; overflow: hidden}
 .form-group label {width: 28%; margin-right: 10px; display: inline-block}
 .form-group .control-label {margin-bottom: 10px; width: 28%}
-.form-group input[type="text"], .form-group select {width: 62%; padding:7px; display: inline-block}
+.form-group input[type="text"], .form-group select {width: 62%; padding:7px;
+  display: inline-block; color: #000; border: 1px solid #8e8e8e;}
+.form-group input::placeholder,  .form-group select{color: #8e8e8e;}
+.form-group select option{color:#000;}
+.form-group select option:first-child{color: #8e8e8e;}
 .form-group input[type="checkbox"] {margin-right: 5px}
 .form-group .checklist {width: 65%; display: inline-block}
 .form-group select {width: 65.5%}
@@ -437,12 +441,11 @@ text-align: center;  font-size: 16px; vertical-align: middle; line-height: 1;}
 tr.active{background: #61c6f7;}
 
 /*--------| Table page 3 |-------*/
-[name=fillRecord]{margin:0 -8px;}
+[name=fillRecord]{margin:0 -8px 25px; border-bottom: 1px solid #ddd;}
 [name=fillRecord] .col-sm-2{width: calc(16.66% - 16px); padding:5px 8px;}
 [name=fillRecord] .form-group input{width:calc(100% - 8px); padding:4px;}
 [name=fillRecord] .form-group select{width: 100%; padding: 4px;}
-[name=fillRecord] .form-group select{color: #757575;}
-[name=fillRecord] .form-group select option{color: #333;}
+[name=fillRecord] .form-group select{}
 #editData .table tbody tr td input, #editData .table tbody tr td select{width:calc(100% - 10px); padding: 8px 5px;
 background: #c5d7ff; color: #2521e4; border:1px solid #2a5fd6;}
 #editData .table tbody tr td select{ padding: 6px 5px;}

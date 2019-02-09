@@ -27,20 +27,21 @@
                 </div>
                 <div class="col-sm-2">
                     <input type="text" class="form-control" name="lname" placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
-                </div>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="age" placeholder="Age" onfocus="this.placeholder=''" onblur="this.placeholder='Age'">
-                </div>
+                </div>                
                 <div class="col-sm-2">
                     <input type="text" class="form-control" name="dob" placeholder="Date of Birth" onfocus="this.placeholder=''" onblur="this.placeholder='Date of Birth'">
                 </div>
                 <div class="col-sm-2">
+                    <input type="text" class="form-control" name="experience" placeholder="Experience" onfocus="this.placeholder=''" onblur="this.placeholder='Experience'">
+                </div>
+                <div class="col-sm-2">
                     <select class="form-control" name="occ">
-                        <option value="-1">Occupation</option>
-                        <option value="Below Average">Web Designer</option>
-                        <option value="Average">Web Developer</option>
-                        <option value="Above Average">Graphic Designer</option>
-                        <option value="Good">Data Entry Operator</option>                         
+                        <option value="-1" selected="">Occupation</option>
+                        <option value="Web Designer">Web Designer</option>
+                        <option value="Web Developer">Web Developer</option>
+                        <option value="Graphic Designer">Graphic Designer</option>
+                        <option value=">Data Entry Operato">Data Entry Operator</option>
+                        <option value=">Data Entry Operato">Quality Assurance</option>
                     </select>
                 </div>
                 <div class="col-sm-2">
@@ -55,9 +56,9 @@
                     <tr>
                         <th>ID</th>
                         <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Age</th>
+                        <th>Last Name</th>                        
                         <th>Date of Birth</th>
+                        <th>Experience</th>
                         <th>Occupation</th>
                         <th>Action</th>
                     </tr>            
