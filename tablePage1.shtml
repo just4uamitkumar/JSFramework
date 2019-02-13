@@ -20,7 +20,7 @@
 <!-- Start Form Validaton -->
 <div class="col-sm-12">        
     <div class="contentBlock">
-        <h2>Employee List</h2>
+        <h2>Table Example </h2>
         <div class="table-responsive">
             <form>
                 <table class="table">
@@ -124,8 +124,7 @@
     </div>
 </div>
 <!-- End Form Validaton -->
-<script src="./js/employee.json"></script>
-<script src="./js/tablePage.js"></script>
+<script src="./js/tablePage1.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
