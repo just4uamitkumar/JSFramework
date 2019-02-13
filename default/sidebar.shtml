@@ -56,7 +56,7 @@
       <a href="FormValidation.shtml" class="level1"></a>
       <a href="Javascript:void();" class="level1 has-child"></a>
       <div class="collapse">
-          <a href="tablePage.shtml" class="level2">Table Example 1</a>
+          <a href="tablePage1.shtml" class="level2">Table Example 1</a>
           <a href="tablePage2.shtml" class="level2">Table Example 2</a>
           <a href="tablePage3.shtml" class="level2">Table Example 3</a>
           <a href="tablePage4.shtml" class="level2">Table Example 4</a>

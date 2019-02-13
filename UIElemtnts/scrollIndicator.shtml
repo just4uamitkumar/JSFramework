@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Scroll Indicator</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Scroll Section -->
+<div class="col-sm-8">        
+    <div class="contentBlock">
+        <h2>Get Distance betwen two points</h2>
+        <div class="range-slider">
+        	<div class="startPoint"></div>
+        	<div class="dragMe"></div>
+        	<div class="endPoint"></div>
+        	<div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+        	<div class="col-sm-6">
+		        <button class="btn btn-primary" id="firstLeft">Move Left</button>
+		        <button class="btn btn-primary" id="firstRight">Move right</button>
+		    </div>
+
+		    <div class="col-sm-6 text-right">
+		    	<button class="btn btn-primary" id="secondLeft">Move Left</button>	        
+		        <button class="btn btn-primary" id="secondRight">Move Right</button>		        
+		    </div>
+        </div>        
+
+	    <div class="col-sm-12 text-center">
+	        <button class="btn btn-warning" id="getDistance">Get Distance</button>	       
+	    </div>
+
+        <p>Distance between both the point is <strong id="distance"></strong></p>        
+    </div>                
+</div>
+<!-- End Scroll Section -->
+
+<!-- Start Scroll Section -->
+<div class="col-sm-4">        
+    <div class="contentBlock">
+    	<div class="scrollArray form-group">
+	        <button class="prev btn btn-primary" id="getPrev"><i class="fa fa-thumbs-down"></i></button>
+	        <input type="text" class="form-control" value="" />
+	        <button class="next btn btn-primary" id="getNext"><i class="fa fa-thumbs-up"></i></button>
+	    </div>
+    </div>
+
+    <div class="contentBlock">
+    	<div class="scrollArray form-group">
+	        <button class="prev btn btn-primary" id="Prev"><i class="fa fa-thumbs-down"></i></button>
+	        <input type="text" id="getVal" class="form-control" value="" />
+	        <button class="next btn btn-primary" id="Next"><i class="fa fa-thumbs-up"></i></button>
+	    </div>
+    </div>
+
+    <div class="contentBlock">
+        <h2>Get Reverse Value using Array</h2>
+        <div class="reverseArray form-group">            
+            <input type="text" class="form-control" value="" placeholder="Enter your text" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your text'"  />
+            <button class="btn btn-primary"><i class="fa fa-send"></i></button>            
+        </div>
+
+        <div class="breakArray form-group">            
+            <input type="text" class="form-control" value="" placeholder="Reverse Value will get here" onfocus="this.placeholder=''" onblur="this.placeholder='Reverse Value will get here'"  />
+            <button class="btn btn-primary"><i class="fa fa-send"></i></button>            
+        </div>
+
+        <p id="myValue" class="myValue">Your Value will be broken here.</p>
+    </div>                 
+</div>
+<!-- End Scroll section -->
+
+<script src="./js/scrollIndicator.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
