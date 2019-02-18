@@ -23,27 +23,28 @@ var url = './js/db/user4.json';
 	if (this.readyState == 4 && this.status == 200) {
 		
 	  	myObj = JSON.parse(this.responseText);
-	  	myObj.dob = new Date(myObj.dob);
+	  	
 
 	  	for (i=0; i < myObj.users.length; i++) {
+	  		myObj.users[i].dob = new Date(myObj.users[i].dob);
+	  		var myDate = new Date(myObj.users[i].dob)
 	  		txt += "<tr id=row_"+ myObj.users[i].id + ">" +
 	  			"<td>" + myObj.users[i].id + "</td>" + 
 	  			"<td>" + myObj.users[i].firstname + "</td>" +
 	  			"<td>" + myObj.users[i].lastname + "</td>" +	  			
-	  			"<td>" + myObj.users[i].dob + "</td>" +
+	  			"<td>" + myDate.getFullYear()+'-' + ("0" + (myDate.getMonth() + 1)).slice(-2) + '-'+ myDate.getDate() + "</td>" +
 	  			"<td>" + myObj.users[i].experience + "</td>" +
 	  			"<td>" + myObj.users[i].occupatoin + "</td>" +
 	  			"<td>" + "<button class='btn btn-warning deleteRow' onclick='deleteRow(event);'><i class='fa fa-trash'></i></button>" +
             "<button class='btn btn-warning editRow'><i class='fa fa-pencil'></i></button>" + "</td>" +
-	  		  "</tr>";
+	  		  "</tr>";  
 	  	}		
 
 		document.getElementById("myTable").tBodies[0].innerHTML = txt;
 	}
 	};
 	xhttp.open("GET", url, true);
-	xhttp.send();
-
+	xhttp.send();	
 	
 })();
 
@@ -77,12 +78,42 @@ var url = './js/db/user4.json';
         alert( "Please provide Last Name!" );
         newLName.focus();
         return false;
-    }
-    
+    } 
+        
     if( newDob.value == "" ){
         alert( "Please provide Date of Birth!" );
         newDob.focus();
         return false;
+    }
+
+    // regular expression to match required date format   
+    re = /^(\d{4})-(\d{1,2})-(\d{1,2})/
+
+    if(newDob.value != '') {
+      if(regs = newDob.value.match(re)) {
+        // day value between 1 and 31
+        if(regs[3] < 1 || regs[3] > 31) {
+          alert("Invalid value for day: " + regs[1]);
+          newDob.focus();
+          return false;
+        }
+        // month value between 1 and 12
+        if(regs[2] < 1 || regs[2] > 12) {
+          alert("Invalid value for month: " + regs[2]);
+          newDob.focus();
+          return false;
+        }
+        // year value between 1902 and 2019
+        if(regs[1] < 1902 || regs[1] > (new Date()).getFullYear()) {
+          alert("Invalid value for year: " + regs[1] + " - must be between 1902 and " + (new Date()).getFullYear());
+          newDob.focus();
+          return false;
+        }
+      } else {
+        alert("Invalid date format: " + newDob.value);
+        newDob.focus();
+        return false;
+      }
     }
 
     if( newExp.value == "" ){
@@ -97,8 +128,8 @@ var url = './js/db/user4.json';
         return false;
     }
 
-    if( newExp.value > 99 ){
-        alert( "Enter Valid Experience!" );
+    if( newExp.value > 10 ){
+        alert( "Experience should not be more than 10 Years!" );
         newExp.focus();
         return false;
     }
@@ -108,10 +139,8 @@ var url = './js/db/user4.json';
         alert( "Please provide Occupation!" );
         return false;
     }
-
 	
 	//return false;
-
 	var newTr = document.createElement('tr');       
     newTr.innerHTML+= "<td>" + (greatestID + 1) + "</td>" +
 					    "<td>" + newFName.value + "</td>" +

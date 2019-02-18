@@ -16,9 +16,8 @@ $(function(){
                         class : 'list-group-item',
                         'data-id' :newItem.id,                           
                         html:newItem.title                        
-                    });                         
-
-                    listItem.push($li);                         
+                    }); 
+                    listItem.push($li);          
                 });
 
                 $listgroup.append(listItem);                   
