@@ -3,8 +3,7 @@
     var i, j;
 
     //Add sidebar menu content
-    var FirstText = ['DashBoard Slider', 'Tooltip', 'Form Validation', 'Clock', 'CanVas', 
-      'Highest Common Factor'];
+    var FirstText = ['DashBoard Slider', 'Tooltip', 'Form Validation', 'Highest Common Factor'];
     var level1 = document.querySelectorAll('.level1:not(.has-child)');
     var collapseDiv = document.querySelectorAll('.collapse');
 

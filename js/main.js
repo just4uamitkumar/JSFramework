@@ -109,32 +109,3 @@ function scrollFunction() {
         document.getElementsByClassName('scrollVal')[0].classList.remove('show');
     }, 500);
 }
-
-
-
-
-
-
-
-//Active URL Script
-// (function(){
-//     var myURL = window.location.href
-//     console.log(myURL);
-//     var x = document.getElementsByClassName("sidebar")[0].getElementsByTagName("a");
-//     var y = x.getAttribute('href');
-
-//     for(var i = 0; i < x.length; i++){
-//         if(myURL.indexOf(y) > -1) {
-//            x[i].classList.add('active');
-//        }
-//     }
-
-// }());
-
-
-
-
-
-
-
-
