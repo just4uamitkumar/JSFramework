@@ -258,10 +258,10 @@ height: 18px; border-radius: 50%; text-align: center; padding: 2px 0 0;}
 #clock img[src*="hour"] {transition: transform 216000s linear 0s;}
 #clock:target img[src*="hour"] {transform: rotate(360deg);}
 
-#digiClock1, #digiClock2{font-family: 'Comic Sans MS', Arial; font-size: 44px;
+.digiClockA, .digiClockB{font-family: 'Comic Sans MS', Arial; font-size: 44px;
 text-align: center;}
-#digiClock1{color:#980f0f;}
-#digiClock2{color:#328003;}
+.digiClockA{color:#980f0f;}
+.digiClockB{color:#328003;}
 
 
 /*--------| Canvas  |-------*/

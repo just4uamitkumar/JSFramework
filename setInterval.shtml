@@ -17,15 +17,14 @@
 </div>
 <!--end Page Header -->
 
-<!-- Start Get Data -->
+<!-- Start Current Time Data -->
 <div class="col-sm-6">        
     <div class="contentBlock">    
         <h2>Current Time</h2>
-        <div id="demo1" class="m-b-10">Amit</div>
-        <button type="button" class="btn btn-primary" onclick="getName1()">Get Content</button>
+        <div id="demo1" class="m-b-10"></div>       
     </div>
 </div>
-<!-- End Get Data -->
+<!-- End Current Time -->
 
 <!-- Start Get Data -->
 <div class="col-sm-6">        
@@ -37,34 +36,18 @@
 </div>
 <!-- End Get Data -->
 
+<div class="clearfix"></div>
 
+<!-- Start Digital Clock -->
+<div class="col-sm-6">
+  <div class="contentBlock">
+    <h2>Digital Clock (setInterval)</h2>
+    <div id="demo3" class="digiClockA">&nbsp;</div>
+  </div>
+</div>
+<!-- End Digital Clock -->
 
-
-<script>
-(function(){
-  var myVar = setInterval(myTimer, 1000);
-  function myTimer() {
-    var d = new Date();
-    document.getElementById("demo1").innerHTML = d.toLocaleTimeString();
-  }
-})();
-
- 
-
-
-function getName2(){
-  setInterval(function(){ 
-    alert("Hello"); 
-  }, 1000 );
-
-}
-
-
-
-
-
-
-</script>
+<script src="./js/setInterval.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->

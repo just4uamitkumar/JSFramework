@@ -27,28 +27,16 @@
 </div>
 <!-- End Get Data -->
 
+<!-- Start Digital Clock -->
+<div class="col-sm-6">
+  <div class="contentBlock">
+    <h2>Digital Clock (SetTimeOut)</h2>
+    <div id="demo3" class="digiClockB"></div>
+  </div>
+</div>
+<!-- End Digital Clock -->
 
-
-<script>
-
-//The Local Storage
-
-// Check browser support
-function getName1(){
-  setTimeout(function(){
-     if (typeof(Storage) !== "undefined") {
-    // Store
-      localStorage.setItem("key", "{'name':'Smith', 'age':23, 'country':'US'}");
-    // Retrieve
-     document.getElementById("demo1").innerHTML = localStorage.getItem("key");
-    } else {
-      document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-    }
-  }, 1000)
- 
-}
-
-</script>
+<script src="./js/setTimeOut.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
