@@ -63,3 +63,51 @@
     }
     
 }());
+
+//Show Modal Popup
+(function(){
+    var i, j, k, l;
+
+    var colors = ['green', 'red', 'dodgerBlue', 'pink', 'yellow', 'orange', 'slateBlue','violet','DarkBlue' ];
+    var colorItem = document.querySelectorAll('.colorList li a');
+
+    //Add color on Popup items
+    for (i = 0; i < colorItem.length; i++){
+        colorItem[i].setAttribute('data-color', colors[i])
+    }
+
+    var pickBtn = document.querySelectorAll('.pickColor');
+    var colorBox = document.querySelectorAll('.color');
+    //var colorLiA = document.querySelectorAll('#chooseColor .colorList > li')
+
+    //var chooseColor = null;
+
+    function openModal(){
+        var chooseColor = this.parentNode.childNodes[0];
+        //var colorAttr = chooseColor.getAttribute('data-color');
+        console.log(chooseColor)
+
+        // for(j = 0; j < chooseColor.length; j++){
+        //     var colorAttr = chooseColor[j].getAttribute('data-color');
+        //     document.querySelectorAll('a[data-color='+colorAttr'+]').classList.remove('disable');
+        // }
+        //var colorAttr = chooseColor.getAttribute('data-color');
+
+        
+                
+                
+        
+        document.getElementById('chooseColor').classList.remove('hide');        
+    }
+
+    for(j = 0; j < pickBtn.length; j++ ){       
+        pickBtn[j].addEventListener("click", openModal);       
+    }
+
+    // $('.color + .pickColorBtn').click(function(){
+    //     chooseColor = $(this).siblings('.color');
+    //     colorAttr = chooseColor.attr('data-color');
+    //     $('#chooseColor .colorListA > li').find('[data-color='+colorAttr+']').removeClass('disable');
+    //     $('#chooseColor').wrap('<div class="shadowBG darken"></div>').removeClass('hide');
+    // });
+})();
