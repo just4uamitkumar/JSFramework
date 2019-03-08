@@ -11,7 +11,7 @@
       level1[j].innerHTML = FirstText[j];       
     }
 
-    var parArr = ['UI Elements', 'Ajax', 'JSON', 'Timer', 'Local Storage', 'Table'];
+    var parArr = ['UI Elements', 'Object','Ajax', 'JSON', 'Timer', 'Local Storage', 'Table'];
     var hasChild = document.getElementsByClassName("has-child");
 
     function expand(){        
