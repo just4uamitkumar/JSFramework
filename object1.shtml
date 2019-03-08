@@ -30,7 +30,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>var count = <strong id="var1"></strong></td>
+                    <td id="countInfo">var count = <strong id="var1"></strong></td>
                     <td><strong id="demo1"></strong></td>
                 </tr>
                 <tr>

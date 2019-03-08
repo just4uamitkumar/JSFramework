@@ -1,5 +1,5 @@
  //Number
-var count = 62;
+var count = '72';
 
 document.getElementById('demo1').innerHTML = typeof(count);
 
@@ -29,7 +29,7 @@ document.getElementById('demo5').innerHTML = typeof(student);
 
 
 //Object
-var bag = {size:'Large', color:'Red', price:'$20'}
+var bag = {size:'Large', color:'Black', price:'$20'}
 
 document.getElementById('demo6').innerHTML = typeof(bag);
 
@@ -50,8 +50,15 @@ document.getElementById('demo8').innerHTML = typeof(myFunc);
 
 
 
-
-
+if (typeof count === 'string') {
+ 	var countString = document.getElementById('countInfo');
+    countString.innerHTML = "";
+    countString.innerHTML= 'var count = \' <strong id="var1"></strong>\'';
+    document.getElementById('var1').innerHTML =  count;
+}
+else{
+	document.getElementById('var1').innerHTML = count;
+}
 
 document.getElementById('var1').innerHTML = count
 document.getElementById('var2').innerHTML = empName

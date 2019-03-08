@@ -40,26 +40,16 @@
                     <td><strong id="demo1"></strong></td>
                 </tr>
                 <tr>
-                    <td>var empName = '<strong id="var2"></strong>'</td>
+                    <td>var student =
+                        { 
+                            ID : '<strong id="var2A"></strong>',
+                            Name : '<strong id="var2B"></strong>',
+                            Designation : '<strong id="var2C"></strong>',
+                        }
+                    </td>
                     <td><strong id="demo2"></strong></td>
                 </tr>
-                <tr>
-                    <td>
-                        var x = <strong id="var3A"></strong>,
-                        y = <strong id="var3B"></strong>,
-                        z = <strong id="var3C"></strong>
-                    </td>
-                    <td><strong id="demo3"></strong></td>
-                </tr>
-                <tr>
-                    <td>var clock <strong id="var4"></strong></td>
-                    <td><strong id="demo4"></strong></td>
-                </tr>
-
-                <tr>
-                    <td>var student = <strong>null</strong> </td>
-                    <td><strong id="demo5"></strong></td>
-                </tr>              
+                              
             </tbody>            
         </table>        
     </div>
