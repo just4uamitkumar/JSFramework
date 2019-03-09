@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
-<title>Object</title>
+<title>Get Object</title>
 
 <!--| Header File Include Here |-->
 <!--#include virtual="./default/header.shtml" -->
@@ -56,53 +56,7 @@
 </div>
 <!-- End Get Data -->
 
-<!-- Start Get Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">
-       <h2>Non Primitive Data Type</h2>
-       <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Variable</th>
-                    <th>Typeof</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        var bag = { size : '<span id="var6A"></span>',&nbsp; 
-                                    color : '<span id="var6B"></span>', &nbsp; 
-                                    price : '<span id="var6C"></span>' 
-                                    }
-                    </td>
-                    <td><strong id="demo6"></strong></td>
-                </tr>
-                <tr>
-                    <td>var cityName = [ '<span id="var7A"></span>', &nbsp; 
-                                        '<span id="var7B"></span>', &nbsp; 
-                                         '<span id="var7C"></span>' 
-                                    ]</td>
-                    <td><strong id="demo7"></strong></td>
-                </tr>
-                <tr>
-                    <td>
-                        function <span id="var8A"></span> {<br>
-                             &nbsp; &nbsp;<span class="text-muted"> //Your code will be here</span><br>
-                        }
-                    </td>
-                    <td><strong id="demo8"></strong></td>
-                </tr>
-                              
-            </tbody>            
-        </table> 
-        
-    </div>
-</div>
-<!-- End Get Data -->
-
-
 <script src="./js/object/object2.js"></script>
-
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->
 <!--| Footer File End Here |-->
