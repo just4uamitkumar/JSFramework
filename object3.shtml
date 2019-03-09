@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Create Object</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">
+    <div class="contentBlock">    
+        <h2>Object Literal</h2>
+        <p class="m-b-10">object={ property1 : value1 , property2 : value2 ..... propertyN : valueN}  </p>
+        <hr/>
+        <p class="m-b-10">
+            var emp={id : <span id="var1A"></span>, name : "<span id="var1B"></span>, salary : "<span id="var1C"></span>" }</p>
+        <p id="demo1"></p>      
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">
+    <div class="contentBlock">    
+        <h2>Instance of Object</h2>        
+        <p class="m-b-10">var objectName = new Object();</p>
+        <hr/>
+        <p class="m-b-10">
+             var student= {id : <span id="var2A"></span>, name : "<span id="var2B"></span>, salary : "<span id="var2C"></span>" }</p>
+        </p>
+        <p id="demo2"></p>      
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">
+    <div class="contentBlock">    
+        <h2>Object Constructor</h2>        
+        <p class="m-b-10">var objectName = new Object();</p>
+        <hr/>
+        <p class="m-b-10">
+             var student= {id : <span id="var2A"></span>, name : "<span id="var2B"></span>, salary : "<span id="var2C"></span>" }</p>
+        </p>
+        <p id="demo3"></p>      
+    </div>
+</div>
+<!-- End Get Data -->
+
+<script src="./js/object/object3.js"></script>
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

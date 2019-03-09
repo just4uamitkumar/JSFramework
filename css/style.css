@@ -17,6 +17,7 @@ li { list-style: none}
 .text-danger{color: #e60a0a;}
 .text-muted{color: #b1acac;}
 .pull-right{float: right;}
+hr{margin: 20px 0; border-color: #fdfdfd;}
 
 .hide {display: none !important}
 .show { display: block !important}
