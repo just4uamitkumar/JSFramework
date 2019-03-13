@@ -1,11 +1,11 @@
  //Number
-var count = '72';
+var count = 72;
 
 document.getElementById('demo1').innerHTML = typeof(count);
 
 
 //String
-var empName = 'Muzahid'; 
+var empName = 'Bassel Beani'; 
 
 document.getElementById('demo2').innerHTML = typeof(empName); 
 
