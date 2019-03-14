@@ -19,7 +19,7 @@
 
 
 <!-- Start Get Data -->
-<div class="col-sm-12">        
+<div class="col-sm-6">        
     <div class="contentBlock">    
         <h2>JSON.stringify()</h2>
         <p>A common use of JSON is to exchange data to/from a web server.</p>
@@ -32,7 +32,7 @@
 <!-- End Get Data -->
 
 <!-- Start Get Data -->
-<div class="col-sm-12">        
+<div class="col-sm-6">        
     <div class="contentBlock">    
         <h2>Stringify a JavaScript Array</h2>
         <p>It is also possible to stringify JavaScript arrays:</p>
@@ -42,6 +42,8 @@
     </div>
 </div>
 <!-- End Get Data -->
+
+<div class="clearfix"></div>
 
 <!-- Start Get Data -->
 <div class="col-sm-6">        
