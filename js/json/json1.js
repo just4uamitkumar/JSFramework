@@ -1,8 +1,10 @@
 function getData1(){
-  var myJSON = '{"name":"John", "age":31, "city":"New York"}';
+  var myJSON = {name:"John", age:31, city:"New York"};
   var myObj = JSON.parse(myJSON);
   document.getElementById("demo1").innerHTML = myObj.name + ' age is '+ myObj.age + ' and live in ' + myObj.city
+
 }
+
 
 function getData2(){
   var myObj, myJSON, text, obj;
@@ -16,7 +18,9 @@ function getData2(){
   text = localStorage.getItem("testJSON");
   obj = JSON.parse(text);
   document.getElementById("demo2").innerHTML = obj.name;
+  
 }
+
 
 function getData3(){
   var txt = '{"name":"John", "age":30, "city":"New York"}'

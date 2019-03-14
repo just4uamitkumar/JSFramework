@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
-<title>JSON Example 2</title>
+<title>JSON Example</title>
 
 <!--| Header File Include Here |-->
 <!--#include virtual="./default/header.shtml" -->
@@ -18,7 +18,7 @@
 <!--end Page Header -->
 
 <!-- Start Get Data -->
-<div class="col-sm-12">        
+<div class="col-sm-6">        
     <div class="contentBlock">    
         <h2>JSON.parse()</h2>
         <p>A common use of JSON is to exchange data to/from a web server.</p>
@@ -33,11 +33,25 @@
 <!-- Start Get Data -->
 <div class="col-sm-6">        
     <div class="contentBlock">    
+        <h2>JSON.stringify()</h2>
+        <p>A common use of JSON is to exchange data to/from a web server.</p>
+        <p>When sending data to a web server, the data has to be a string.</p>
+        <p>Convert a JavaScript object into a string with JSON.stringify().</p>
+        <button type="button" class="btn btn-primary m-b-10" onclick="getData2()">Get Content</button>
+        <div id="demo2" class="m-b-10"></div>
+    </div>
+</div>
+<!-- End Get Data -->
+
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">    
         <h2>JSON From the Server</h2>
         <p>You can request JSON from the server by using an AJAX request.</p>
         <p>As long as the response from the server is written in JSON format, you can parse the string into a JavaScript object.</p>
         <button type="button" class="btn btn-primary m-b-10" onclick="getData2()">Get Content</button>
-        <div id="demo2" class="m-b-10"></div>
+        <div id="demo2A" class="m-b-10"></div>
     </div>
 </div>
 <!-- End Get Data -->
