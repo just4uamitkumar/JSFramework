@@ -1,7 +1,7 @@
 {
   "datas": [
     {
-      "name": "Ravi3",
+      "name": "Jim",
       "designation": "DotNet Developer",
       "experience": "1 Year",
       "technology": "ASP",
@@ -9,7 +9,7 @@
       "id": 5
     },
     {
-      "name": "Upendra",
+      "name": "Darrel",
       "designation": "DotNet Developer",
       "experience": "6 Year",
       "technology": "ASP, MVC",
@@ -17,26 +17,26 @@
       "id": 7
     },
     {
-      "name": "Ravi",
-      "designation": "DotNet Developer",
+      "name": "John",
+      "designation": "HTML Developer",
       "experience": "4 Year",
-      "technology": "ASP",
+      "technology": "HTML, CSS",
       "rating": "Good",
       "id": 8
     },
     {
-      "name": "Vishal",
-      "designation": "Java Developer",
-      "experience": "Fresher",
-      "technology": "Java",
-      "rating": "Average",
+      "name": "Robin",
+      "designation": "PHP Developer",
+      "experience": "0",
+      "technology": "PHP, Javascript",
+      "rating": "Above Average",
       "id": 9
     },
     {
-      "name": "Feature Pa",
-      "designation": "DotNet Developer",
+      "name": "Creg",
+      "designation": "Graphic Designer",
       "experience": "12",
-      "technology": "ASP, MVC",
+      "technology": "Photoshop, Illustrator",
       "rating": "Above Average",
       "id": 10
     }
