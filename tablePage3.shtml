@@ -52,7 +52,7 @@
         </form>
 
         <div class="table-responsive">
-           <table class="table">
+           <table class="table table-stripped">
                 <thead>
                     <tr>
                         <th>ID</th>
