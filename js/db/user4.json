@@ -1,6 +1,6 @@
 {"users":[
 	{
-		"id":"1",
+		"id":1,
 		"firstname":"Vinay",
 		"lastname":"Narvaria",		
 		"dob":"1988-06-14",
@@ -8,7 +8,7 @@
 		"occupatoin":"Web Designer"
 	},
 	{
-		"id":"2",
+		"id":2,
 		"firstname":"Sandeep",
 		"lastname":"Nagraj",		
 		"dob":"1987-12-20",
@@ -16,7 +16,7 @@
 		"occupatoin":"Web Developer"
 	},
 	{
-		"id":"3",
+		"id":3,
 		"firstname":"Naveen",
 		"lastname":"Pataudi",		
 		"dob":"1992-05-24",
@@ -24,7 +24,7 @@
 		"occupatoin":"Data Entry Operator"
 	},
 	{
-		"id":"4",
+		"id":4,
 		"firstname":"Govind",
 		"lastname":"Mahor",		
 		"dob":"1990-07-28",
@@ -32,7 +32,7 @@
 		"occupatoin":"Quality Assurance"
 	},
 	{
-		"id":"5",
+		"id":5,
 		"firstname":"Manish",
 		"lastname":"Tripathi",		
 		"dob":"1986-12-14",
@@ -40,7 +40,7 @@
 		"occupatoin":"Graphic Designer"
 	},
 	{
-		"id":"6",
+		"id":6,
 		"firstname":"Rajan",
 		"lastname":"Jadon",		
 		"dob":"1984-09-16",
@@ -48,7 +48,7 @@
 		"occupatoin":"Web Designer"
 	},
 	{
-		"id":"7",
+		"id":7,
 		"firstname":"Dishant",
 		"lastname":"Sachdeva",
 		"dob":"1991-01-10",

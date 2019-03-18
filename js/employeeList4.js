@@ -7,6 +7,6 @@
             document.getElementById("demo").innerHTML = myObj
         }
     };
-    xmlhttp.open("GET", "./db/employee.json", true);
+    xmlhttp.open("GET", "./js/db/employee.json", true);
     xmlhttp.send();
 })();
