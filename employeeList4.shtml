@@ -19,13 +19,13 @@
 <!-- Start Form Validaton -->
 <div class="col-sm-12">        
     <div class="contentBlock">    
-        <button class="btn-primary m-b-10 pull-right">Click Me</button>
-        <div id="demo"></div>    
-        <table id="employee_table" class="table">
+        <button class="btn-primary m-b-10 pull-right" onclick="loadDoc()">Click Me</button>
+        <table id="employee_table" class="table  table-striped">
             <thead>
                 <tr>
                     <th>Emp ID</th>
                     <th>Name</th>
+                    <th>Date of Birth</th>
                     <th>Designation</th>
                     <th>Experience</th>
                     <th>Technology</th>
