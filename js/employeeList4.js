@@ -28,7 +28,7 @@ function loadDoc() {
             myObj.employees[i].dob = new Date(myObj.employees[i].dob);
             var myDate = new Date(myObj.employees[i].dob)
             
-            txt += "<tr id=row_"+ myObj.employees[i].id + ">" +
+            txt += "<tr id=row_"+ i + ">" +
                 "<td>" + myObj.employees[i].empID + "</td>" + 
                 "<td>" + myObj.employees[i].name + "</td>" +
                 "<td>" + myDate.getFullYear()+'-' + ("0" + (myDate.getMonth() + 1)).slice(-2) + '-'+ myDate.getDate() + "</td>" +
