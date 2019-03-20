@@ -1,3 +1,4 @@
+
 (function(){
     var i, j, k;
     var expandRow = document.querySelectorAll('.expandRow');
@@ -70,6 +71,7 @@
 
     var colors = ['green', 'red', 'dodgerBlue', 'pink', 'yellow', 'orange', 'slateBlue','violet','DarkBlue' ];
     var colorBox = document.querySelectorAll('.colorList li a');
+    colorLi = document.querySelectorAll('.colorList li')
     var actModal = document.getElementById('chooseColor');
 
     function closeModal(){
@@ -94,24 +96,16 @@
     var pickBtn = document.querySelectorAll('.pickColor');
     var colorCont = document.querySelectorAll('.color');
 
+    
     var chooseColor = null;
-    console.log(chooseColor)
-
     function openModal(){
-        var chooseColor = this.previousElementSibling;
-        console.log(chooseColor)
-        //var colorAttr = chooseColor.getAttribute('data-color');
-       // console.log(colorAttr)
-
-        // for (l = 0; l < colorBox.length; l++){
-        //     colorBox[l].getAttribute('data-color', colorAttr[l]).classList.remove('disable')
-        // }
-
-        for(l = 0; l < chooseColor.length; l++){
-            var colorAttr = chooseColor[l].getAttribute('data-color');
-            console.log(colorAttr)
-            colorBox[i].getAttribute('[data-color='+ colorAttr +']').classList.remove('disable');
-        }              
+        debugger;
+        chooseColor = this.previousElementSibling;
+        var colorAttr = chooseColor.getAttribute('data-color');
+        
+        if(colorAttr != null){
+            document.querySelectorAll('.colorList li a[data-color=' + colorAttr + ']')[0].classList.remove('disable');
+        }        
         
         //Add dark shadow behind modal
         actModal.classList.remove('hide');        
@@ -122,8 +116,9 @@
     }
 
     //Fill Color in Color Container 
-    function fillColor(e){
+    function fillColor(e){         
         e.preventDefault();
+        this.classList.add('disable')
         var hexColor = this.getAttribute('data-color');
         //alert(hexColor);
         chooseColor.setAttribute('data-color', hexColor);

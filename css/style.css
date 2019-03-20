@@ -258,6 +258,7 @@ vertical-align: middle; border: 1px solid #a09f9f;}
 .colorList li{display: inline-block; width: 31.6%; margin: 1% 0;}
 .colorList li a{display: block; border: 2px solid #40301B; width: 48px;
     height: 48px;  box-shadow: 2px 4px 4px #000; transition: transform ease 0.5s;}
+.colorList li a.disable{opacity: 0.4; pointer-events: none;}
 
 /*--------| Clock  |-------*/
 .digiClockA, .digiClockB{font-family: 'Comic Sans MS', Arial; font-size: 44px;

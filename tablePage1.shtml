@@ -145,7 +145,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            <div class="color" data-color="ABC"></div>
+                            <div class="color"></div>
                             <button class="btn pickColor">
                                 <i class="fa fa-eyedropper"></i>
                             </button>
@@ -154,7 +154,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="color" data-color="BCD">Amit</div>
+                            <div class="color"></div>
                             <button class="btn pickColor">
                                 <i class="fa fa-eyedropper"></i>
                             </button>
@@ -164,7 +164,7 @@
 
                     <tr>
                         <td>
-                            <div class="color" data-color="CDE">Ajay</div>
+                            <div class="color"></div>
                             <button class="btn pickColor">
                                 <i class="fa fa-eyedropper"></i>
                             </button>
@@ -173,7 +173,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="color" data-color="DEF">Praveen</div>
+                            <div class="color"></div>
                             <button class="btn pickColor">
                                 <i class="fa fa-eyedropper"></i>
                             </button>

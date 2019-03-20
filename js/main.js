@@ -12,7 +12,7 @@ function pageStyle(){
     //Body ClassName
     var pathname = window.location.pathname.replace('/JSFramework/', '').slice(0,-6);
     var body = document.body;
-    body.classList.add(pathname); 
+    //body.classList.add(pathname);
     body.classList.replace('index', 'home')  
 }
 
