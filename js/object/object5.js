@@ -7,9 +7,8 @@ function getData1(){
 
 function getData2(){
     var obj = { name: "David", age: 45, city: "San Adreas" };
-    var myJSON = JSON.stringify(obj);
+    var myJSON = JSON.stringify(obj);   
     document.getElementById("demo2").innerHTML = myJSON;
-
 }
 
 

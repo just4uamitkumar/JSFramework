@@ -6,9 +6,13 @@ document.getElementById('demo1').innerHTML = employee.Designation +', '+ employe
 
 
 
-var student = { RollNo : 5, Name :"David", Subject:"C++"}
+var student = { RollNo : 5, Name :"David", Subject:"PHP"}
 
 document.getElementById('demo2').innerHTML = student['Name'] +', '+ student['Subject'];
+
+
+
+
 
 
 

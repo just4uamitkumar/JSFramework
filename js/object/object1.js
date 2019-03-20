@@ -1,5 +1,5 @@
  //Number
-var count = 72;
+var count = 120;
 
 document.getElementById('demo1').innerHTML = typeof(count);
 
@@ -47,6 +47,10 @@ function myFunc(){
 }
 
 document.getElementById('demo8').innerHTML = typeof(myFunc);
+
+
+
+
 
 
 
