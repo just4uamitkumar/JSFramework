@@ -69,45 +69,82 @@
     var i, j, k, l;
 
     var colors = ['green', 'red', 'dodgerBlue', 'pink', 'yellow', 'orange', 'slateBlue','violet','DarkBlue' ];
-    var colorItem = document.querySelectorAll('.colorList li a');
+    var colorBox = document.querySelectorAll('.colorList li a');
+    var actModal = document.getElementById('chooseColor');
+
+    function closeModal(){
+        actModal.classList.add('hide');
+        var mShadow = document.querySelector('.mShadow');
+
+        // get the element's parent node       
+        var mParent = mShadow.parentNode;
+
+        // move all children out of the element
+        while (mShadow.firstChild) mParent.insertBefore(mShadow.firstChild, mShadow);
+
+        // remove the empty element
+        mParent.removeChild(mShadow); 
+    }
 
     //Add color on Popup items
-    for (i = 0; i < colorItem.length; i++){
-        colorItem[i].setAttribute('data-color', colors[i])
+    for (i = 0; i < colorBox.length; i++){
+        colorBox[i].setAttribute('data-color', colors[i])
     }
 
     var pickBtn = document.querySelectorAll('.pickColor');
-    var colorBox = document.querySelectorAll('.color');
-    //var colorLiA = document.querySelectorAll('#chooseColor .colorList > li')
+    var colorCont = document.querySelectorAll('.color');
 
-    //var chooseColor = null;
+    var chooseColor = null;
+    console.log(chooseColor)
 
     function openModal(){
-        var chooseColor = this.parentNode.childNodes[0];
-        //var colorAttr = chooseColor.getAttribute('data-color');
+        var chooseColor = this.previousElementSibling;
         console.log(chooseColor)
-
-        // for(j = 0; j < chooseColor.length; j++){
-        //     var colorAttr = chooseColor[j].getAttribute('data-color');
-        //     document.querySelectorAll('a[data-color='+colorAttr'+]').classList.remove('disable');
-        // }
         //var colorAttr = chooseColor.getAttribute('data-color');
+       // console.log(colorAttr)
 
+        // for (l = 0; l < colorBox.length; l++){
+        //     colorBox[l].getAttribute('data-color', colorAttr[l]).classList.remove('disable')
+        // }
+
+        for(l = 0; l < chooseColor.length; l++){
+            var colorAttr = chooseColor[l].getAttribute('data-color');
+            console.log(colorAttr)
+            colorBox[i].getAttribute('[data-color='+ colorAttr +']').classList.remove('disable');
+        }              
         
-                
-                
+        //Add dark shadow behind modal
+        actModal.classList.remove('hide');        
+        var mShadow = document.createElement('div');
+        mShadow.setAttribute('class','mShadow');    
+        actModal.parentNode.insertBefore(mShadow, actModal);   
+        mShadow.appendChild(actModal);
+    }
+
+    //Fill Color in Color Container 
+    function fillColor(e){
+        e.preventDefault();
+        var hexColor = this.getAttribute('data-color');
+        //alert(hexColor);
+        chooseColor.setAttribute('data-color', hexColor);
         
-        document.getElementById('chooseColor').classList.remove('hide');        
+        closeModal(); 
     }
 
     for(j = 0; j < pickBtn.length; j++ ){       
         pickBtn[j].addEventListener("click", openModal);       
     }
 
-    // $('.color + .pickColorBtn').click(function(){
-    //     chooseColor = $(this).siblings('.color');
-    //     colorAttr = chooseColor.attr('data-color');
-    //     $('#chooseColor .colorListA > li').find('[data-color='+colorAttr+']').removeClass('disable');
-    //     $('#chooseColor').wrap('<div class="shadowBG darken"></div>').removeClass('hide');
-    // });
+    for(k = 0; k < colorBox.length; k++ ){       
+        colorBox[k].addEventListener("click", fillColor);       
+    }
+
+    //Close Modal without fill color
+    document.querySelectorAll('[data-dismiss="modal"]')[0].onclick = function(){
+        closeModal();
+    }
+
+    
+
+ 
 })();

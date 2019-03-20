@@ -154,7 +154,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="color">Amit</div>
+                            <div class="color" data-color="BCD">Amit</div>
                             <button class="btn pickColor">
                                 <i class="fa fa-eyedropper"></i>
                             </button>
@@ -164,7 +164,7 @@
 
                     <tr>
                         <td>
-                            <div class="color">Ajay</div>
+                            <div class="color" data-color="CDE">Ajay</div>
                             <button class="btn pickColor">
                                 <i class="fa fa-eyedropper"></i>
                             </button>
@@ -173,7 +173,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="color">Praveen</div>
+                            <div class="color" data-color="DEF">Praveen</div>
                             <button class="btn pickColor">
                                 <i class="fa fa-eyedropper"></i>
                             </button>
@@ -240,7 +240,7 @@
 
 
 <!-- Start 1st Modal -->
-<div class="gModal modalSM hide"  id="chooseColor">
+<div class="gModal modalSM hide" id="chooseColor">
     <div class="modalDialog">
         <div class="modalHeader">
             <button type="button" class="close" data-dismiss="modal">
@@ -250,15 +250,15 @@
         </div>
         <div class="modalBody">
             <ul class="colorList">
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
             </ul>
         </div>        
     </div>
