@@ -28,7 +28,7 @@
 	B = new city('Shimla',"Himachal");
 	C = new city('Chennai',"TamilNadu"); 	  
 	
-	document.getElementById('demo3').innerHTML = C.name+" "+C.state
+	document.getElementById('demo3').innerHTML = B.name+" "+B.state
 
 
 
