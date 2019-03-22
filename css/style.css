@@ -27,7 +27,7 @@ hr{margin: 20px 0; border-color: #fdfdfd;}
 header {background: #696969; left: 0; position: fixed; right: 0; top: 0;  z-index: 1;}
 header .logo {background: #09667b; float: left; text-align: center; width: 230px}
 header .logo a {color: #fff; display: block; line-height: 0.8; padding: 15px; text-shadow: 1px 1px 1px #efefef; text-transform: uppercase}
-
+.headClock{float: left; color: #f7a45b;padding: 10px 9px 0;}    
 .sidebar-toggle {background: rgba(255, 255, 255, 0.15); color: #fff; display: inline-block;
   padding: 9px 15px; text-align: center; float: left}
 .sidebar-toggle:hover {background: rgba(255, 255, 255, 0.3);}

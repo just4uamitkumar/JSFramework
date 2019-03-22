@@ -57,8 +57,10 @@
             </tbody>            
         </table>        
     </div>
+    
 </div>
 <!-- End Get Data -->
+
 
 <!-- Start Get Data -->
 <div class="col-sm-6">        
@@ -103,6 +105,14 @@
     </div>
 </div>
 <!-- End Get Data -->
+
+<div class="clearfix"></div>
+
+<div class="col-sm-12">
+    <div class="contentBlock">
+        <h3>Undefined and Null are equal in value but different in type</h3>
+    </div>    
+</div>
 
 
 <script src="./js/object/object1.js"></script>

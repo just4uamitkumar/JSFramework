@@ -16,9 +16,10 @@
 	
 	<!-- Start Nav -->
     <div class="nav">
+        <div id="headTime" class="headClock"></div>
         <ul>
-            <li><a href="javascript:void(0);">Menu Item 1</a></li>
-            <li class="hasNav"><a href="javascript:void(0);">Menu Item 2</a>
+            <li><a href="javascript:void(0);">Timer</a></li>
+            <li class="hasNav"><a href="javascript:void(0);">Ajax</a>
                 <ul class="dropdown">
                     <li><a href="javascript:void(0);">Menu Item A</a></li>
                     <li><a href="javascript:void(0);">Menu Item B</a></li>
@@ -27,8 +28,8 @@
                     <li><a href="javascript:void(0);">Menu Item E</a></li>
                 </ul>
             </li>
-            <li><a href="javascript:void(0);">Menu Item 3</a></li>
-            <li class="hasNav"><a href="javascript:void(0);">Menu Item 4</a>
+            <li><a href="javascript:void(0);">HCF</a></li>
+            <li class="hasNav"><a href="javascript:void(0);">JSON</a>
                  <ul class="dropdown">
                     <li><a href="javascript:void(0);">Menu Item a</a></li>
                     <li><a href="javascript:void(0);">Menu Item b</a></li>
