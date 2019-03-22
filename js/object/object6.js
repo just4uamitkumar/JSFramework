@@ -12,6 +12,8 @@ function loadDoc1() {
 }
 
 
+
+
 //The XMLHttpRequest Object
 function loadDoc2() {
   //Read Json Data
