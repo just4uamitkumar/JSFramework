@@ -1,5 +1,5 @@
 
-var employee= {ID : 2103, Name :"Darell Laurid", Designation:"Software Engineer"}
+var employee= {ID : 2103, Name :"Darell Laurid", Designation:"PHP Developer"}
 
 document.getElementById('demo1').innerHTML = employee.Designation +', '+ employee.Name;
 
