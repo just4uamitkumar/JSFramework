@@ -95,11 +95,10 @@
 
     var pickBtn = document.querySelectorAll('.pickColor');
     var colorCont = document.querySelectorAll('.color');
-
     
     var chooseColor = null;
+
     function openModal(){
-        debugger;
         chooseColor = this.previousElementSibling;
         var colorAttr = chooseColor.getAttribute('data-color');
         
@@ -122,6 +121,14 @@
         var hexColor = this.getAttribute('data-color');
         //alert(hexColor);
         chooseColor.setAttribute('data-color', hexColor);
+        document.getElementById('clearBtn').classList.remove('disable');
+
+        //Remove Disable from Finish Button 
+        var x = document.querySelectorAll('.colorList li a.disable');        
+
+        if(x.length == 8){
+            document.getElementById('finish').classList.remove('disable');        
+        }
         
         closeModal(); 
     }
@@ -136,7 +143,29 @@
 
     //Close Modal without fill color
     document.querySelectorAll('[data-dismiss="modal"]')[0].onclick = function(){
+       
+        var colorAttr = chooseColor.getAttribute('data-color');
+
+        if(colorAttr != null){
+            document.querySelectorAll('.colorList li a[data-color=' + colorAttr + ']')[0].classList.add('disable');
+        }
+
         closeModal();
+    }
+
+    document.getElementById('clearBtn').onclick = function(){
+        this.classList.add('disable');
+        document.getElementById('finish').classList.add('disable');
+
+        for(l = 0; l < colorBox.length; l++ ){  
+            colorBox[l].classList.remove('disable');       
+        }
+
+        for(var m = 0; m < colorCont.length; m++ ){ 
+            colorCont[m].removeAttribute('data-color');       
+        }
+        
+
     }
 
     
