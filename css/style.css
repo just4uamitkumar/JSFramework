@@ -220,6 +220,7 @@ button, .btn { box-shadow:1px 1px 2px rgba(0,0,0,0.4); padding: 6px 14px; cursor
   color:#fff;  border-width: 0 0 2px; border-style: solid; font-size: 0.8rem; border-radius: 2px; }
 .btn.btn-sm{font-size: 0.7rem; padding: 4px 11px;}
 .btn + .btn{margin-left: 10px;}
+.btn.disable{opacity: 0.5;}
 .btn-primary{background: #053ee6;  border-color: #2f1cb5;}
 .btn-info{background: #1d87c7; border-color: #8bb6da;}
 .btn-warning{background: #dc5e22; border-color: #b14614;}
@@ -249,9 +250,9 @@ left: 9px; position: absolute; top: 9px; background: #39a00f; display: block; wi
 height: 18px; border-radius: 50%; text-align: center; padding: 2px 0 0;}
 .expandRow.active:before {content: "\f068"; background: #da1a1a;}
 
-.table .color{background: #dddddd; width: 104px; height: 30px; display: inline-block;
+.table .color{background: #dddddd; width: 104px; height: 28px; display: inline-block;
 vertical-align: middle; border: 1px solid #a09f9f;}
-.table .pickColor{background: #278ea5; border-color: #166c80; padding: 8px 14px 7px;
+.table .pickColor{background: #278ea5; border-color: #166c80; padding:7px 14px 6px;
     color: #f4e7ff; }
 .colorList{text-align: center; background: #ececec; width: 70%; padding: 5% 15% 4%;
     margin: 0 auto;}

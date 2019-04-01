@@ -126,10 +126,10 @@
 <!-- End Form Validaton -->
 
 <!-- Start closure example -->
-<div class="col-sm-6">        
+<div class="col-sm-12">        
     <div class="contentBlock clearfix">
         <h2>Closure Example
-            <button class="btn btn-primary clearBtn pull-right" type="button">
+            <button class="btn btn-primary disable pull-right" type="button" id="clearBtn">
                 Clear All
             </button>
         </h2>
@@ -138,8 +138,12 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th width="35%">Color </th>
-                        <th width="65%;">Types of Color</th>
+                        <th width="16%">Color </th>
+                        <th width="17%;">Types of Color</th>
+                        <th width="16%">Color </th>
+                        <th width="17%;">Types of Color</th>
+                        <th width="16%">Color </th>
+                        <th width="17%;">Types of Color</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -151,8 +155,6 @@
                             </button>
                         </td>
                         <td>Color A</td>
-                    </tr>
-                    <tr>
                         <td>
                             <div class="color"></div>
                             <button class="btn pickColor">
@@ -160,9 +162,6 @@
                             </button>
                         </td>
                         <td>Color B</td>
-                    </tr>
-
-                    <tr>
                         <td>
                             <div class="color"></div>
                             <button class="btn pickColor">
@@ -170,7 +169,8 @@
                             </button>
                         </td>
                         <td>Color C</td>
-                    </tr>
+                    </tr>                   
+
                     <tr>
                         <td>
                             <div class="color"></div>
@@ -179,9 +179,6 @@
                             </button>
                         </td>
                         <td>Color D</td>
-                    </tr>
-
-                    <tr>
                         <td>
                             <div class="color"></div>
                             <button class="btn pickColor">
@@ -189,8 +186,6 @@
                             </button>
                         </td>
                         <td>Color E</td>
-                    </tr>
-                    <tr>
                         <td>
                             <div class="color"></div>
                             <button class="btn pickColor">
@@ -208,8 +203,6 @@
                             </button>
                         </td>
                         <td>Color G</td>
-                    </tr>
-                    <tr>
                         <td>
                             <div class="color"></div>
                             <button class="btn pickColor">
@@ -217,9 +210,6 @@
                             </button>
                         </td>
                         <td>Color H</td>
-                    </tr>
-
-                    <tr>
                         <td>
                             <div class="color"></div>
                             <button class="btn pickColor btn-warning">
@@ -227,11 +217,11 @@
                             </button>
                         </td>
                         <td>Color I</td>
-                    </tr>                    
+                    </tr>          
                 </tbody>
             </table>
         </div>
-        <button class="btn btn-warning clearBtn pull-right" type="button">
+        <button class="btn btn-warning pull-right disable" id="finish" type="button">
            Finish
         </button>
     </div>
