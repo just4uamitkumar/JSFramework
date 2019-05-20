@@ -81,7 +81,7 @@ $(function(){
   var $addTodoForm = $('#addTodo');
   var $tbody = $('tbody');
 
-  var url = 'http://localhost:3000/todos';
+  var url = 'http://localhost:3000/todos'; //dba.json
 
   //Template
   var source = $('#listItemTemplate').html();

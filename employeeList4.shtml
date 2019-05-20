@@ -41,7 +41,7 @@
 </div>
 <!-- End Form Validaton -->
 
-<script src="./js/employeeList4.js"></script>
+<script src="./js/table/employeeList4.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->

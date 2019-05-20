@@ -84,7 +84,7 @@
 </div>
 <!-- End Scroll section -->
 
-<script src="./js/scrollIndicator.js"></script>
+<script src="./js/UIElement/scrollIndicator.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->

@@ -141,7 +141,7 @@
 </script>
 
 
-<script src="./js/tablePage3.js"></script>
+<script src="./js/table/tablePage3.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->

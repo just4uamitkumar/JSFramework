@@ -28,7 +28,7 @@
     </div>
 </div>
 <!-- End col-sm-12 -->
-<script src="./js/gallery2.js"></script> 
+<script src="./js/UIElement/gallery2.js"></script> 
 
 
 <!--| Footer File Include Here |-->

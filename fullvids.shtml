@@ -52,7 +52,8 @@
 
     </div>    
 
-<script src="./js/fullVids.js"></script>
+<script src="./js/UIElement/fullVids.js"></script>
+
    
 </div>
 <!-- end row div -->

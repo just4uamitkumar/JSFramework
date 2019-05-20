@@ -86,7 +86,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script id="listItemTemplate" type="text/x-handlebars-template"">   
+<script id="listItemTemplate" type="text/x-handlebars-template">   
     <tr class="headRow"  id={{id}}>
         <td><span>{{id}}</span></td>
         <td><span class="text">{{text}}</span></td>
@@ -97,7 +97,7 @@
     </tr> 
 </script>
 
-<script id="editTemplate" type="text/x-handlebars-template"">
+<script id="editTemplate" type="text/x-handlebars-template">
    <form class="gModal modalSM" id="editTodo">
         <div class="modalDialog">
             <div class="modalHeader">
@@ -122,7 +122,7 @@
     </form>
 </script>
 
-<script src="./js/tablePage2.js"></script>
+<script src="./js/table/tablePage2.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->

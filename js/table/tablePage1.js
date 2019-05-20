@@ -65,14 +65,37 @@
     
 }());
 
+(function(){
+    var colorNames = ['Color A', 'Color B', 'Color C', 'Color D', 'Color E', 'Color F', 'Color G', 'Color H', 'Color I'];
+    var n, txt =''
+     for (var n=0; n < colorNames.length; n++) {
+        txt += "<tr>" +
+            "<td>" +
+                "<div class='color'></div>"+
+                "<button class='btn pickColor'>" +
+                    "<i class='fa fa-eyedropper'></i>" +
+                "</button>" +
+            "</td>" + 
+            "<td>" + colorNames[n] + "</td>" +                       
+          "</tr>";  
+    }
+    document.getElementById("colorTable").tBodies[0].innerHTML = txt;
+})();
+
+
 //Show Modal Popup
 (function(){
+
     var i, j, k, l;
 
     var colors = ['green', 'red', 'dodgerBlue', 'pink', 'yellow', 'orange', 'slateBlue','violet','DarkBlue' ];
+    
     var colorBox = document.querySelectorAll('.colorList li a');
     colorLi = document.querySelectorAll('.colorList li')
     var actModal = document.getElementById('chooseColor');
+
+
+   
 
     function closeModal(){
         actModal.classList.add('hide');
@@ -126,7 +149,7 @@
         //Remove Disable from Finish Button 
         var x = document.querySelectorAll('.colorList li a.disable');        
 
-        if(x.length == 8){
+        if(x.length == 9){
             document.getElementById('finish').classList.remove('disable');        
         }
         
@@ -163,8 +186,7 @@
 
         for(var m = 0; m < colorCont.length; m++ ){ 
             colorCont[m].removeAttribute('data-color');       
-        }
-        
+        }      
 
     }
 

@@ -113,8 +113,9 @@ h4 { padding: 0 0 5px; font-size: 1.2rem}
 
 /*-------| Tabs |--------*/
 .tabs {margin: 10px 0 0; border-bottom: 3px double #fff}
-.tabs ul li {display: inline-block}
-.tabs ul li a {background: #444; color: #fff; display: block; font-size: 1rem; padding: 10px 27px}
+.tabs ul li {display: inline-block; width: 24.4%;}
+.tabs ul li a {background: #444; color: #fff; display: block; font-size: 1rem;
+  padding: 10px 17px; width: calc(100% - 34px)}
 .tabs ul li a:hover, .tabs ul li a.active {background: #222}
 .tabCont, .tabContainer {margin: 10px 0}
 .tabCont .tabWrapper, .tabCont .tabWrap, .tabContainer .tabWrapper, .tabContainer .tabWrap {

@@ -53,7 +53,7 @@ $(function(){
   var $addDataForm = $('[name=fillRecord]');
   var $tbody = $('tbody');
 
-  var url = 'http://localhost:3000/datas';
+  var url = 'http://localhost:3000/datas';  //dbb.json
 
   //Template
   var source = $('#tableRow').html();
