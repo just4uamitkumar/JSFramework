@@ -24,7 +24,7 @@
 </div>
 <!-- End Form Validaton -->
 
-<script src="./js/employeeList2.js"></script>
+<script src="./js/table/employeeList2.js"></script>
 
 
 <!--| Footer File Include Here |-->

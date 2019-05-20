@@ -47,7 +47,7 @@
 </div>
 <!-- End First Accordion Section -->
 
-<script src="./js/accordion.js"></script>
+<script src="./js/UIElement/accordion.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->

@@ -43,7 +43,7 @@
     
 </div>
 <!-- End Tab Section -->
-<script src="./js/canvas.js"></script>
+<script src="./js/UIElement/canvas.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->

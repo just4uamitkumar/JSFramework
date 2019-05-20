@@ -126,7 +126,7 @@
 <!-- End Form Validaton -->
 
 <!-- Start closure example -->
-<div class="col-sm-12">        
+<div class="col-sm-6">        
     <div class="contentBlock clearfix">
         <h2>Closure Example
             <button class="btn btn-primary disable pull-right" type="button" id="clearBtn">
@@ -135,19 +135,15 @@
         </h2>
         <p>Even a small change in your daily routine can make a big difference over time.</p>
         <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table  table-striped" id="colorTable">
                 <thead>
                     <tr>
-                        <th width="16%">Color </th>
-                        <th width="17%;">Types of Color</th>
-                        <th width="16%">Color </th>
-                        <th width="17%;">Types of Color</th>
-                        <th width="16%">Color </th>
-                        <th width="17%;">Types of Color</th>
+                        <th>Color </th>
+                        <th>Types of Color</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td>
                             <div class="color"></div>
                             <button class="btn pickColor">
@@ -217,7 +213,7 @@
                             </button>
                         </td>
                         <td>Color I</td>
-                    </tr>          
+                    </tr> -->          
                 </tbody>
             </table>
         </div>
@@ -257,7 +253,7 @@
 
 
 
-<script src="./js/tablePage1.js"></script>
+<script src="./js/table/tablePage1.js"></script>
 
 
 

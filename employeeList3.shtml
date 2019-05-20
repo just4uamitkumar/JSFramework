@@ -35,7 +35,7 @@
 <!-- End Get Data -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="./js/employeeList3.js"></script>
+<script src="./js/table/employeeList3.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->

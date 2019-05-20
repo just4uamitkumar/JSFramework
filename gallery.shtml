@@ -115,7 +115,7 @@
 </div>
 <!-- End 5th Modal -->
 
-<script src="./js/gallery.js"></script> 
+<script src="./js/UIElement/gallery.js"></script> 
 
 
 <!--| Footer File Include Here |-->

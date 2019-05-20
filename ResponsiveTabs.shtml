@@ -26,7 +26,7 @@
 </div>
 <!-- End First Accordion Section -->
 
-<script src="./js/responsiveTab.js"></script>
+<script src="./js/UIElement/responsiveTab.js"></script>
 
 
 <!--| Footer File Include Here |-->

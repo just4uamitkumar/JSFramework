@@ -96,3 +96,31 @@
         el.value = opt.value;
     }            
 }());
+
+(function(){
+    var x = document.querySelectorAll('.contentBlock');
+    var xA = x[0].clientHeight;
+    var xB = x[1].clientHeight;
+    var xC = x[2].clientHeight;
+
+   console.log(xA, xB, xC);
+   var i;    
+
+    for(i = 0 ; i < x.length; i++){
+
+        if(xA>xB && xA>xC){
+            x[i].style.height = xA + 'px';
+        }
+
+        else if(xB>xA && xB>xC){        
+            x[i].style.height = xB + 'px';        
+        }
+
+        else if(xC>xA && xC>xA){
+            x[i].style.height = xC + 'px';        
+        }      
+    }
+    
+    
+
+}());
