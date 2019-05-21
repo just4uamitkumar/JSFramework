@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Sort Array</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Filter Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2>The sort() method sorts an array alphabetically</h2>	
+        <div class="m-b-10">
+           var fruits = ["Banana", "Orange", "Apple", "Mango"];                 
+        </div>
+        <div class="block">
+            <div id='sort1A' class="m-b-10"></div>
+			<div id='sort1B' class="m-b-10"></div>			
+        </div>        
+    </div>
+</div>
+<!-- End Filter Data -->
+
+
+<!-- Start Filter Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2>By default, the sort() function sorts values as strings.</h2>	
+        <div class="m-b-10">
+           var points = [40, 100, 1, 5, 25, 10];                 
+        </div>
+        <div class="block m-b-10">	
+			<span id='sort2A'></span>
+			<span id='sort2B' class="m-l-20"></span>
+			<span id='sort2C' class="m-l-20"></span>		
+		</div>
+		<div class="block">
+			<span>Lowest value : <span id="sort2BA"></span></span>			
+			<span class="m-l-20">Highest value : <span id="sort2CA"></span></span>					
+        </div>        
+    </div>
+</div>
+<!-- End Filter Data -->
+
+<div class="clearfix"></div>
+
+<!-- Start Filter Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2>Using Math.max() on an Array</h2>	
+        <div class="m-b-10">
+           var points = [40, 100, 1, 5, 25, 10];                 
+        </div>
+		<p>You can use Math.max.apply to find the highest number in an array</p>
+        <div class="block m-b-10">	
+			<span>Highest Value by (Math.max.apply(null, arr);) <strong id='sort3A'></strong><span>
+			<span class="m-l-20">Lowest Value by (Math.min.apply(null, arr);) <strong id='sort3B'></strong><span>
+		</div>		       
+    </div>
+</div>
+<!-- End Filter Data -->
+
+<!-- Start Filter Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2>Using Objects</h2>
+		
+        <div class="block m-b-10">	
+			<div id="sort4A"></div>
+			<button type="button" class="btn btn-primary" onclick="myFunction()">Sort</button>
+		</div>		       
+    </div>
+</div>
+<!-- End Filter Data -->
+
+
+
+<script src="./js/array/sort.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
