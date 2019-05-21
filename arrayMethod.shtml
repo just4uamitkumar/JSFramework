@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Array Methods</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Filter Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2>var arr = [2, 4, 2, 1, 5, 4, 1, 7];</h2>	
+        <div class="block">
+			<p>Sort Array : <span id="am1"></span></p>
+			<p>Sort Array : <span id="am2"></span></p>
+		</div>       
+    </div>
+</div>
+<!-- End Filter Data -->
+
+
+<script src="./js/array/arrayMethod.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
