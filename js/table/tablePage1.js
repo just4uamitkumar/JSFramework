@@ -93,8 +93,6 @@
     var colorBox = document.querySelectorAll('.colorList li a');
     colorLi = document.querySelectorAll('.colorList li')
     var actModal = document.getElementById('chooseColor');
-
-
    
 
     function closeModal(){

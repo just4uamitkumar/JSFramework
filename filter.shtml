@@ -71,7 +71,7 @@
 				<p>Get values Greater than or equal to 50</p>
 				<div id='filter2D' class="m-b-10"></div>
 				
-				<p>Get values Less than to 50</p>
+				<p>Get values Less than to 10</p>
 				<div id='filter2E' class="m-b-10"></div>			
 			</div>
 		</div>		

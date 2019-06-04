@@ -47,18 +47,6 @@
 <!-- Start Get Data -->
 <div class="col-sm-6">        
     <div class="contentBlock">    
-        <h2>JSON From the Server</h2>
-        <p>You can request JSON from the server by using an AJAX request.</p>
-        <p>As long as the response from the server is written in JSON format, you can parse the string into a JavaScript object.</p>
-        <button type="button" class="btn btn-primary m-b-10" onclick="getData2()">Get Content</button>
-        <div id="demo2A" class="m-b-10"></div>
-    </div>
-</div>
-<!-- End Get Data -->
-
-<!-- Start Get Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">    
         <h2>Array as JSON</h2>
         <p>When using the JSON.parse() on a JSON derived from an array, the method will return a JavaScript array, instead of a JavaScript object.</p>
         <button type="button" class="btn btn-primary m-b-10" onclick="getData3()">Get Content</button>
@@ -67,7 +55,7 @@
 </div>
 <!-- End Get Data -->
 
-<div class="clearfix"></div>
+
 
 <!-- Start Get Data -->
 <div class="col-sm-6">        
@@ -81,6 +69,8 @@
     </div>
 </div>
 <!-- End Get Data -->
+    
+<div class="clearfix"></div>
 
 <!-- Start Get Data -->
 <div class="col-sm-6">        

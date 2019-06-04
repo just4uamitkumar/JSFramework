@@ -28,15 +28,15 @@ function loadDoc2() {
 
 	  	for (i=0; i < myObj.users.length; i++) {
 
-	  		//myObj.users[i].dob = new Date(myObj.users[i].dob);
-	  		//var myDate = new Date(myObj.users[i].dob)
+	  		myObj.users[i].dob = new Date(myObj.users[i].dob);
+	  		var myDate = new Date(myObj.users[i].dob)
 	  		
 	  		txt += "<tr id=row_"+ myObj.users[i].id + ">" +
 	  			"<td>" + myObj.users[i].id + "</td>" + 
 	  			"<td>" + myObj.users[i].firstname + "</td>" +
 	  			"<td>" + myObj.users[i].lastname + "</td>" +	  			
-	  			//"<td>" + myDate.getFullYear()+'-' + ("0" + (myDate.getMonth() + 1)).slice(-2) + '-'+ myDate.getDate() + "</td>" +
-	  			"<td>" + myObj.users[i].dob+ "</td>" +
+	  			"<td>" + myDate.getDate()+'-' + ("0" + (myDate.getMonth() + 1)).slice(-2) + '-'+ myDate.getFullYear() + "</td>" +
+	  			//"<td>" + myObj.users[i].dob+ "</td>" +
 	  			"<td>" + myObj.users[i].experience + "</td>" +
 	  			"<td>" + myObj.users[i].occupatoin + "</td>" +	  			
 	  		  "</tr>";  

@@ -1,5 +1,5 @@
  //Number
-var count = 120;
+var count = '120';
 
 document.getElementById('demo1').innerHTML = typeof(count);
 

@@ -40,22 +40,14 @@ posFunc();
 	}
 	
 	function lessThanTen(value){
-		return value < 50
+		return value < 10
 	}	
 	
-		
-	
-	var EvenFilt = filtered.filter(isEven);
-	var OddFilt = filtered.filter(isOdd);
-	var ThreeFilt = filtered.filter(isMultiThree);
-	var FiftyFilt = filtered.filter(bigThanFifty);
-	var fNineFilt = filtered.filter(lessThanTen);
-	
-	document.getElementById('filter2A').innerHTML = EvenFilt;
-	document.getElementById('filter2B').innerHTML = OddFilt;
-	document.getElementById('filter2C').innerHTML = ThreeFilt;
-	document.getElementById('filter2D').innerHTML = FiftyFilt;
-	document.getElementById('filter2E').innerHTML = fNineFilt;
+	document.getElementById('filter2A').innerHTML = filtered.filter(isEven);
+	document.getElementById('filter2B').innerHTML = filtered.filter(isOdd);
+	document.getElementById('filter2C').innerHTML = filtered.filter(isMultiThree);
+	document.getElementById('filter2D').innerHTML = filtered.filter(bigThanFifty);
+	document.getElementById('filter2E').innerHTML = filtered.filter(lessThanTen);
 	
 	
 })();
@@ -78,21 +70,3 @@ posFunc();
 	function myFunctionB() {			
 		 document.getElementById("filter3B").innerHTML = myArray.filter(inputValB);
 	}
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
