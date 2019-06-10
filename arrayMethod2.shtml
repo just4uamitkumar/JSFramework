@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Array Methods 2</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Atm Wrapper -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2>Welcome to ATM</h2>
+        <div class="atmWrapper">
+            <form class="atmForm" name="atmForm">                
+                <div class="form-group">
+                    <label>Enter the Amount</label>
+                    <input type="number" id="amount" name="amount"/>
+                    <span class="defVal"></span>
+                </div>
+                <button type="button" onclick="atmApp();">Get Money</button>
+            </form>
+        </div>       
+    </div>
+</div>
+<!-- End Atm Wrapper-->
+
+<div class="col-sm-6">
+    <div class="contentBlock">
+        <div class="formResult">
+            <div class="title">You will get following amount</div>
+            <ul>
+                <li><span class="currency" id="price1">0</span> notes of Rs 1</li>
+                <li><span class="currency" id="price2">0</span> notes of Rs 2</li>
+                <li><span class="currency" id="price3">1</span> notes of Rs 5</li>
+                <li><span class="currency" id="price4">1</span> notes of Rs 10</li>
+                <li><span class="currency" id="price5">1</span> notes of Rs 20</li>
+                <li><span class="currency" id="price6">1</span> notes of Rs 50</li>
+                <li><span class="currency" id="price7">1</span> notes of Rs 100</li>
+                <li><span class="currency" id="price8">1</span> notes of Rs 200</li>
+                <li><span class="currency" id="price9">2</span> notes of Rs 500</li>
+                <li><span class="currency" id="price10">3</span> notes of Rs 2000</li>
+            </ul>
+            <div class="totalCount">Total notes dispensed: <span id="noteCount">12</span></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./js/array/arrayMethod2.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
