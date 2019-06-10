@@ -142,78 +142,7 @@
                         <th>Types of Color</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <!-- <tr>
-                        <td>
-                            <div class="color"></div>
-                            <button class="btn pickColor">
-                                <i class="fa fa-eyedropper"></i>
-                            </button>
-                        </td>
-                        <td>Color A</td>
-                        <td>
-                            <div class="color"></div>
-                            <button class="btn pickColor">
-                                <i class="fa fa-eyedropper"></i>
-                            </button>
-                        </td>
-                        <td>Color B</td>
-                        <td>
-                            <div class="color"></div>
-                            <button class="btn pickColor">
-                                <i class="fa fa-eyedropper"></i>
-                            </button>
-                        </td>
-                        <td>Color C</td>
-                    </tr>                   
-
-                    <tr>
-                        <td>
-                            <div class="color"></div>
-                            <button class="btn pickColor">
-                                <i class="fa fa-eyedropper"></i>
-                            </button>
-                        </td>
-                        <td>Color D</td>
-                        <td>
-                            <div class="color"></div>
-                            <button class="btn pickColor">
-                                <i class="fa fa-eyedropper"></i>
-                            </button>
-                        </td>
-                        <td>Color E</td>
-                        <td>
-                            <div class="color"></div>
-                            <button class="btn pickColor">
-                                <i class="fa fa-eyedropper"></i>
-                            </button>
-                        </td>
-                        <td>Color F</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <div class="color"></div>
-                            <button class="btn pickColor">
-                                <i class="fa fa-eyedropper"></i>
-                            </button>
-                        </td>
-                        <td>Color G</td>
-                        <td>
-                            <div class="color"></div>
-                            <button class="btn pickColor">
-                                <i class="fa fa-eyedropper"></i>
-                            </button>
-                        </td>
-                        <td>Color H</td>
-                        <td>
-                            <div class="color"></div>
-                            <button class="btn pickColor btn-warning">
-                                <i class="fa fa-eyedropper"></i>
-                            </button>
-                        </td>
-                        <td>Color I</td>
-                    </tr> -->          
+                <tbody>                           
                 </tbody>
             </table>
         </div>

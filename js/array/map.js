@@ -1,6 +1,4 @@
 
-
-
 (function(){
 	var numbers = [4, 9, 16, 25];
 	
@@ -21,7 +19,7 @@
 				{ id: 88, name: 'Commander Jerjerrod' }
 			];	
 	
-	const officersIds = Emps.map(Emp => Emp.id);
+	const officersIds = Emps.map(Emp => (Emp.id + ':' + Emp.name));
 	
 	document.getElementById('map3').innerHTML = officersIds;
 
