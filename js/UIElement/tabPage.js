@@ -8,7 +8,8 @@
     var i, j, y, z;        
 
     var tabArr = ['First Tab', 'Second Tab', 'Third Tab', 'Fourth Tab'];
-
+   
+   
     for (y = 0; y < tab.length; y++) { 
         tab[y].innerHTML = tabArr[y]; 
     }
