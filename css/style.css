@@ -203,7 +203,7 @@ left: calc(50% - 8px); position: absolute; width: 0}
 .form-group {margin-bottom: 10px; overflow: hidden}
 .form-group label {width: 28%; margin-right: 10px; display: inline-block}
 .form-group .control-label {margin-bottom: 10px; width: 28%}
-.form-group input[type="text"], .form-group select {width: 62%; padding:7px;
+.form-group input[type="text"], .form-group input[type="number"], .form-group select {width: 62%; padding:7px;
   display: inline-block; color: #000; border: 1px solid #8e8e8e;}
 .form-group input::placeholder,  .form-group select{color: #8e8e8e;}
 .form-group select option{color:#000;}
@@ -469,3 +469,8 @@ background: #c5d7ff; color: #2521e4; border:1px solid #2a5fd6;}
 #editData .table tbody tr td select{ padding: 6px 5px;}
 .table tbody tr td[colspan]{padding: 0;}
 
+/*--------| ATM WithDraw App |-------*/
+.cashResult{}
+.cashResult ul{border-bottom: 2px solid #ddd; margin-bottom: 5px; font-size: 0;}
+.cashResult ul li{display: inline-block;  width: 46%;   padding: 5px 1%; font-size: 15px;
+ border-top: 1px solid #ddd;}

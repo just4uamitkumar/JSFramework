@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
-<title>Object Method</title>
+<title>Merge Objects</title>
 
 <!--| Header File Include Here |-->
 <!--#include virtual="./default/header.shtml" -->
@@ -22,10 +22,21 @@
     <div class="contentBlock">    
         <h2>Merge Two Objects</h2>
         <p>We have two objects </p>
-        <p>const target = { a: 1, b: 2 };</p>
-        <p>const source = { b: 4, c: 5 };</p>
-        <div id="demo1" class="m-b-10"></div>
-        <button type="button" class="btn btn-primary" onclick="loadDoc1()">Get Content</button>
+        <p class="left">const target = { a: 1, b: 2 };</p>
+        <p class="right">const source = { b: 4, c: 5 };</p>
+        <p>The Resulted Object Will be : {a: 1, b: 4, c: 5}</p>
+    </div>
+</div>
+<!-- End Get Data -->
+    
+    <!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">    
+        <h2>Merge Two Objects</h2>
+        <p>We have two objects </p>
+        <p>var obj1 = { name: "David", age: 45, city: "San Adreas" };</p>
+        <p>var obj2 = { state: "Florida", Professtion: 'Software Engineer', Salary: 50000};</p>
+        <p>The Resulted Object Will be : {name: "David", age: 45, city: "San Adreas", state: "Florida", Professtion: "Software Engineer",  Salary: 50000}</p>
     </div>
 </div>
 <!-- End Get Data -->
