@@ -63,12 +63,19 @@
 
 //[11, 22, 22, 33].reduce((x, y) => x.includes(y) ? x : [...x, y], []);
 
+(function(){
+    var myNum = [2, 4, 2, 1, 5, 4, 1, 7];
+    myNum.sort();
+    myNum.sort(function(a, b) {return a - b});
+    console.log(myNum.reduce((x,y) => x.includes(y) ? x : [...x, y], []))
+    //Resule [1, 2, 4, 5, 7]
+})();
 
-//var myNum = [2, 4, 2, 1, 5, 4, 1, 7];
-//myNum.sort();
-//myNum.sort(function(a, b) {return a - b});
-//console.log(myNum.reduce((x,y) => x.includes(y) ? x : [...x, y], []))
-//Resule [1, 2, 4, 5, 7]
+
+
+
+
+
     
     
     

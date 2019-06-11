@@ -19,39 +19,40 @@
 
 <!-- Start Atm Wrapper -->
 <div class="col-sm-6">        
-    <div class="contentBlock">
-		<h2>Welcome to ATM</h2>
-        <div class="atmWrapper">
-            <form class="atmForm" name="atmForm">                
-                <div class="form-group">
-                    <label>Enter the Amount</label>
-                    <input type="number" id="amount" name="amount"/>
-                    <span class="defVal"></span>
-                </div>
-                <button type="button" onclick="atmApp();">Get Money</button>
-            </form>
-        </div>       
+    <div class="contentBlock clearfix">
+		<h2>Welcome to ATM</h2>       
+        <form name="atmForm">                
+            <div class="form-group">
+                <label>Enter the Amount</label>
+                <input type="number" class="form-control" oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');" id="amount" name="amount"/>               
+            </div>
+            <div class="form-group">
+                <label></label>
+                 <button type="button" class="btn btn-primary" onClick='atmApp();'>Get Money</button>               
+            </div>           
+        </form>           
     </div>
 </div>
 <!-- End Atm Wrapper-->
 
 <div class="col-sm-6">
     <div class="contentBlock">
-        <div class="formResult">
-            <div class="title">You will get following amount</div>
+        <h2>Currency Count</h2>
+        <div class="cashResult">
+            <p><strong>You will get following amount</strong></p>
             <ul>
                 <li><span class="currency" id="price1">0</span> notes of Rs 1</li>
                 <li><span class="currency" id="price2">0</span> notes of Rs 2</li>
-                <li><span class="currency" id="price3">1</span> notes of Rs 5</li>
-                <li><span class="currency" id="price4">1</span> notes of Rs 10</li>
-                <li><span class="currency" id="price5">1</span> notes of Rs 20</li>
-                <li><span class="currency" id="price6">1</span> notes of Rs 50</li>
-                <li><span class="currency" id="price7">1</span> notes of Rs 100</li>
-                <li><span class="currency" id="price8">1</span> notes of Rs 200</li>
-                <li><span class="currency" id="price9">2</span> notes of Rs 500</li>
-                <li><span class="currency" id="price10">3</span> notes of Rs 2000</li>
+                <li><span class="currency" id="price3">0</span> notes of Rs 5</li>
+                <li><span class="currency" id="price4">0</span> notes of Rs 10</li>
+                <li><span class="currency" id="price5">0</span> notes of Rs 20</li>
+                <li><span class="currency" id="price6">0</span> notes of Rs 50</li>
+                <li><span class="currency" id="price7">0</span> notes of Rs 100</li>
+                <li><span class="currency" id="price8">0</span> notes of Rs 200</li>
+                <li><span class="currency" id="price9">0</span> notes of Rs 500</li>
+                <li><span class="currency" id="price10">0</span> notes of Rs 2000</li>
             </ul>
-            <div class="totalCount">Total notes dispensed: <span id="noteCount">12</span></div>
+            <div class="totalCount"><strong>Total notes dispensed: <span class="text-danger" id="noteCount">0</span></strong></div>
         </div>
     </div>
 </div>

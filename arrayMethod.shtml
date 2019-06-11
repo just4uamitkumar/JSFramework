@@ -30,6 +30,17 @@
     </div>
 </div>
 <!-- End Filter Data -->
+    
+    <!-- Start Filter Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2>var myArray = [3, 10, 12, 11, 5, 10, 3, 12];</h2>	
+        <div class="block">
+			<p>Sort Array : <span id="am5"></span></p>
+		</div>       
+    </div>
+</div>
+<!-- End Filter Data -->
 
 
 <script src="./js/array/arrayMethod.js"></script>
