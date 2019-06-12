@@ -5,18 +5,15 @@
     var tabHead = document.querySelectorAll(".tabWrapper > h4");
     tab[0].classList.add("active");
     tabWrapper[0].classList.add("active");
-    var i, j, y, z;        
-
+    var i, j, y, z;
+    
+    
     var tabArr = ['First Tab', 'Second Tab', 'Third Tab', 'Fourth Tab'];
-   
-   
-    for (y = 0; y < tab.length; y++) { 
-        tab[y].innerHTML = (y + 1) + ' : ' + tabArr[y] ; 
-    }
-
-    for (z = 0; z < tabHead.length; z++) { 
-        tabHead[z].innerHTML = tabArr[z]; 
-    }          
+    
+    tabArr.forEach((elem, index) => {       
+        tab[index].innerHTML = (index + 1)  + ' : ' + elem; 
+        tabHead[index].innerHTML = elem;
+    });
   
     
     function openTab(){

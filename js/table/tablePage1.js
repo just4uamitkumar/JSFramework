@@ -65,9 +65,15 @@
     
 }());
 
+//Append td
 (function(){
     var colorNames = ['Color A', 'Color B', 'Color C', 'Color D', 'Color E', 'Color F', 'Color G', 'Color H', 'Color I'];
-    var n, txt =''
+    var n, txt ='';
+    
+    colorNames.forEach((element) => {
+        document.getElementById("colorTable").tBodies[0].innerHTML = "<tr><td><button class='btn pickColor'></button></td><td>" + element + "</td></tr>"
+    });
+    
      for (var n=0; n < colorNames.length; n++) {
         txt += "<tr>" +
             "<td>" +
