@@ -11,7 +11,7 @@
    
    
     for (y = 0; y < tab.length; y++) { 
-        tab[y].innerHTML = tabArr[y]; 
+        tab[y].innerHTML = (y + 1) + ' : ' + tabArr[y] ; 
     }
 
     for (z = 0; z < tabHead.length; z++) { 
