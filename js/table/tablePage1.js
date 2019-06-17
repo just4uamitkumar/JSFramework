@@ -70,22 +70,24 @@
     var colorNames = ['Color A', 'Color B', 'Color C', 'Color D', 'Color E', 'Color F', 'Color G', 'Color H', 'Color I'];
     var n, txt ='';
     
-    colorNames.forEach((element) => {
-        document.getElementById("colorTable").tBodies[0].innerHTML = "<tr><td><button class='btn pickColor'></button></td><td>" + element + "</td></tr>"
+    colorNames.forEach((element, index) => {
+        document.getElementById("colorTable").tBodies[0].innerHTML += "<tr><td><div class='color'></div>" + 
+                          "<button class='btn pickColor'><i class='fa fa-eyedropper'></i></button></td><td>" + element + "</td></tr>"
     });
     
-     for (var n=0; n < colorNames.length; n++) {
-        txt += "<tr>" +
-            "<td>" +
-                "<div class='color'></div>"+
-                "<button class='btn pickColor'>" +
-                    "<i class='fa fa-eyedropper'></i>" +
-                "</button>" +
-            "</td>" + 
-            "<td>" + colorNames[n] + "</td>" +                       
-          "</tr>";  
-    }
-    document.getElementById("colorTable").tBodies[0].innerHTML = txt;
+//     for (var n=0; n < colorNames.length; n++) {
+//        txt += "<tr>" +
+//            "<td>" +
+//                "<div class='color'></div>"+
+//                "<button class='btn pickColor'>" +
+//                    "<i class='fa fa-eyedropper'></i>" +
+//                "</button>" +
+//            "</td>" + 
+//            "<td>" + colorNames[n] + "</td>" +                       
+//          "</tr>";  
+//    }
+    //document.getElementById("colorTable").tBodies[0].innerHTML = txt;
+    
 })();
 
 
