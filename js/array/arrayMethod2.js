@@ -1,12 +1,8 @@
 function atmApp(){
    //debugger;
     var amountValue = document.atmForm.amount.value;
-    var price = document.getElementsByClassName('currency');
+    var price = document.querySelectorAll('.currency');    
     var noteCount = document.getElementById('noteCount');
-    
-    for(var i = 0; i < price.length; i++){
-        price[i].innerHTML = 0;
-    }
     
     var x = amountValue;
     var abc = x;
@@ -14,8 +10,10 @@ function atmApp(){
     if(amountValue == ''){
         alert('Enter amount you want to despatch');
         return false;
-    }
-    
+    } 
+      
+    const beforeCount = [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
+    document.getElementById('firstArr').innerHTML = beforeCount;   
            
    while(x > 0){
         if(x >= 2000) {
@@ -66,20 +64,17 @@ function atmApp(){
         else if(x >= 1){
             document.getElementById('price1').innerHTML = Math.trunc(x/1);
             x = x - (Math.trunc(x/1) * 1);
-        } 
-       
+        }
     }
     
      var arr =[];
     
-     for (var j = 0; j < price.length; j++){
-         
-         arr.push(parseInt(price[j].innerHTML));
-         
-         var total = arr.reduce(function(a, b) { return a + b; }, 0);
-         
-         noteCount.innerHTML = total
-       
+     for (var j = 0; j < price.length; j++){         
+         arr.push(parseInt(price[j].innerHTML));         
+         var total = arr.reduce(function(a, b) { return a + b; }, 0);         
+         noteCount.innerHTML = total       
      }
-  
+    
+     const afterCount = [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
+     document.getElementById('lastArr').innerHTML = afterCount  
 }

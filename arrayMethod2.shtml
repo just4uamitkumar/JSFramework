@@ -54,6 +54,11 @@
             </ul>
             <div class="totalCount"><strong>Total notes dispensed: <span class="text-danger" id="noteCount">0</span></strong></div>
         </div>
+        <hr/>
+        <div class="clearfix">
+            <p id="firstArr" class="pull-left"></p>
+            <p id="lastArr" class="pull-right"></p>
+        </div>
     </div>
 </div>
 
