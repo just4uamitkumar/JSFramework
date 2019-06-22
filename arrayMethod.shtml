@@ -22,21 +22,40 @@
     <div class="contentBlock">
 		<h2>var arr = [2, 4, 2, 1, 5, 4, 1, 7];</h2>	
         <div class="block">
-			<p>Sort Array : <span id="am1"></span></p>
-			<p>Sort Array : <span id="am2"></span></p>
-            <p>Sort Array : <span id="am3"></span></p>
-            <p>Sort Array : <span id="am4"></span></p>
+            <p>Sort Array : <span id="am1"></span></p>
 		</div>       
     </div>
 </div>
 <!-- End Filter Data -->
     
-    <!-- Start Filter Data -->
+<!-- Start Filter Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2> var materials = ['Hydrogen','Helium','Lithium','Beryllium'];</h2>	
+        <div class="block">
+            <p>Sort Array : <span id="am2"></span></p>
+		</div>       
+    </div>
+</div>
+<!-- End Filter Data -->
+    
+<!-- Start Filter Data -->
 <div class="col-sm-6">        
     <div class="contentBlock">
 		<h2>var myArray = [3, 10, 12, 11, 5, 10, 3, 12];</h2>	
         <div class="block">
-			<p>Sort Array : <span id="am5"></span></p>
+			<p>Sort Array : <span id="am3"></span></p>
+		</div>       
+    </div>
+</div>
+<!-- End Filter Data -->
+    
+<!-- Start Filter Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2>var names = ["John", "Peter", "Clark", "Harry", "John", "Alice", "Clark"];</h2>	
+        <div class="block">
+			<p>Sort Array : <span id="am4"></span></p>
 		</div>       
     </div>
 </div>
