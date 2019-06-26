@@ -1,6 +1,24 @@
+  //amountValue = null;
+
+function resetAmt(){
+   document.atmForm.amount.value = '';
+     var price = document.querySelectorAll('.currency');
+     var noteCount = document.getElementById('noteCount');
+    
+for (var j = 0; j < price.length; j++){         
+     price[j].innerHTML = 0;
+     noteCount.innerHTML = 0 ;   
+     
+ }
+    
+    const afterCount = [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
+    document.getElementById('lastArr').innerHTML = afterCount
+
+};
+
 function atmApp(){
    //debugger;
-    var amountValue = document.atmForm.amount.value;
+  var amountValue = document.atmForm.amount.value;
     var price = document.querySelectorAll('.currency');    
     var noteCount = document.getElementById('noteCount');
     
@@ -10,7 +28,12 @@ function atmApp(){
     if(amountValue == ''){
         alert('Enter amount you want to despatch');
         return false;
-    } 
+    }
+    
+    for (var j = 0; j < price.length; j++){         
+         price[j].innerHTML = 0;
+         noteCount.innerHTML = 0 ;
+     }
       
     const beforeCount = [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
     document.getElementById('firstArr').innerHTML = beforeCount;   
@@ -77,4 +100,11 @@ function atmApp(){
     
      const afterCount = [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
      document.getElementById('lastArr').innerHTML = afterCount  
+}
+
+
+function delAmount(){
+    //e.preventDefault();
+   var amountValue = document.atmForm.amount.value;    
+    document.atmForm.amount.value = amountValue.slice(0, -1);
 }
