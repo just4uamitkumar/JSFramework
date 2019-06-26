@@ -24,11 +24,13 @@
         <form name="atmForm">                
             <div class="form-group">
                 <label>Enter the Amount</label>
-                <input type="number" class="form-control" oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');" id="amount" name="amount"/>               
+                <input type="number" class="form-control" oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');" id="amount" name="amount" />
+                <button type="button" class="btn btn-danger backSpace" onClick='delAmount();'><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
             </div>
             <div class="form-group">
                 <label></label>
-                 <button type="button" class="btn btn-primary" onClick='atmApp();'>Get Money</button>               
+                 <button type="button" class="btn btn-primary" onClick='atmApp();'>Get Money</button>
+                <button type="button" onClick='resetAmt()' class="btn btn-danger" >Clear</button> 
             </div>           
         </form>           
     </div>
