@@ -1,32 +1,56 @@
 //Tab Function
 (function (){
     var i, j, k, x, y;
-    var numbBtn = document.querySelectorAll('.numb');
-    var countBtn = document.querySelectorAll('.count');
-    var result = document.getElementById('result');
+    var button = document.querySelectorAll('button');
     var calcVal = document.getElementById('calcVal');
     
    
-    for (i = 0; i < numbBtn.length; i++) {       
-        numbBtn[i].addEventListener("click", EnterKey);
+    for (i = 0; i < button.length; i++) {       
+        button[i].addEventListener("click", EnterKey);
     }  
     
     function EnterKey(){        
-        var btnText = this.innerHTML;
-        calcVal.value = '';
-        calcVal.value += btnText;
+        var btnText = this.name;
+        if(btnText === '=' ){
+            calculate();
+        }
+        
+        else if(btnText === 'C'){
+          reset();
+        }
+        
+        else if(btnText === "CE"){
+            backspace();
+        }
+        
+        else {
+            calcVal.value = calcVal.value + btnText
+          
+        }
+        
+       
     }
 
-    document.getElementById('del').onclick = function(){
-        if (calcVal.value.length > 0){
-           calcVal.value = calcVal.value.substring(0, calcVal.value.length - 1); 
-        } 
+    
+   function calculate(){
+       try{
+           calcVal.value = eval(calcVal.value || '') + ''
+       }
+       catch(e){
+           calcVal.value = 'error'
+      }
+   }
+    
+    function reset() {
+        calcVal.value =''
     }
-
-    document.getElementById('delAll').onclick = function(){
-        if (calcVal.value.length > 0){
-           calcVal.value = 0; 
-        } 
+    
+    function backspace()  {
+      calcVal.value.slice(0, -1);        
+    }
+    
+    function result() {
+        calcVal.value=""       
     }
 
 }());
