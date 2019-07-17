@@ -58,9 +58,18 @@
     var uniqueNames = getUnique(names);
     console.log(uniqueNames); // Prints: ["Amit", "Ajay", "Raj", "Monti", "Clark"]
     
-    document.getElementById('am4').innerHTML = uniqueNames
+    document.getElementById('am4').innerHTML = uniqueNames;
+     
+    
+    var x = (! + [] + [] + []).length;   //Result 9
+    
+    var y = (! + [] + [] + []).length;   //Result 4
+    
+       
      
 })();
+
+
 
 
 
