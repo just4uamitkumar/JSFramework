@@ -27,14 +27,14 @@ function myFunction2(){
 })();
 
 var arr = [4, 6, 8, 12];
-function isOddA(element, index, array){
+function isOdd(element, index, array){
 	return (element%2 == 1);
 }
 
-function isOddB(element, index, array){
+function isEven(element, index, array){
 	return (element%2 == 0);
 }
 
 
-document.getElementById('find2B').innerHTML = arr.find(isOddA);
-document.getElementById('find2C').innerHTML = arr.find(isOddB);
+document.getElementById('find2B').innerHTML = arr.find(isOdd);
+document.getElementById('find2C').innerHTML = arr.find(isEven);

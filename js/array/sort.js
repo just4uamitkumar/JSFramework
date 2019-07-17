@@ -1,6 +1,5 @@
 (function(){
 	var fruits = ["Banana", "Orange", "Apple", "Mango"];
-	//document.getElementById("demo").innerHTML = fruits;
 	fruits.sort();
 	document.getElementById("sort1A").innerHTML = fruits;
 	 
@@ -13,12 +12,12 @@
 	document.getElementById('sort2A').innerHTML = points;
 	
 	points.sort(function(a, b){return a - b});
-	document.getElementById('sort2B').innerHTML = points;
-	document.getElementById('sort2BA').innerHTML = points[0];
+	document.getElementById('sort2B').innerHTML = points;   
+	document.getElementById('sort2BA').innerHTML = points[0] + ', ' + points[points.length - 1]; //Lowest Value, Highest Value
 	
 	points.sort(function(a, b){return b - a});
 	document.getElementById('sort2C').innerHTML = points;
-	document.getElementById('sort2CA').innerHTML = points[0];
+	document.getElementById('sort2CA').innerHTML = points[0]; //Highest Value
 	
 	//math max array
 	document.getElementById("sort3A").innerHTML = myArrayMax(points);

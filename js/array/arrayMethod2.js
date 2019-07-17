@@ -1,27 +1,26 @@
   //amountValue = null;
+var price = document.querySelectorAll('.currency');
+var noteCount = document.getElementById('noteCount');
+
+function resetVal(){
+    for (var j = 0; j < price.length; j++){         
+         price[j].innerHTML = 0;
+         noteCount.innerHTML = 0;        
+     }
+}
 
 function resetAmt(){
    document.atmForm.amount.value = '';
-     var price = document.querySelectorAll('.currency');
-     var noteCount = document.getElementById('noteCount');
     
-for (var j = 0; j < price.length; j++){         
-     price[j].innerHTML = 0;
-     noteCount.innerHTML = 0 ;   
-     
- }
+   resetVal();    
     
-    const afterCount = [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
-    document.getElementById('lastArr').innerHTML = afterCount
-
+    document.getElementById('lastArr').innerHTML = 
+        [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
 };
 
 function atmApp(){
    //debugger;
-  var amountValue = document.atmForm.amount.value;
-    var price = document.querySelectorAll('.currency');    
-    var noteCount = document.getElementById('noteCount');
-    
+  var amountValue = document.atmForm.amount.value;    
     var x = amountValue;
     var abc = x;
     
@@ -30,13 +29,9 @@ function atmApp(){
         return false;
     }
     
-    for (var j = 0; j < price.length; j++){         
-         price[j].innerHTML = 0;
-         noteCount.innerHTML = 0 ;
-     }
+    resetVal();
       
-    const beforeCount = [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
-    document.getElementById('firstArr').innerHTML = beforeCount;   
+   document.getElementById('firstArr').innerHTML = [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
            
    while(x > 0){
         if(x >= 2000) {
@@ -92,19 +87,18 @@ function atmApp(){
     
      var arr =[];
     
-     for (var j = 0; j < price.length; j++){         
-         arr.push(parseInt(price[j].innerHTML));         
+     for (var h = 0; h < price.length; h++){         
+         arr.push(parseInt(price[h].innerHTML));         
          var total = arr.reduce(function(a, b) { return a + b; }, 0);         
          noteCount.innerHTML = total       
-     }
-    
-     const afterCount = [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
-     document.getElementById('lastArr').innerHTML = afterCount  
+     }    
+   
+     document.getElementById('lastArr').innerHTML = 
+         [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
 }
 
 
-function delAmount(){
-    //e.preventDefault();
+function delAmount(){    
    var amountValue = document.atmForm.amount.value;    
-    document.atmForm.amount.value = amountValue.slice(0, -1);
+    document.atmForm.amount.value = amountValue.slice(0, -1);  
 }
