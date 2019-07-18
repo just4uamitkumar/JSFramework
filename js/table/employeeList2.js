@@ -28,7 +28,7 @@ function CreateTableFromJSON() {
             "Emp ID": "4",
             "Name": "Arya Bhushan",
             "Designation":"Graphic Designer",
-            "Experience":"5 Year",
+            "Experience":"2 Year",
             "Technology":"Photoshop",
             "Rating":"Average"
         },
@@ -40,7 +40,33 @@ function CreateTableFromJSON() {
             "Experience":"4 Year",
             "Technology":"HTML5",
             "Rating":"Good"
+        },
+        {
+            "Emp ID": "6",
+            "Name": "Jitender",
+            "Designation":"HTML Developer",
+            "Experience":"2 Year",
+            "Technology":"HTML",
+            "Rating":"Average"
+        },
+        {
+            "Emp ID": "7",
+            "Name": "Sandeep",
+            "Designation":"Graphic Designer",
+            "Experience":"4 Year",
+            "Technology":"Photoshop",
+            "Rating":"Average"
+        },
+
+        {
+            "Emp ID": "8",
+            "Name": "Govind",
+            "Designation":"Graphic Designer",
+            "Experience":"3 Year",
+            "Technology":"HTML5",
+            "Rating":"Good"
         }
+        
     ]
 
     // EXTRACT VALUE FOR HTML HEADER. 
@@ -92,3 +118,30 @@ function CreateTableFromJSON() {
 }
 
 CreateTableFromJSON();
+
+
+//Remove Duplicate from array
+var getTD = document.querySelectorAll('td');
+var listTD = [];
+
+for (var k = 0; k < getTD.length; k++){
+    var tdVal = getTD[k].innerHTML;
+    listTD.push(tdVal);
+    
+}
+console.log(listTD)
+
+function getUnique(array){
+    var uniqueArray = [];
+        
+    // Loop through array values
+    for(i=0; i < array.length; i++){
+        if(uniqueArray.indexOf(array[i]) === -1) {
+            uniqueArray.push(array[i]);
+        }
+    }
+    return uniqueArray;
+}   
+
+var uniqueNames = getUnique(listTD);
+console.log(uniqueNames); 
