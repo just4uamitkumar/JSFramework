@@ -226,6 +226,8 @@ button, .btn { box-shadow:1px 1px 2px rgba(0,0,0,0.4); padding: 6px 14px; cursor
 .btn + .btn{margin-left: 10px;}
 .btn.disable{opacity: 0.5;}
 .btn-primary{background: #053ee6;  border-color: #2f1cb5;}
+.btn-noColor{background: none; border:0; box-shadow: none;
+    color: #0e0e0e;}
 .btn-info{background: #1d87c7; border-color: #8bb6da;}
 .btn-warning{background: #dc5e22; border-color: #b14614;}
 .btn-danger{background: #F00; border-color: #941010;}

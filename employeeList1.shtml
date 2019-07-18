@@ -24,12 +24,24 @@
         <table id="employee_table" class="table">
             <thead>
                 <tr>
-                    <th>Emp ID</th>
-                    <th>Name</th>
-                    <th>Designation</th>
-                    <th>Experience</th>
-                    <th>Technology</th>
-                    <th>Rating</th>
+                    <th>Emp ID 
+                        <button id="sortA" onclick="sortaA()" class="btn btn-noColor pull-right"><i class="fa fa-hand-o-down"></i></button>
+                    </th>
+                    <th>Name
+                        <button id="sortB" class="btn btn-noColor pull-right"><i class="fa fa-hand-o-down"></i></button>
+                    </th>
+                    <th>Designation
+                        <button class="btn btn-noColor pull-right"><i class="fa fa-hand-o-down"></i></button>
+                    </th>
+                    <th>Experience
+                        <button class="btn btn-noColor pull-right"><i class="fa fa-hand-o-down"></i></button>
+                    </th>
+                    <th>Technology
+                        <button class="btn btn-noColor pull-right"><i class="fa fa-hand-o-down"></i></button>
+                    </th>
+                    <th>Rating
+                        <button class="btn btn-noColor pull-right"><i class="fa fa-hand-o-down"></i></button>
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -39,7 +51,7 @@
 </div>
 <!-- End Form Validaton -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/jquery.js"></script>
 <script src="./js/table/employeeList1.js"></script>
 
 <!--| Footer File Include Here |-->
