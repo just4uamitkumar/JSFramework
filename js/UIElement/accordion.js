@@ -5,13 +5,14 @@
     var accHead = document.querySelectorAll(".accWrapper > h2");   
 
     var arrAcc = ['First Accordion', 'Second Accordion', 'Third Accordion', 'Fourth Accordion'];
-    var i, j, k, l;
-
-    //add array value in accordion head
-    for (l = 0; l < accHead.length; l++ ){
-        accHead[l].innerHTML = arrAcc[l];
-    }
-
+    var i, j, k;
+    
+    arrAcc.forEach((elem, index) => {       
+        accHead[index].innerHTML = elem; 
+        acc[index].innerHTML = elem;
+    });
+    
+   
     function openAccordion(){
         var accAttr = this.getAttribute("data-acc");        
         var y = document.getElementById(accAttr);
@@ -35,7 +36,6 @@
     }
 
     for (i = 0; i < acc.length; i++) { 
-        acc[i].innerHTML = arrAcc[i];
         acc[i].addEventListener("click", openAccordion);
     }      
 }());

@@ -1,4 +1,3 @@
-
 (function(){
     var i, j, k;
     var expandRow = document.querySelectorAll('.expandRow');
@@ -70,38 +69,27 @@
     var colorNames = ['Color A', 'Color B', 'Color C', 'Color D', 'Color E', 'Color F', 'Color G', 'Color H', 'Color I'];
     var n, txt ='';
     
-    colorNames.forEach((element, index) => {
+    colorNames.forEach( el => {
         document.getElementById("colorTable").tBodies[0].innerHTML += "<tr><td><div class='color'></div>" + 
-                          "<button class='btn pickColor'><i class='fa fa-eyedropper'></i></button></td><td>" + element + "</td></tr>"
+                          "<button class='btn pickColor'><i class='fa fa-eyedropper'></i></button></td><td>" + el + "</td></tr>"
     });
-    
-//     for (var n=0; n < colorNames.length; n++) {
-//        txt += "<tr>" +
-//            "<td>" +
-//                "<div class='color'></div>"+
-//                "<button class='btn pickColor'>" +
-//                    "<i class='fa fa-eyedropper'></i>" +
-//                "</button>" +
-//            "</td>" + 
-//            "<td>" + colorNames[n] + "</td>" +                       
-//          "</tr>";  
-//    }
-    //document.getElementById("colorTable").tBodies[0].innerHTML = txt;
     
 })();
 
 
 //Show Modal Popup
 (function(){
-
     var i, j, k, l;
-
     var colors = ['green', 'red', 'dodgerBlue', 'pink', 'yellow', 'orange', 'slateBlue','violet','DarkBlue' ];
     
     var colorBox = document.querySelectorAll('.colorList li a');
     colorLi = document.querySelectorAll('.colorList li')
-    var actModal = document.getElementById('chooseColor');
-   
+    var actModal = document.getElementById('chooseColor'); 
+    
+     colors.forEach( (elment, index) => {
+        colorBox[index].setAttribute('data-color', elment)
+    });
+    
 
     function closeModal(){
         actModal.classList.add('hide');
@@ -115,16 +103,10 @@
 
         // remove the empty element
         mParent.removeChild(mShadow); 
-    }
-
-    //Add color on Popup items
-    for (i = 0; i < colorBox.length; i++){
-        colorBox[i].setAttribute('data-color', colors[i])
-    }
-
-    var pickBtn = document.querySelectorAll('.pickColor');
-    var colorCont = document.querySelectorAll('.color');
+    }   
     
+    var pickBtn = document.querySelectorAll('.pickColor');
+    var colorCont = document.querySelectorAll('.color');    
     var chooseColor = null;
 
     function openModal(){
@@ -192,11 +174,6 @@
 
         for(var m = 0; m < colorCont.length; m++ ){ 
             colorCont[m].removeAttribute('data-color');       
-        }      
-
-    }
-
-    
-
- 
+        }
+    } 
 })();

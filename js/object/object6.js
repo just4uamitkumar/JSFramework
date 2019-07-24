@@ -11,9 +11,6 @@ function loadDoc1() {
   xhttp.send();
 }
 
-
-
-
 //The XMLHttpRequest Object
 function loadDoc2() {
   //Read Json Data
@@ -41,12 +38,9 @@ function loadDoc2() {
 	  			"<td>" + myObj.users[i].occupatoin + "</td>" +	  			
 	  		  "</tr>";  
 	  	}
-
 		document.getElementById("myTable").tBodies[0].innerHTML = txt;
 	}
 	};
 	xhttp.open("GET", "./js/db/user4.json", true);
 	xhttp.send();
 }
-
-

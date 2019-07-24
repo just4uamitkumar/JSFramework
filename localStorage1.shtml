@@ -41,9 +41,6 @@
 
 
 <script>
-
-//The Local Storage
-
 // Check browser support
 function getName1(){ 
    if (typeof(Storage) !== "undefined") {
@@ -54,8 +51,7 @@ function getName1(){
   } else {
     document.getElementById("failed1").innerHTML = "Sorry, your browser does not support Web Storage...";
   }
-} 
-
+}
 
 // Check browser support
 function getName2(){ 
@@ -68,8 +64,6 @@ function getName2(){
     document.getElementById("failed2").innerHTML = "Sorry, your browser does not support Web Storage...";
   }
 } 
-
-
 </script>
 
 <!--| Footer File Include Here |-->

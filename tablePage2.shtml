@@ -20,7 +20,7 @@
 <!-- Start Form Validaton -->
 <div class="col-sm-12">        
     <div class="contentBlock">
-        <h2>HandelBar Example 1 <button class="btn btn-primary pull-right addRecord">Add Record</button></h2>
+        <h2>HandelBar Example 1 <button class="btn btn-primary pull-right" id="addData">Add Record</button></h2>
         
         <div class="table-responsive">
             <table class="table">
@@ -84,7 +84,7 @@
 <!-- End 5th Modal -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/jquery.js"></script>
 
 <script id="listItemTemplate" type="text/x-handlebars-template">   
     <tr class="headRow"  id={{id}}>

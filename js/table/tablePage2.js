@@ -1,28 +1,18 @@
 //Open add Record Modal
-(function(){
-    var i, j, k, l;
-    var addRecordBtn = document.querySelectorAll('.addRecord');
-    var activeM = document.getElementById('addRecord');
-    //Open Modal 
-    function addRecord(e){
-        e.preventDefault();
-        //Show Modal
-        activeM.classList.remove('hide');
-        document.body.style.overflow = 'hidden';
-
-        //Add dark shadow behind modal
-        var mShadow = document.createElement('div');
-        mShadow.setAttribute('class','mShadow');    
-        activeM.parentNode.insertBefore(mShadow, activeM);   
-        mShadow.appendChild(activeM);    
-    }
-
-    for(i = 0; i < addRecordBtn.length; i++ ){
-        addRecordBtn[i].addEventListener("click", addRecord);
-    }
-      
-})();
-
+ document.getElementById('addData').onclick = function(e){
+     e.preventDefault();
+     var activeM = document.getElementById('addRecord');
+     
+     //Show Modal
+     activeM.classList.remove('hide');
+     document.body.style.overflow = 'hidden';
+     
+     //Add dark shadow behind modal
+    var mShadow = document.createElement('div');
+    mShadow.setAttribute('class','mShadow');    
+    activeM.parentNode.insertBefore(mShadow, activeM);   
+    mShadow.appendChild(activeM);       
+ }
 
 //Open Delete Row Modal 
 var tRow = 'null';
@@ -81,8 +71,7 @@ $(function(){
   var $addTodoForm = $('#addTodo');
   var $tbody = $('tbody');
 
-  var url = 'http://localhost:3000/todos'; //dba.json
-
+  var url = 'http://localhost:3000/todos'; //dba.json  
   //Template
   var source = $('#listItemTemplate').html();
   var template = Handlebars.compile(source)
@@ -90,7 +79,6 @@ $(function(){
   //Add TodoList
   $addTodoForm.on('submit', function(e){
     e.preventDefault();
-    //alert('test');
     var newTodo = $addTodoForm.find('input').val();
     
     $addTodoForm.find('input').val('');
@@ -102,11 +90,8 @@ $(function(){
         text: newTodo
       }
     }).done(function(newTodo){
-      var listItem = template({
-            text: newTodo.text,
-            id:newTodo.id
-          });
-
+      var listItem = template({ text: newTodo.text, id:newTodo.id });
+        
       $tbody.append(listItem)
     }).fail(function(){
       //Err
