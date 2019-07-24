@@ -21,33 +21,33 @@
 <div class="col-sm-4">        
     <div class="contentBlock clearfix">
         <div class="calculator">
-            <input type="text" value=""/ id="calcVal">
+            <input type="text" value="" id="calcVal">
             <div class="calcWrapper">
                 <ul>
-                    <li ><button name="(" type="button" class="btn btn-warning ">(</button></li>
-                    <li ><button name="CE" type="button" class="btn btn-warning ">CE</button></li>
-                    <li ><button name=")" type="button" class="btn btn-warning ">)</button></li>
-                    <li ><button name="C" type="button" class="btn btn-warning ">C</button></li>
+                    <li><button name="(" type="button" class="btn btn-warning ">(</button></li>
+                    <li><button name="CE" type="button" class="btn btn-warning ">CE</button></li>
+                    <li><button name=")" type="button" class="btn btn-warning ">)</button></li>
+                    <li><button name="C" type="button" class="btn btn-warning ">C</button></li>
                     
-                    <li ><button name="1" type="button" class="btn btn-info">1</button></li>
-                    <li ><button name="2" type="button" class="btn btn-info">2</button></li>
-                    <li ><button name="3" type="button" class="btn btn-info">3</button></li>
-                    <li ><button name="+" type="button" class="btn btn-warning">+</button></li>
+                    <li><button name="1" type="button" class="btn btn-info">1</button></li>
+                    <li><button name="2" type="button" class="btn btn-info">2</button></li>
+                    <li><button name="3" type="button" class="btn btn-info">3</button></li>
+                    <li><button name="+" type="button" class="btn btn-warning">+</button></li>
                     
-                    <li ><button name="4" type="button" class="btn btn-info">4</button></li>
-                    <li ><button name="5" type="button" class="btn btn-info">5</button></li>
-                    <li ><button name="6" type="button" class="btn btn-info">6</button></li>
-                    <li ><button name="-" type="button" class="btn btn-warning">-</button></li>
+                    <li><button name="4" type="button" class="btn btn-info">4</button></li>
+                    <li><button name="5" type="button" class="btn btn-info">5</button></li>
+                    <li><button name="6" type="button" class="btn btn-info">6</button></li>
+                    <li><button name="-" type="button" class="btn btn-warning">-</button></li>
 
-                    <li ><button name="7" type="button" class="btn btn-info">7</button></li>
-                    <li ><button name="8" type="button" class="btn btn-info">8</button></li>
-                    <li ><button name="9" type="button" class="btn btn-info">9</button></li>
-                    <li ><button name="*" type="button" class="btn btn-warning">X</button></li>
+                    <li><button name="7" type="button" class="btn btn-info">7</button></li>
+                    <li><button name="8" type="button" class="btn btn-info">8</button></li>
+                    <li><button name="9" type="button" class="btn btn-info">9</button></li>
+                    <li><button name="*" type="button" class="btn btn-warning">X</button></li>
                     
-                    <li ><button name="." type="button" class="btn btn-info">.</button></li>
-                    <li ><button name="0" type="button" class="btn btn-info">0</button></li>
-                    <li ><button name="=" type="button" class="btn btn-warning">=</button></li>
-                    <li ><button name="/" type="button" class="btn btn-warning">÷</button></li>
+                    <li><button name="." type="button" class="btn btn-info">.</button></li>
+                    <li><button name="0" type="button" class="btn btn-info">0</button></li>
+                    <li><button name="=" type="button" class="btn btn-warning">=</button></li>
+                    <li><button name="/" type="button" class="btn btn-warning">÷</button></li>
                 </ul>
             </div>
         </div>

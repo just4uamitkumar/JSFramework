@@ -17,7 +17,7 @@
 </div>
 <!--end Page Header -->
 
-<!-- Start Get Data -->
+<!-- Object Constructor -->
 <div class="col-sm-6">
     <div class="contentBlock">    
         <h2>Object Constructor</h2>        
@@ -38,7 +38,22 @@
         <p id="demo1"></p>      
     </div>
 </div>
-<!-- End Get Data -->
+<!-- Object Constructor -->
+    
+<!-- Combine Two Objects -->
+<div class="col-sm-6">
+    <div class="contentBlock">    
+        <h2>Combine Two Objects</h2>        
+        <p class="m-b-10">var Obj1 = { food: 'pizza', car: 'ford' }</p>
+        <p>var Obj2 = { animal: 'dog' }</p>
+        <hr/>
+
+        <p class="m-b-10">ver merged = {...Obj1, ...Obj2}</p>
+        <p class="m-b-10">Object.assign({}, Obj1, Obj2, Obj3, Obj4)</p>      
+    </div>
+</div>
+<!-- Combine Two Objects -->
+
 
 <script src="./js/object/object4.js"></script>
 <!--| Footer File Include Here |-->

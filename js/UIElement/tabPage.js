@@ -13,8 +13,7 @@
     tabArr.forEach((elem, index) => {       
         tab[index].innerHTML = (index + 1)  + ' : ' + elem; 
         tabHead[index].innerHTML = elem;
-    });
-  
+    });  
     
     function openTab(){
        for (j = 0; j < tabWrapper.length; j++) { 
@@ -31,9 +30,9 @@
 
     for (i = 0; i < tab.length; i++) { 
         tab[i].addEventListener("click", openTab);            
-    }
-    
+    }    
 }());
+
 
 //Select Tab by dropdown
 (function() {

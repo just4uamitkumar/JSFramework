@@ -25,8 +25,7 @@
            var fruits = ["Banana", "Orange", "Apple", "Mango"];                 
         </div>
         <div class="block">
-            <div id='sort1A' class="m-b-10"></div>
-			<div id='sort1B' class="m-b-10"></div>			
+            <div id='sort1A' class="m-b-10"></div>		
         </div>        
     </div>
 </div>

@@ -1,57 +1,36 @@
  //Number
 var count = '120';
-
 document.getElementById('demo1').innerHTML = typeof(count);
-
 
 //String
 var empName = 'Bassel Beani'; 
-
-document.getElementById('demo2').innerHTML = typeof(empName); 
-
+document.getElementById('demo2').innerHTML = typeof(empName);
 
 //Bolean
 var x = 10, y = 15, z = 15;
-
 document.getElementById('demo3').innerHTML = (z == y) + ', ' + typeof(z == y)
-
-
 
 //Undefind
 var clock;
 document.getElementById('demo4').innerHTML = typeof(clock);
 
-
 //Null
 var student = null;
-
 document.getElementById('demo5').innerHTML = typeof(student);
-
 
 //Object
 var bag = {size:'Large', color:'Black', price:'$20'}
-
 document.getElementById('demo6').innerHTML = typeof(bag);
-
-
 
 //Array
 var cityName = ["New Delhi", "Lucknow", "Allahabad"];
-
 document.getElementById('demo7').innerHTML = typeof(cityName);
-
 
 //Function
 function myFunc(){
 	//Your code will be here
 }
-
 document.getElementById('demo8').innerHTML = typeof(myFunc);
-
-
-
-
-
 
 
 if (typeof count === 'string') {

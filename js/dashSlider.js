@@ -6,8 +6,7 @@
     var social = document.getElementsByClassName('social');    
     var i, j, k;
 
-    function moveSocial(){
-             
+    function moveSocial(){             
 
         if(this.classList.contains('move')){
             this.classList.remove('move');

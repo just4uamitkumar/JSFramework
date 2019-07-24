@@ -2,8 +2,7 @@
 (function (){
     var i, j, k, x, y;
     var button = document.querySelectorAll('button');
-    var calcVal = document.getElementById('calcVal');
-    
+    var calcVal = document.getElementById('calcVal');    
    
     for (i = 0; i < button.length; i++) {       
         button[i].addEventListener("click", EnterKey);
@@ -24,11 +23,8 @@
         }
         
         else {
-            calcVal.value = calcVal.value + btnText
-          
-        }
-        
-       
+            calcVal.value = calcVal.value + btnText          
+        }      
     }
 
     

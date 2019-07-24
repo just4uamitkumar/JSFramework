@@ -11,12 +11,10 @@ function myFunction() {
   }
 }
 
-
 (function(){   
     var exitModal = document.getElementById('exitModal');    
     var exitBtn = document.getElementById("exitBtn");    
     var exitSpan = document.getElementsByClassName("close");
-    //var exitSpan2 = document.getElementsByClassName("close")[1]
     var i;  
 
     exitBtn.onclick = function() {
@@ -31,7 +29,7 @@ function myFunction() {
         exitSpan[i].onclick = closeModal;
     }   
     
-    exitSpan2.onclick = function() {
+    exitSpan.onclick = function() {
         exitModal.style.display = "none";
     }
     
@@ -41,3 +39,4 @@ function myFunction() {
         }
     } 
 }());
+

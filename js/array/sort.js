@@ -1,10 +1,7 @@
 (function(){
 	var fruits = ["Banana", "Orange", "Apple", "Mango"];
 	fruits.sort();
-	document.getElementById("sort1A").innerHTML = fruits;
-	 
-	fruits.reverse();
-	document.getElementById("sort1B").innerHTML = fruits;
+	document.getElementById("sort1A").innerHTML = fruits  + '<br/>' + '<br/>' + fruits.reverse();	
 	
 	var points = [40, 100, 1, 5, 25, 10];
 	points.sort();
