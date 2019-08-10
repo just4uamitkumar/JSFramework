@@ -28,7 +28,8 @@
 </div>
 <!-- Description About some -->
 
-<!-- Start Filter Data -->
+<div class="row">
+    <!-- Start Filter Data -->
 <div class="col-sm-6">        
     <div class="contentBlock">
 		<h2>Find the condition whether value is exist or not</h2>	
@@ -60,6 +61,9 @@
     </div>
 </div>
 <!-- End Filter Data -->
+</div>
+<!-- end row -->
+
 
 
 
