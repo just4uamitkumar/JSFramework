@@ -27,10 +27,10 @@ hr{margin: 20px 0; border-color: #fdfdfd;}
 
 
 /*------| Header |-----*/
-header {background: #696969; left: 0; position: fixed; right: 0; top: 0;  z-index: 1;}
+header.mainHeader {background: #696969; left: 0; position: fixed; right: 0; top: 0;  z-index: 1;}
 header .logo {background: #09667b; float: left; text-align: center; width: 230px}
 header .logo a {color: #fff; display: block; line-height: 0.8; padding: 15px; text-shadow: 1px 1px 1px #efefef; text-transform: uppercase}
-.headClock{float: left; color: #f7a45b;padding: 10px 9px 0;}    
+  
 .sidebar-toggle {background: rgba(255, 255, 255, 0.15); color: #fff; display: inline-block;
   padding: 9px 15px; text-align: center; float: left}
 .sidebar-toggle:hover {background: rgba(255, 255, 255, 0.3);}
@@ -44,9 +44,9 @@ border-radius: 50%; border: 12px double #585858; width: 140px; height: 140px; li
 
 
 /*-------| Navigation |--------*/
-.nav {float: right;}
-.nav > ul {font-size: 0; float: left;}
-.nav > ul > li {display: inline-block; position: relative}
+.nav {float: right; display: flex;}
+.nav > ul {font-size: 0; display: flex;}
+.nav > ul > li {position: relative}
 .nav > ul > li > a {border-right: 1px solid rgba(255, 255, 255, 0.2); color: #fff; display: block;
   font-size: 13px; padding: 11px 25px}
 .nav > ul > li > a:hover {background: rgba(255, 255, 255, 0.05)}
@@ -64,8 +64,9 @@ display: none; border-bottom: 2px solid #3C8900; border-radius: 0 0 5px 5px;}
 .nav > ul > li.hasNav > a:before {content: "\f103"; font-family: FontAwesome; position: absolute;
 font-size: 14px; right: 10px; top: 10px}
 .nav > ul > li.hasNav.active > a:before {content: "\f102"}
-.nav > a{float: left; display: inline-block; color: #ffffff; background: #359010;
+.nav > a{color: #ffffff; background: #359010;
 padding: 9px 16px 9px; box-shadow: -3px -3px 3px rgba(0,0,0,0.2); }
+.headClock{ color: #f7a45b;padding: 10px 9px 0;}  
 
 /*------| Sidebar |-----*/
 .wrapper {overflow: hidden; position: relative}
@@ -105,20 +106,21 @@ h3{padding: 0 0 10px; font-size: 1.3rem; }
 h4 { padding: 0 0 5px; font-size: 1.2rem}
 
 /*------| Columns |-----*/
-.row {margin: 0 -15px}
+.row {display: flex;}
 .col-sm-12 { width: calc(100% - 30px); padding:15px; float: none;}
 .col-sm-9 { width: calc(75% - 30px); padding:15px; float: left}
-.col-sm-8 {width: calc(66.666% - 30px); padding:15px;  float: left}
-.col-sm-6 {width: calc(50% - 30px); padding:15px; float: left}
-.col-sm-4 {width: calc(33.333% - 30px); padding:15px;  float: left}
-.col-sm-3 {width: calc(25% - 30px); padding:15px; float: left}
+.col-sm-8 {width: calc(66.666% - 30px); padding:15px;}
+.col-sm-6 {width: calc(50% - 30px); padding:15px;}
+.col-sm-4 {width: calc(33.333% - 30px); padding:15px;}
+.col-sm-3 {width: calc(25% - 30px); padding:15px}
 .col-sm-2 {width: calc(16.66% - 30px); padding:15px; float: left}
 
 /*-------| Tabs |--------*/
 .tabs {margin: 10px 0 0; border-bottom: 3px double #fff}
-.tabs ul li {display: inline-block; width: 24.4%;}
+.tabs ul {display: flex;}
+.tabs ul li {margin:0 4px;  width:24%;}
 .tabs ul li a {background: #444; color: #fff; display: block; font-size: 1rem;
-  padding: 10px 17px; width: calc(100% - 34px)}
+  padding: 10px 17px;}
 .tabs ul li a:hover, .tabs ul li a.active {background: #222}
 .tabCont, .tabContainer {margin: 10px 0}
 .tabCont .tabWrapper, .tabCont .tabWrap, .tabContainer .tabWrapper, .tabContainer .tabWrap {
@@ -145,8 +147,9 @@ font-size: 14px; right: 17px; top: 11px; transition: content 3s ease 0s}
 .accWrapper.active{display: block}
 
 /*-------| Responsive Tabs |--------*/
-.ResTabs ul li {display: inline-block; background: #0295B7}
-.ResTabs ul li a {display: block; text-decoration: none; font: 16px Arial,Helvetica,Sans-serif;
+.ResTabs ul{display: flex}
+.ResTabs ul li {background: #0295B7}
+.ResTabs ul li a {display: block; font: 16px Arial,Helvetica,Sans-serif;
   color: #fff; padding: 9px 36px}
 .ResTabs ul li a:hover{background: #1d7584;}
 .ResTabs ul li a.active {background: #13606d;}
@@ -415,8 +418,8 @@ span.close {color: #fff; float: right; font-size: 28px; line-height:1; font-weig
 #calcVal{padding:5px 10px; width: calc(100% - 25px); border: 3px #ddd ridge;
 background: #ccc; color: #000304; font-size: 18px; letter-spacing: 2px;
 text-transform: uppercase; font-family: Impact;}
-.calcWrapper ul{margin:10px -9px 5px; font-size: 0;}
-.calcWrapper ul li{width:calc(25% - 18px); padding: 5px 9px; display: inline-block;}
+.calcWrapper ul{margin:10px -9px 5px; font-size: 0; display: flex; flex-wrap: wrap}
+.calcWrapper ul li{width:calc(25% - 18px); padding: 5px 9px;}
 .calcWrapper ul li button{width: 100%; font-size: 18px; font-weight: 700;}
 
 
@@ -433,6 +436,7 @@ text-transform: uppercase; font-family: Impact;}
 #new1 input{width: 50px; margin: 0 3px 0 0 ;}
 
 /*--------| Gallery |-------*/
+.galleryPage{display: flex; flex-wrap: wrap;}
 .mShadow{background-color: rgba(0,0,0,0.7); position: fixed; left: 0; top: 0; right: 0;
 bottom: 0; z-index: 2;}
 .gModal{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
@@ -477,3 +481,6 @@ background: #c5d7ff; color: #2521e4; border:1px solid #2a5fd6;}
 .cashResult ul li{display: inline-block;  width: 46%;   padding: 5px 1%; font-size: 15px;
  border-top: 1px solid #ddd;}
 .backSpace{margin: 0 0 0 -43px; padding: 7px 14px 6px;}
+
+/*--------| Scroll Array |-------*/
+.scrollArray, .reverseArray, .breakArray  {display: flex;}

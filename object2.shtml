@@ -17,44 +17,48 @@
 </div>
 <!--end Page Header -->
 
-<!-- Start Get Data -->
-<div class="col-sm-12">
-    <div class="contentBlock">    
-        <h2>Access Object</h2>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Variable</th>
-                    <th>Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>var var employee =
-                        { 
-                            ID : '<strong id="var1A"></strong>',
-                            Name : '<strong id="var1B"></strong>',
-                            Designation : '<strong id="var1C"></strong>',
-                        }
-                    </td>
-                    <td><strong id="demo1"></strong></td>
-                </tr>
-                <tr>
-                    <td>var student =
-                        { 
-                            Roll No : '<strong id="var2A"></strong>',
-                            Name : '<strong id="var2B"></strong>',
-                            Subject : '<strong id="var2C"></strong>',
-                        }
-                    </td>
-                    <td><strong id="demo2"></strong></td>
-                </tr>
-                              
-            </tbody>            
-        </table>        
+<div class="row">
+    <!-- Start Get Data -->
+    <div class="col-sm-6">
+        <div class="contentBlock">    
+            <h2>Access Object</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>var var employee =
+                            { 
+                                ID : '<strong id="var1A"></strong>',
+                                Name : '<strong id="var1B"></strong>',
+                                Designation : '<strong id="var1C"></strong>',
+                            }
+                        </td>
+                        <td><strong id="demo1"></strong></td>
+                    </tr>
+                    <tr>
+                        <td>var student =
+                            { 
+                                Roll No : '<strong id="var2A"></strong>',
+                                Name : '<strong id="var2B"></strong>',
+                                Subject : '<strong id="var2C"></strong>',
+                            }
+                        </td>
+                        <td><strong id="demo2"></strong></td>
+                    </tr>
+
+                </tbody>            
+            </table>        
+        </div>
     </div>
+    <!-- End Get Data -->
 </div>
-<!-- End Get Data -->
+<!-- end row -->
+
 
 <script src="./js/object/object2.js"></script>
 <!--| Footer File Include Here |-->

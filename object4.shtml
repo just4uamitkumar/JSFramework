@@ -17,43 +17,45 @@
 </div>
 <!--end Page Header -->
 
-<!-- Object Constructor -->
-<div class="col-sm-6">
-    <div class="contentBlock">    
-        <h2>Object Constructor</h2>        
-        <p class="m-b-10">var objectName = new Object();</p>
-        <hr/>
+<div class="row">
+    <!-- Object Constructor -->
+    <div class="col-sm-6">
+        <div class="contentBlock">    
+            <h2>Object Constructor</h2>        
+            <p class="m-b-10">var objectName = new Object();</p>
+            <hr/>
 
-        <span class="text-muted"> //Object Constructor</span><br>
-        function city(name,state) <span id="var8A"></span> {<br>
-           &nbsp; &nbsp; this.name=name; <br> 
-           &nbsp; &nbsp; this.state=state;<br><br>
-           &nbsp; &nbsp; <span class="text-muted"> //Object Method</span><br>
-            &nbsp; &nbsp; this.changeName = changeName; <br><br>
+            <span class="text-muted"> //Object Constructor</span><br>
+            function city(name,state) <span id="var8A"></span> {<br>
+               &nbsp; &nbsp; this.name=name; <br> 
+               &nbsp; &nbsp; this.state=state;<br><br>
+               &nbsp; &nbsp; <span class="text-muted"> //Object Method</span><br>
+                &nbsp; &nbsp; this.changeName = changeName; <br><br>
 
-            &nbsp; &nbsp; function changeName(otherName){  <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; this.name=otherName; <br> 
-            &nbsp; &nbsp; }  <br>          
-        } 
-        <p id="demo1"></p>      
+                &nbsp; &nbsp; function changeName(otherName){  <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; this.name=otherName; <br> 
+                &nbsp; &nbsp; }  <br>          
+            } 
+            <p id="demo1"></p>      
+        </div>
     </div>
-</div>
-<!-- Object Constructor -->
-    
-<!-- Combine Two Objects -->
-<div class="col-sm-6">
-    <div class="contentBlock">    
-        <h2>Combine Two Objects</h2>        
-        <p class="m-b-10">var Obj1 = { food: 'pizza', car: 'ford' }</p>
-        <p>var Obj2 = { animal: 'dog' }</p>
-        <hr/>
+    <!-- Object Constructor -->
 
-        <p class="m-b-10">ver merged = {...Obj1, ...Obj2}</p>
-        <p class="m-b-10">Object.assign({}, Obj1, Obj2, Obj3, Obj4)</p>      
+    <!-- Combine Two Objects -->
+    <div class="col-sm-6">
+        <div class="contentBlock">    
+            <h2>Combine Two Objects</h2>        
+            <p class="m-b-10">var Obj1 = { food: 'pizza', car: 'ford' }</p>
+            <p>var Obj2 = { animal: 'dog' }</p>
+            <hr/>
+
+            <p class="m-b-10">ver merged = {...Obj1, ...Obj2}</p>
+            <p class="m-b-10">Object.assign({}, Obj1, Obj2, Obj3, Obj4)</p>      
+        </div>
     </div>
+    <!-- Combine Two Objects -->
 </div>
-<!-- Combine Two Objects -->
-
+<!-- end row -->
 
 <script src="./js/object/object4.js"></script>
 <!--| Footer File Include Here |-->

@@ -17,95 +17,108 @@
 </div>
 <!--end Page Header -->
 
-<!-- Start Filter Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">
-		<h2>Get values greater than 0</h2>	
-        <div class="m-b-10">
-            var filtered = [112, 52, 0, -1, 944]                      
+<div class="row">
+    <!-- Start Filter Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">
+            <h2>Get values greater than 0</h2>	
+            <div class="m-b-10">
+                var filtered = [112, 52, 0, -1, 944]                      
+            </div>
+            <div class="block">
+               <p class="m-b-10">Get new array value with greater than 0</p>
+                <div id='filter1'></div>
+            </div>        
         </div>
-        <div class="block">
-           <p class="m-b-10">Get new array value with greater than 0</p>
-            <div id='filter1'></div>
-        </div>        
     </div>
-</div>
-<!-- End Filter Data -->
+    <!-- End Filter Data -->
 
-<!-- Start Filter Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">
-		<h2>Get larger words</h2>	
-        <div class="m-b-10">
-            ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']                      
+    <!-- Start Filter Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">
+            <h2>Get larger words</h2>	
+            <div class="m-b-10">
+                ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']                      
+            </div>
+            <div class="block ovHid">
+               <p class="m-b-10">Get array of larger words.</p>
+                <div class="row">
+                    <div id='filter1A' class='col-sm-6'></div>
+                    <div id='filter1B' class='col-sm-6 text-right'></div>
+                </div>                
+            </div>        
         </div>
-        <div class="block ovHid">
-           <p class="m-b-10">Get array of larger words.</p>
-            <div id='filter1A' class='pull-left'></div>
-			<div id='filter1B' class='pull-right'></div>
-        </div>        
     </div>
+    <!-- End Filter Data -->
 </div>
-<!-- End Filter Data -->
+<!-- end row -->
+    
+<div class="row">
+    <!-- Start Filter Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">
+            <h2>Get Filtered Values</h2>	
+            <div class="m-b-10">
+                [3, 5, 9, 11,  23, 54, 60, 53, 98, 101, 994]                      
+            </div>
+            <div class="block ovHid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Get Even values out of the current array</p>
+                        <div id='filter2A' class="m-b-10"></div>
 
-<!-- Start Filter Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">
-		<h2>Get Filtered Values</h2>	
-        <div class="m-b-10">
-            [3, 5, 9, 11,  23, 54, 60, 53, 98, 101, 994]                      
+                        <p>Get Odd values out of the current array</p>
+                        <div id='filter2B' class="m-b-10"></div>
+
+                        <p>Get values divisible by 3 out of the current array</p>
+                        <div id='filter2C' class="m-b-10"></div>
+                    </div>
+
+                    <div class="col-sm-6">			
+                        <p>Get values Greater than or equal to 50</p>
+                        <div id='filter2D' class="m-b-10"></div>
+
+                        <p>Get values Less than to 10</p>
+                        <div id='filter2E' class="m-b-10"></div>			
+                    </div>
+                </div>                
+            </div>		
         </div>
-		<div class="block ovHid">
-			<div class="col-sm-6">
-				<p>Get Even values out of the current array</p>
-				<div id='filter2A' class="m-b-10"></div>
-				
-				<p>Get Odd values out of the current array</p>
-				<div id='filter2B' class="m-b-10"></div>
-				
-				<p>Get values divisible by 3 out of the current array</p>
-				<div id='filter2C' class="m-b-10"></div>
-			</div>
-			
-			<div class="col-sm-6">			
-				<p>Get values Greater than or equal to 50</p>
-				<div id='filter2D' class="m-b-10"></div>
-				
-				<p>Get values Less than to 10</p>
-				<div id='filter2E' class="m-b-10"></div>			
-			</div>
-		</div>		
     </div>
-</div>
-<!-- End Filter Data -->
+    <!-- End Filter Data -->
 
-<!-- Start Filter Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">
-		<h2>Get Filtered Values</h2>	
-        <div class="m-b-10">
-            [3, 5, 9, 11,  23, 54, 60, 53, 98, 101, 994]                      
-        </div>		
-		<div class="block ovHid">
-			<p>Get value greater than input value</p>
-			<div class="form-group">
-				<input type="text" id="GCheck" class="form-control" value="18">
-				<button type="button" class="btn btn-primary" onclick="myFunctionA()">Get </button>
-				<div class="" id="filter3A"></div>
-			</div>			
-		</div>
-		
-		<div class="block ovHid">
-			<p>Get value less than input value</p>
-			<div class="form-group">
-				<input type="text" id="lCheck" class="form-control" value="18">
-				<button type="button" class="btn btn-primary" onclick="myFunctionB()">Get </button>
-				<div class="" id="filter3B"></div>
-			</div>			
-		</div>
+    <!-- Start Filter Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">
+            <h2>Get Filtered Values</h2>	
+            <div class="m-b-10">
+                [3, 5, 9, 11,  23, 54, 60, 53, 98, 101, 994]                      
+            </div>		
+            <div class="block ovHid">
+                <p>Get value greater than input value</p>
+                <div class="form-group">
+                    <input type="text" id="GCheck" class="form-control" value="18">
+                    <button type="button" class="btn btn-primary" onclick="myFunctionA()">Get </button>
+                    <div class="" id="filter3A"></div>
+                </div>			
+            </div>
+
+            <div class="block ovHid">
+                <p>Get value less than input value</p>
+                <div class="form-group">
+                    <input type="text" id="lCheck" class="form-control" value="18">
+                    <button type="button" class="btn btn-primary" onclick="myFunctionB()">Get </button>
+                    <div class="" id="filter3B"></div>
+                </div>			
+            </div>
+        </div>
     </div>
+    <!-- End Filter Data -->
 </div>
-<!-- End Filter Data -->
+<!-- end row -->
+
+
+
 
 
 
