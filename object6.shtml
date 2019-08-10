@@ -17,15 +17,19 @@
 </div>
 <!--end Page Header -->
 
-<!-- Start Get Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">    
-        <h2>The XMLHttpRequest Object</h2>
-        <div id="demo1" class="m-b-10"></div>
-        <button type="button" class="btn btn-primary" onclick="loadDoc1()">Get Content</button>
+<div class="row">
+    <!-- Start Get Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>The XMLHttpRequest Object</h2>
+            <div id="demo1" class="m-b-10"></div>
+            <button type="button" class="btn btn-primary" onclick="loadDoc1()">Get Content</button>
+        </div>
     </div>
+    <!-- End Get Data -->
 </div>
-<!-- End Get Data -->
+<!-- end row -->
+
 <div class="clearfix"></div>
 <!-- Start Get Data -->
 <div class="col-sm-12">        

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<header>
+<header class="mainHeader">
 	<div class="logo"><a href="index.shtml">JavaScript Framework</a></div>
 
     <a class="sidebar-toggle" id="sidebar-toggle" href="javascript:void(0)"><i class="fa fa-bars" aria-hidden="true"></i></a>
