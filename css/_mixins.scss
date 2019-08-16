@@ -1,0 +1,22 @@
+//Mixin Examples
+@mixin box-shadow($property) {
+  -webkit-box-shadow: $property;
+  -ms-box-shadow: $property;
+  -moz-box-shadow: $property;
+  box-shadow: $property;
+}
+
+@mixin border-radius($radius) {  
+  -webkit-border-radius: $radius;  
+     -moz-border-radius: $radius;  
+      -ms-border-radius: $radius;  
+          border-radius: $radius;  
+}
+
+@mixin fixElem() {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

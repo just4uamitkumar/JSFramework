@@ -17,35 +17,40 @@
 </div>
 <!--end Page Header -->
 
-<!-- Start Current Time Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">    
-        <h2>Current Time</h2>
-        <div id="demo1" class="m-b-10"></div>       
+<div class="row">
+    <!-- Start Current Time Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>Current Time</h2>
+            <div id="demo1" class="m-b-10"></div>       
+        </div>
     </div>
-</div>
-<!-- End Current Time -->
+    <!-- End Current Time -->
 
-<!-- Start Get Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">    
-        <h2>setInterval</h2>
-        <div id="demo2" class="m-b-10"></div>
-        <button type="button" class="btn btn-primary" onclick="getName2()">Get Content</button>
+    <!-- Start Get Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>setInterval</h2>
+            <div id="demo2" class="m-b-10"></div>
+            <button type="button" class="btn btn-primary" onclick="getName2()">Get Content</button>
+        </div>
     </div>
+    <!-- End Get Data -->
 </div>
-<!-- End Get Data -->
-
-<div class="clearfix"></div>
-
-<!-- Start Digital Clock -->
-<div class="col-sm-6">
-  <div class="contentBlock">
-    <h2>Digital Clock (setInterval)</h2>
-    <div id="demo3" class="digiClockA">&nbsp;</div>
-  </div>
+<!-- end row -->
+    
+<div class="row">
+    <!-- Start Digital Clock -->
+    <div class="col-sm-6">
+      <div class="contentBlock">
+        <h2>Digital Clock (setInterval)</h2>
+        <div id="demo3" class="digiClockA">&nbsp;</div>
+      </div>
+    </div>
+    <!-- End Digital Clock -->
 </div>
-<!-- End Digital Clock -->
+<!-- end row -->
+
 
 <script src="./js/setInterval.js"></script>
 
