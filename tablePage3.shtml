@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Table Example 3</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Form Validaton -->
+<div class="col-sm-12">        
+    <div class="contentBlock">
+        <h2>HandelBar Example 2</h2>                
+        <form name="fillRecord" class="clearfix">                   
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" name="name" placeholder="Enter Name" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Name'">
+                </div>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" name="design" placeholder="Enter Designation" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Designation'">
+                </div>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" name="expert" placeholder="Experience(in Months)" onfocus="this.placeholder=''" onblur="this.placeholder='Experience(in Months)'">
+                </div>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" name="tech" placeholder="Technology" onfocus="this.placeholder=''" onblur="this.placeholder='Technology'">
+                </div>
+                <div class="col-sm-2">
+                    <select class="form-control" name="rate">
+                        <option value="-1">Select Rating</option>
+                        <option value="Below Average">Below Average</option>
+                        <option value="Average">Average</option>
+                        <option value="Above Average">Above Average</option>
+                        <option value="Good">Good</option>                          
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <button type="reset" class="btn btn-warning">Reset</button>              
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="table-responsive">
+           <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Experience</th>
+                        <th>Technology</th>
+                        <th>Rating</th>
+                        <th>Action</th>
+                    </tr>            
+                </thead>
+                <tbody>                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- End Form Validaton -->
+
+<!-- Start 5th Modal -->
+<div class="gModal modalSM hide" id="deleteRowModal">
+    <div class="modalDialog">
+        <div class="modalHeader">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4>Delete a Row</h4>
+        </div>
+        <div class="modalBody">
+            Are you sure you want to delete the row ?
+        </div>
+        <div class="modalFooter text-right">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>              
+            <button type="button" class="btn btn-primary confirmDelete">Confirm Delete</button>          
+        </div>
+    </div>
+</div>
+<!-- End 5th Modal -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script id="tableRow" type="text/x-handlebars-template"">   
+    <tr id={{id}}>
+        <td><span class="id">{{id}}</span></td>
+        <td><span class="name">{{name}}</span></td>
+        <td><span class="design">{{designation}}</span></td>
+        <td><span class="expert">{{experience}}</span></td>
+        <td><span class="tech">{{technology}}</span></td>
+        <td><span class="rate">{{rating}}</span></td>
+        <td>
+            <button class="btn btn-warning deleteRow" onclick=deleteRowModal(event);><i class="fa fa-trash"></i></button>
+            <button class="btn btn-warning editRow"><i class="fa fa-pencil"></i></button>
+        </td>
+    </tr> 
+</script>
+
+<script id="editRow" type="text/x-handlebars-template"">
+    <tr><td colspan="7">
+        <form id="editData">
+            <table class="table">
+                <tr>
+                    <td><span class="id">{{id}}</span></td>
+                    <td><input value="{{value1}}" type="text" class="form-control inputName"></td>
+                    <td><input value="{{value2}}" type="text" class="form-control inputDesign"></td>
+                    <td><input value="{{value3}}" type="text" class="form-control inputExpert"></td>
+                    <td><input value="{{value4}}" type="text" class="form-control inputTech"></td>
+                    <td>
+                        <select class="form-control selectRate">
+                            <option value="{{value5}}">{{value5}}</option>
+                            <option value="Below Average">Below Average</option>
+                            <option value="Average">Average</option>
+                            <option value="Above Average">Above Average</option>
+                            <option value="Good">Good</option>                          
+                        </select>
+                    </td>
+                    <td>                    
+                        <button type="reset" class="btn btn-warning"><i class="fa fa-times"></i></button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i></button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </td></tr>
+</script>
+
+
+<script src="./js/table/tablePage3.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

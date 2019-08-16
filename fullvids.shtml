@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Full Screen Video</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<h1></h1>
+
+<div class="row">
+
+    <!-- Start Full Screen Video -->
+    <div class="col-sm-12">
+        <button href="javascript:void()"  id="exitBtn" class="vidsExit btn-info"><i class="fa fa-power-off"></i> Exit</button>
+        <video autoplay muted loop id="myVideo">
+          <source src="./vids/rain.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+
+        <div class="vidContent">
+          <h1>Heading</h1>
+          <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+          <button id="myBtn" onclick="myFunction(event)">Pause</button>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="exitModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h4>Exit Vidoe Page</h4>
+        </div>
+        <div class="modal-body">
+          <p>Do you want to exit from this page?</p>
+          
+        </div>
+        <div class="modal-footer">
+          <a href="index.shtml" class="btn btn-primary"><i class="fa fa-check"></i> Yes</a>
+          <a href="javascript:void()" class="btn btn-danger close">
+            <i class="fa fa-close"></i> No</a>
+        </div>
+      </div>
+
+    </div>    
+
+<script src="./js/UIElement/fullVids.js"></script>
+
+   
+</div>
+<!-- end row div -->
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

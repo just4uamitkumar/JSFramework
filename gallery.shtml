@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Gallery</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="contentBlock clearfix">
+            <div class="galleryPage">
+                <div class="col-sm-3"><div class="imgThumb"></div></div>
+                <div class="col-sm-3"><div class="imgThumb"></div></div>
+                <div class="col-sm-3"><div class="imgThumb"></div></div>
+                <div class="col-sm-3"><div class="imgThumb"></div></div>
+                <div class="col-sm-3"><div class="imgThumb"></div></div>
+            </div>    
+        </div>
+    </div>    
+</div>
+<!-- End row -->
+
+
+<!-- Start 1st Modal -->
+<div class="gModal hide" id="thumb-1">
+    <div class="modalDialog">
+        <div class="modalHeader">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4></h4>
+        </div>
+        <div class="modalBody"> </div>
+        <div class="modalFooter">
+            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>            
+        </div>
+    </div>
+</div>
+<!-- End 1st Modal -->
+
+<!-- Start 2nd Modal -->
+<div class="gModal hide" id="thumb-2">
+    <div class="modalDialog">
+        <div class="modalHeader">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4></h4>
+        </div>
+        <div class="modalBody"> </div>
+        <div class="modalFooter">
+            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>            
+        </div>
+    </div>
+</div>
+<!-- End 2nd  Modal -->
+
+<!-- Start 3rd Modal -->
+<div class="gModal hide" id="thumb-3">
+    <div class="modalDialog">
+        <div class="modalHeader">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4></h4>
+        </div>
+        <div class="modalBody"> </div>
+        <div class="modalFooter">
+            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>            
+        </div>
+    </div>
+</div>
+<!-- End 3rd Modal -->
+
+<!-- Start 4th Modal -->
+<div class="gModal hide" id="thumb-4">
+    <div class="modalDialog">
+        <div class="modalHeader">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4></h4>
+        </div>
+        <div class="modalBody"></div>
+        <div class="modalFooter">
+            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>            
+        </div>
+    </div>
+</div>
+<!-- End 4th Modal -->
+
+<!-- Start 5th Modal -->
+<div class="gModal hide" id="thumb-5">
+    <div class="modalDialog">
+        <div class="modalHeader">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4></h4>
+        </div>
+        <div class="modalBody"></div>
+        <div class="modalFooter">
+            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>            
+        </div>
+    </div>
+</div>
+<!-- End 5th Modal -->
+
+<script src="./js/UIElement/gallery.js"></script> 
+
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

@@ -1,0 +1,19 @@
+/*------| HTML |-----*/
+html {font-size: 12px; }
+
+
+/*------| Header |-----*/
+.sidebar-toggle { padding: 10px 15px 11px;}
+
+/*-------| Navigation |--------*/
+.nav > ul > li > a {padding: 10px 18px}
+
+
+/*-------| Tabs |--------*/
+.tabs ul li a {padding: 9px 18px;}
+
+/*-------| Navigation |--------*/
+nav > ul > li {display: block; }
+
+/*--------| Login  |-------*/
+.loginCont h4{ font-size: 1.2rem;}

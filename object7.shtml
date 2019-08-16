@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Merge Objects</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<div class="row">
+    <!-- Start Get Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>Merge Two Objects</h2>
+            <p>We have two objects </p>
+            <p class="left">const target = { a: 1, b: 2 };</p>
+            <p class="right">const source = { b: 4, c: 5 };</p>
+            <p>The Resulted Object Will be : {a: 1, b: 4, c: 5}</p>
+        </div>
+    </div>
+    <!-- End Get Data -->
+
+        <!-- Start Get Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>Merge Two Objects</h2>
+            <p>We have two objects </p>
+            <p>var obj1 = { name: "David", age: 45, city: "San Adreas" };</p>
+            <p>var obj2 = { state: "Florida", Professtion: 'Software Engineer', Salary: 50000};</p>
+            <p>The Resulted Object Will be : {name: "David", age: 45, city: "San Adreas", state: "Florida", Professtion: "Software Engineer",  Salary: 50000}</p>
+        </div>
+    </div>
+    <!-- End Get Data --
+</div>
+<!-- end row -->
+>
+
+<script src="./js/object/object7.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

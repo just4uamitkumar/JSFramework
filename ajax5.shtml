@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Ajax Example 5</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Get Data -->
+<div class="col-sm-12">        
+    <div class="contentBlock">    
+        <h2>AJAX XML Example</h2>
+        <p>The following example will demonstrate how a web page can fetch
+        information from an XML file with AJAX:</p>
+        <button type="button" class="btn btn-primary m-b-10" onclick="loadDoc()">
+          Get Content
+        </button>  
+        <table id="demo" class="table"></table>            
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-12">        
+    <div class="contentBlock">    
+        <h2>AJAX PHP Example</h2>
+         <p>The following example demonstrates how a web page can communicate with a web
+         server while a user types characters in an input field:</p>
+
+        <h3>Start typing a name in the input field below:</h3>
+        <p>Suggestions: <span id="txtHint1"></span></p> 
+         
+        <p>First name: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>           
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-12">        
+    <div class="contentBlock">    
+        <h2>AJAX Database</h2>
+        <p>The following example will demonstrate how a web page can fetch information from a database with AJAX:</p>
+
+        <form action=""> 
+          <select name="customers" onchange="showCustomer(this.value)">
+            <option value="">Select a customer:</option>
+            <option value="ALFKI">Alfreds Futterkiste</option>
+            <option value="NORTS ">North/South</option>
+            <option value="WOLZA">Wolski Zajazd</option>
+          </select>
+        </form>
+        <div id="txtHint2">Customer info will be listed here...</div>
+                  
+    </div>
+</div>
+<!-- End Get Data -->
+
+<script src="./js/ajax/ajax5.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Ajax Example 2</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<div class="col-sm-12">
+  <div class="contentBlock">
+    <h2>Call Back Function</h2>
+        <p>A callback function is a function passed as a parameter to another function.</p>
+        <p>If you have more than one AJAX task in a website, you should create one function for executing the XMLHttpRequest object, and one callback function for each AJAX task.</p>
+        <p>The function call should contain the URL and what function to call when the response is ready.</p>
+  </div>
+</div>
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">    
+        <h2>Call Back Function 1</h2>
+        <div id="demo1" class="m-b-10"></div>
+        <button type="button" class="btn btn-primary" onclick="loadDoc('./js/db/ajax_info.txt', myFunction1)">Get Content
+        </button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+      <h2>Call Back Function 2</h2>        
+        <div id="demo2" class="m-b-10"></div>
+        <button type="button" class="btn btn-primary" onclick="loadDoc('./js/db/ajax_info2.txt', myFunction2)">Get Content
+        </button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<div class="clearfix"></div>
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+      <h2>Call Back Function 3</h2>
+      <div id="demo3" class="m-b-10"></div>
+      <button type="button" class="btn btn-primary" onclick="loadDoc('./js/db/ajax_info3.txt', myFunction3)">Get Content
+      </button>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<script src="./js/ajax/ajax2.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
