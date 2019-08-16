@@ -102,3 +102,4 @@ function delAmount(){
    var amountValue = document.atmForm.amount.value;    
     document.atmForm.amount.value = amountValue.slice(0, -1);  
 }
+

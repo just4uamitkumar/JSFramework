@@ -22,32 +22,34 @@
     	<h2>Employee List </h2>
         <form name="fillRecord" class="clearfix" onsubmit="return(validate(event));">                   
             <div class="form-group">
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="fname" placeholder="First Name" onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
-                </div>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="lname" placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
-                </div>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="dob" placeholder="Date of Birth" onfocus="this.placeholder=''" onblur="this.placeholder='Date of Birth'">
-                </div>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="experience" placeholder="Experience" onfocus="this.placeholder=''" onblur="this.placeholder='Experience'">
-                </div>
-                
-                <div class="col-sm-2">
-                    <select class="form-control" name="occ">
-                        <option value="-1">Occupation</option>
-                        <option value="Below Average">Web Designer</option>
-                        <option value="Average">Web Developer</option>
-                        <option value="Above Average">Graphic Designer</option>
-                        <option value="Good">Data Entry Operator</option>                         
-                    </select>
-                </div>
-                <div class="col-sm-2">
-                    <button type="reset" class="btn btn-warning">Reset</button>              
-                    <button type="submit" class="btn btn-primary">Add</button>
-                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="fname" placeholder="First Name" onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="lname" placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="dob" placeholder="Date of Birth" onfocus="this.placeholder=''" onblur="this.placeholder='Date of Birth'">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="experience" placeholder="Experience" onfocus="this.placeholder=''" onblur="this.placeholder='Experience'">
+                    </div>
+
+                    <div class="col-sm-2">
+                        <select class="form-control" name="occ">
+                            <option value="-1">Occupation</option>
+                            <option value="Below Average">Web Designer</option>
+                            <option value="Average">Web Developer</option>
+                            <option value="Above Average">Graphic Designer</option>
+                            <option value="Good">Data Entry Operator</option>                         
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="reset" class="btn btn-warning">Reset</button>              
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </div>                
             </div>
         </form>
 

@@ -16,28 +16,31 @@
     <h1></h1>
 </div>
 <!--end Page Header -->
-
-<!-- Start Get Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">    
-        <h2>HTML5 Web Storage</h2>
-        <div id="demo1" class="m-b-10"></div>
-        <div id="failed1" class="m-b-10"></div>
-        <button type="button" class="btn btn-primary" onclick="getName1()">Get Content</button>
+    
+<div class="row">
+    <!-- Start Get Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>HTML5 Web Storage</h2>
+            <div id="demo1" class="m-b-10"></div>
+            <div id="failed1" class="m-b-10"></div>
+            <button type="button" class="btn btn-primary" onclick="getName1()">Get Content</button>
+        </div>
     </div>
-</div>
-<!-- End Get Data -->
+    <!-- End Get Data -->
 
-<!-- Start Get Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">    
-        <h2>HTML5 Web Storage</h2>
-        <div id="demo2" class="m-b-10"></div>
-         <div id="failed2" class="m-b-10"></div>
-        <button type="button" class="btn btn-primary" onclick="getName2()">Get Content</button>
+    <!-- Start Get Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>HTML5 Web Storage</h2>
+            <div id="demo2" class="m-b-10"></div>
+             <div id="failed2" class="m-b-10"></div>
+            <button type="button" class="btn btn-primary" onclick="getName2()">Get Content</button>
+        </div>
     </div>
+    <!-- End Get Data -->
 </div>
-<!-- End Get Data -->
+<!-- end row -->
 
 
 <script>

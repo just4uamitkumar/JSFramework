@@ -23,31 +23,33 @@
         <h2>HandelBar Example 2</h2>                
         <form name="fillRecord" class="clearfix">                   
             <div class="form-group">
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="name" placeholder="Enter Name" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Name'">
-                </div>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="design" placeholder="Enter Designation" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Designation'">
-                </div>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="expert" placeholder="Experience(in Months)" onfocus="this.placeholder=''" onblur="this.placeholder='Experience(in Months)'">
-                </div>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="tech" placeholder="Technology" onfocus="this.placeholder=''" onblur="this.placeholder='Technology'">
-                </div>
-                <div class="col-sm-2">
-                    <select class="form-control" name="rate">
-                        <option value="-1">Select Rating</option>
-                        <option value="Below Average">Below Average</option>
-                        <option value="Average">Average</option>
-                        <option value="Above Average">Above Average</option>
-                        <option value="Good">Good</option>                          
-                    </select>
-                </div>
-                <div class="col-sm-2">
-                    <button type="reset" class="btn btn-warning">Reset</button>              
-                    <button type="submit" class="btn btn-primary">Add</button>
-                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="name" placeholder="Enter Name" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Name'">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="design" placeholder="Enter Designation" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Designation'">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="expert" placeholder="Experience(in Months)" onfocus="this.placeholder=''" onblur="this.placeholder='Experience(in Months)'">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="tech" placeholder="Technology" onfocus="this.placeholder=''" onblur="this.placeholder='Technology'">
+                    </div>
+                    <div class="col-sm-2">
+                        <select class="form-control" name="rate">
+                            <option value="-1">Select Rating</option>
+                            <option value="Below Average">Below Average</option>
+                            <option value="Average">Average</option>
+                            <option value="Above Average">Above Average</option>
+                            <option value="Good">Good</option>                          
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="reset" class="btn btn-warning">Reset</button>              
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </div>                
             </div>
         </form>
 

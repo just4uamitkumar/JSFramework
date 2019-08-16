@@ -1,0 +1,105 @@
+/*--------| Form  |-------*/
+.form-group {
+  margin-bottom: 10px;
+  overflow: hidden; }
+  .form-group label {
+    width: 28%;
+    margin-right: 10px;
+    display: inline-block; }
+  .form-group .control-label {
+    margin-bottom: 10px;
+    width: 28%; }
+  .form-group input[type="text"], .form-group input[type="number"], .form-group .form-group select {
+    width: 62%;
+    padding: 7px;
+    display: inline-block;
+    color: #000;
+    border: 1px solid #8e8e8e; }
+  .form-group input[type="checkbox"] {
+    margin-right: 5px; }
+  .form-group input::placeholder, .form-group select {
+    color: #8e8e8e; }
+  .form-group select {
+    width: 65.5%; }
+    .form-group select option {
+      color: #000; }
+      .form-group select option:first-child {
+        color: #8e8e8e; }
+  .form-group .checklist {
+    width: 65%;
+    display: inline-block;
+    vertical-align: top; }
+
+.model-shadow {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.alert-box {
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  display: none;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .alert-box.show {
+    display: block; }
+
+button, .btn {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  padding: 6px 14px;
+  cursor: pointer;
+  color: #fff;
+  border-width: 0 0 2px;
+  border-style: solid;
+  font-size: 0.8rem;
+  border-radius: 2px; }
+  button.btn-sm, .btn.btn-sm {
+    font-size: 0.7rem;
+    padding: 4px 11px; }
+  button.btn.disable, .btn.btn.disable {
+    opacity: 0.5; }
+  button.btn-primary, .btn.btn-primary {
+    background: #053ee6;
+    border-color: #2f1cb5; }
+  button.btn-noColor, .btn.btn-noColor {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    color: #0e0e0e; }
+  button.btn-info, .btn.btn-info {
+    background: #1d87c7;
+    border-color: #8bb6da; }
+  button.btn-warning, .btn.btn-warning {
+    background: #dc5e22;
+    border-color: #b14614; }
+  button.btn-danger, .btn.btn-danger {
+    background: #F00;
+    border-color: #941010; }
+  button.btn-default, .btn.btn-default {
+    background: #3ea909;
+    border-color: #329402; }
+  button[disable], .btn[disable] {
+    pointer-events: none;
+    opacity: 0.5; }
+
+.btn + .btn {
+  margin-left: 10px; }
+
+form[name='myForm'] {
+  display: flex;
+  flex-wrap: wrap; }
+
+/*# sourceMappingURL=_form.css.map */

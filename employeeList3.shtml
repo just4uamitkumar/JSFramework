@@ -18,21 +18,23 @@
 <!--end Page Header -->
 
 <!-- Start Get Data -->
-
-<div class="col-sm-3">        
-    <div class="contentBlock">
-        <ul class="list-group"></ul>
+<div class="row">
+    <div class="col-sm-3">        
+        <div class="contentBlock">
+            <ul class="list-group"></ul>
+        </div>
     </div>
-</div>
-<!-- End Get Data -->
+    <!-- End Get Data -->
 
-<!-- Start Get Data -->
-<div class="col-sm-9">        
-    <div class="contentBlock">  
-       <div class="postCont"></div>     
+    <!-- Start Get Data -->
+    <div class="col-sm-9">        
+        <div class="contentBlock">  
+           <div class="postCont"></div>     
+        </div>
     </div>
+    <!-- End Get Data -->
 </div>
-<!-- End Get Data -->
+<!-- end row -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./js/table/employeeList3.js"></script>
