@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Table Example 1</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Start Form Validaton -->
+<div class="col-sm-12">        
+    <div class="contentBlock">
+        <h2>Table Example </h2>
+        <div class="table-responsive">
+            <form>
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Emp ID</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Experience</th>
+                        <th>Technology</th>
+                        <th>Rating</th>
+                    </tr>            
+                </thead>
+                <tbody>
+                    <tr class="headRow">
+                        <td><a href="javascript:void();" class="expandRow"></a> </td>
+                        <td><span>5</span></td>
+                        <td><span>Vinay</span></td>
+                        <td><span>Deisgner</span></td>
+                        <td><span>5 years</span></td>
+                        <td><span>HTML</span></td>
+                        <td><span>Average</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>HTML5</span></td>
+                        <td><span>CSS</span></td>
+                        <td><span>JavaScript</span></td>
+                        <td><span>JQuery</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Illustrator</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>DotNet</span></td>
+                        <td><span>PHP</span></td>
+                        <td><span>Photoshp</span></td>
+                        <td><span>Python</span></td>
+                        <td><span>Microsoft Work</span></td>
+                        <td><span>Illustrator</span></td>
+                    </tr>             
+                    <tr class="headRow">
+                        <td><a href="javascript:void();" class="expandRow"></a></td>
+                        <td><span>92</span></td>
+                        <td><span>Sandeep</span></td>
+                        <td><span>Developer</span></td>
+                        <td><span>2 years</span></td>
+                        <td>P<span>HP</span></td>
+                        <td><span>Good</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>Android</span></td>
+                        <td><span>Volvo</span></td>
+                        <td><span>C-Shart</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Illustrator</span></td>
+                        <td><span>CSS</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>iPhone</span></td>
+                        <td><span>Material</span></td>
+                        <td><span>Bootstrap</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Foundation</span></td>
+                        <td><span>CSS</span></td>
+                    </tr>            
+                    <tr class="headRow">
+                        <td><a href="javascript:void();" class="expandRow"></a></td>
+                        <td><span>28</span></td>
+                        <td><span>Govind</span></td>
+                        <td><span>Designer</span></td>
+                        <td><span>5 years</span></td>
+                        <td><span>HTML</span></td>
+                        <td><span>Average</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>Bootstrap</span></td>
+                        <td><span>Material</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Foundation</span></td>
+                        <td><span>CSS</span></td>
+                    </tr>
+                    <tr class="subrow">
+                        <td></td>
+                        <td><span>DotNet</span></td>
+                        <td><span>PHP</span></td>
+                        <td><span>Photoshop</span></td>
+                        <td><span>Python</span></td>
+                        <td><span>Microsoft Work</span></td>
+                        <td><span>Illustrator</span></td>
+                    </tr>            
+                </tbody>
+            </table>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Form Validaton -->
+
+<!-- Start closure example -->
+<div class="col-sm-6">        
+    <div class="contentBlock clearfix">
+        <h2>Closure Example
+            <button class="btn btn-primary disable pull-right" type="button" id="clearBtn">
+                Clear All
+            </button>
+        </h2>
+        <p>Even a small change in your daily routine can make a big difference over time.</p>
+        <div class="table-responsive">
+            <table class="table  table-striped" id="colorTable">
+                <thead>
+                    <tr>
+                        <th>Color </th>
+                        <th>Types of Color</th>
+                    </tr>
+                </thead>
+                <tbody>                           
+                </tbody>
+            </table>
+        </div>
+        <button class="btn btn-warning pull-right disable" id="finish" type="button">
+           Finish
+        </button>
+    </div>
+</div>
+<!-- End Table Example -->
+
+
+<!-- Start 1st Modal -->
+<div class="gModal modalSM hide" id="chooseColor">
+    <div class="modalDialog">
+        <div class="modalHeader">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4>SELECT A COLOR</h4>
+        </div>
+        <div class="modalBody">
+            <ul class="colorList">
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+              <li><a href="javascript:void(0);"></a></li>
+            </ul>
+        </div>        
+    </div>
+</div>
+<!-- End 1st Modal -->
+
+
+
+<script src="./js/table/tablePage1.js"></script>
+
+
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

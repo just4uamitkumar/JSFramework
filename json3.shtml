@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>JSON Example 3</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">    
+        <h2>JSON.stringify()</h2>
+        <p>A common use of JSON is to exchange data to/from a web server.</p>
+        <p>When sending data to a web server, the data has to be a string.</p>
+        <p>Convert a JavaScript object into a string with JSON.stringify().</p>
+        <button type="button" class="btn btn-primary m-b-10" onclick="getData1()">Get Content</button>
+        <div id="demo1" class="m-b-10"></div>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">    
+        <h2>Stringify a JavaScript Array</h2>
+        <p>It is also possible to stringify JavaScript arrays:</p>
+        <p>As long as the response from the server is written in JSON format, you can parse the string into a JavaScript object.</p>
+        <button type="button" class="btn btn-primary m-b-10" onclick="getData2()">Get Content</button>
+        <div id="demo2" class="m-b-10"></div>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<div class="clearfix"></div>
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock clearfix">    
+        <h2>Looping an Object</h2>
+        <p>You can loop through object properties by using the for-in loop:</p>
+
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-primary m-b-10" onclick="getData3()">
+            Get Content
+          </button>
+          <div id="demo3"></div>
+        </div>
+
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-primary m-b-10" onclick="getData4()">
+            Get Content
+          </button>
+          <div id="demo4"></div>
+        </div>        
+    </div>
+</div>
+<!-- End Get Data -->
+
+<!-- Start Get Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">    
+        <h2>Nested JSON Objects</h2>
+        <p>Values in a JSON object can be another JSON object.</p>
+        <p>You can access nested JSON objects by using the dot notation or bracket notation:</p>
+        <button type="button" class="btn btn-primary m-b-10" onclick="getData5()">Get Content</button>
+        <div id="demo5" class="m-b-10"></div>
+    </div>
+</div>
+<!-- End Get Data -->
+
+<script src="./js/json/json3.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

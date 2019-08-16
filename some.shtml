@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Some Array</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<!-- Description About some -->
+<div class="col-sm-12">
+	<div class="contentBlock">
+		<h2>The some() method checks if any of the elements in an array pass a test (provided as a function).</h2>
+		<p>The some() method executes the function once for each element present in the array:</p>
+		<p>If it finds an array element where the function returns a true value, some() returns true (and does not check the remaining values)</p>
+		<p>Otherwise it returns false</p>
+	</div>
+</div>
+<!-- Description About some -->
+
+<!-- Start Filter Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2>Find the condition whether value is exist or not</h2>	
+        <div class="m-b-10">
+           var val = [3, 5, 9, 11,  23, 54, 60, 53, 98, 101, 994];                 
+        </div>
+        <div class="block">
+			<p class="m-b-10">Find first value greater than 18 from above array </p>
+			<button onclick="myFunction1()" class="btn btn-primary">Try it</button>
+            <div id='some1A' class="m-b-10"></div>
+			
+			<p class="m-b-10" class="m-b-10">Find first value less than 18 from above array </p>
+			<button onclick="myFunction2()" class="btn btn-primary">Try it</button>
+            <div id='some1B'></div>
+        </div>        
+    </div>
+</div>
+<!-- End Filter Data -->
+
+<!-- Start Filter Data -->
+<div class="col-sm-6">        
+    <div class="contentBlock">
+		<h2>Find the required values using find method</h2>	       
+        <div class="block">			
+            <div id='some2A' class="m-b-10"></div>
+            <div id='some2B'></div>			
+		
+        </div>        
+    </div>
+</div>
+<!-- End Filter Data -->
+
+
+
+
+
+
+
+
+
+
+<script src="./js/array/some.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
