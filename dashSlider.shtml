@@ -17,24 +17,24 @@
 </div>
 <!--end Page Header -->
 
-<!-- Start Social Slider -->
-<div class="col-sm-6">
-    <div class="contentBlock">
-        <div class="SocialSlider">
-            <div class="facebook social"><span></span> <a href="javascript:void(0);"></a></div>
-            <div class="twitter social"><span></span> <a href="javascript:void(0);"></a></div>
-            <div class="google social"><span></span> <a href="javascript:void(0);"></a></div>
-            <div class="instagram social"><span></span> <a href="javascript:void(0);"></a></div>
-            <div class="youtube social"><span></span> <a href="javascript:void(0);"></a></div>
-        </div>
-    </div>      
-</div>
-<!-- End Social Slider -->
+<div class="row">
+    <!-- Start Social Slider -->
+    <div class="col-sm-6">
+        <div class="contentBlock ovHid">
+            <div class="SocialSlider">
+                <div class="facebook social"><span></span> <a href="javascript:void(0);"></a></div>
+                <div class="twitter social"><span></span> <a href="javascript:void(0);"></a></div>
+                <div class="google social"><span></span> <a href="javascript:void(0);"></a></div>
+                <div class="instagram social"><span></span> <a href="javascript:void(0);"></a></div>
+                <div class="youtube social"><span></span> <a href="javascript:void(0);"></a></div>
+            </div>
+        </div>      
+    </div>
+    <!-- End Social Slider -->
 
-<!-- Start DashBoard Slider -->
-<div class="col-sm-6">
-    <div class="contentBlock clearfix">
-        <div class="DashSlider">
+    <!-- Start DashBoard Slider -->
+    <div class="col-sm-6">
+        <div class="contentBlock clearfix DashSlider">           
             <ul>
                 <li><a href="#dash-1">First Slide</a></li>
                 <li><a href="#dash-2">Second Slide</a></li>
@@ -60,12 +60,14 @@
                 <h4>Fourth Slide </h4>              
                 <p>Store arbitrary data associated with the matched elements or return the value at the named data store for the first element.</p>
                 <p>Suppose you have a simple unordered list on the page</p>
-            </div>
-            
+            </div>            
         </div>
     </div>
+    <!-- End DashBoard Slider -->
 </div>
-<!-- End DashBoard Slider -->
+<!-- end row -->
+
+
 
 <script src="./js/dashSlider.js"></script>
 

@@ -16,25 +16,28 @@
     <h1></h1>
 </div>
 <!--end Page Header -->
-
-<!-- Start Get Data -->
-<div class="col-sm-6">        
-    <div class="contentBlock">    
-        <h2>HTML5 Web Storage with SetTimeOut Function</h2>
-        <div id="demo1" class="m-b-10"></div>
-        <button type="button" class="btn btn-primary" onclick="getName1()">Get Content</button>
+    
+<div class="row">
+    <!-- Start Get Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>HTML5 Web Storage with SetTimeOut Function</h2>
+            <div id="demo1" class="m-b-10"></div>
+            <button type="button" class="btn btn-primary" onclick="getName1()">Get Content</button>
+        </div>
     </div>
-</div>
-<!-- End Get Data -->
+    <!-- End Get Data -->
 
-<!-- Start Digital Clock -->
-<div class="col-sm-6">
-  <div class="contentBlock">
-    <h2>Digital Clock (SetTimeOut)</h2>
-    <div id="demo3" class="digiClockB"></div>
-  </div>
+    <!-- Start Digital Clock -->
+    <div class="col-sm-6">
+      <div class="contentBlock">
+        <h2>Digital Clock (SetTimeOut)</h2>
+        <div id="demo3" class="digiClockB"></div>
+      </div>
+    </div>
+    <!-- End Digital Clock -->
 </div>
-<!-- End Digital Clock -->
+<!-- end row -->
 
 <script src="./js/setTimeOut.js"></script>
 

@@ -25,46 +25,50 @@
         <p>Using this property you can parse the response as an XML DOM object:</p>
   </div>
 </div>
-
-<!-- Start Get Data -->
-<div class="col-sm-3">        
-    <div class="contentBlock">    
-        <h2>responseXML 1</h2>
-        <div id="demo1" class="m-b-10"></div> 
-        <button type="button" class="btn btn-primary" onclick="loadDoc1()">Get XML Content</button>      
+    
+<div class="row">
+    <!-- Start Get Data -->
+    <div class="col-sm-3">        
+        <div class="contentBlock">    
+            <h2>responseXML 1</h2>
+            <div id="demo1" class="m-b-10"></div> 
+            <button type="button" class="btn btn-primary" onclick="loadDoc1()">Get XML Content</button>      
+        </div>
     </div>
-</div>
-<!-- End Get Data -->
+    <!-- End Get Data -->
 
-<!-- Start Get Data -->
-<div class="col-sm-3">        
-    <div class="contentBlock">
-      <h2>responseXML 2</h2>
-        <div id="demo2" class="m-b-10"></div>
-        <button type="button" class="btn btn-primary" onclick="loadDoc2()">Get XML Content</button>
+    <!-- Start Get Data -->
+    <div class="col-sm-3">        
+        <div class="contentBlock">
+          <h2>responseXML 2</h2>
+            <div id="demo2" class="m-b-10"></div>
+            <button type="button" class="btn btn-primary" onclick="loadDoc2()">Get XML Content</button>
+        </div>
     </div>
-</div>
-<!-- End Get Data -->
+    <!-- End Get Data -->
 
-<!-- Start Get Data -->
-<div class="col-sm-3">        
-    <div class="contentBlock">
-      <h2>responseXML 3</h2>
-        <div id="demo3" class="m-b-10"></div>
-        <button type="button" class="btn btn-primary" onclick="loadDoc3()">Get XML Content</button>
+    <!-- Start Get Data -->
+    <div class="col-sm-3">        
+        <div class="contentBlock">
+          <h2>responseXML 3</h2>
+            <div id="demo3" class="m-b-10"></div>
+            <button type="button" class="btn btn-primary" onclick="loadDoc3()">Get XML Content</button>
+        </div>
     </div>
-</div>
-<!-- End Get Data -->
+    <!-- End Get Data -->
 
-<!-- Start Get Data -->
-<div class="col-sm-3">        
-    <div class="contentBlock">
-      <h2>responseXML 4</h2>
-        <div id="demo4" class="m-b-10"></div>
-        <button type="button" class="btn btn-primary" onclick="loadDoc4()">Get XML Content</button>
+    <!-- Start Get Data -->
+    <div class="col-sm-3">        
+        <div class="contentBlock">
+          <h2>responseXML 4</h2>
+            <div id="demo4" class="m-b-10"></div>
+            <button type="button" class="btn btn-primary" onclick="loadDoc4()">Get XML Content</button>
+        </div>
     </div>
+    <!-- End Get Data -->
 </div>
-<!-- End Get Data -->
+<!-- end row -->
+
 
 <script src="./js/ajax/ajax3.js"></script>
 
