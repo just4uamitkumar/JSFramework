@@ -63,10 +63,20 @@
     
     var x = (! + [] + [] + []).length;   //Result 9
     
-    var y = (! + [] + [] + []).length;   //Result 4
-    
+    var y = (! + [] + [] + []).length;   //Result 4    
        
      
+})();
+
+
+//Remove dupliate keyword from a string;
+(function(){
+    var string = "abcdeabcdeabcde";
+    var myArray = string.split(''); 
+    var newString = (myArray.reduce((x,y) => x.includes(y) ? x : [...x, y], [])).join('');
+  
+    document.getElementById('am5').innerHTML = newString;
+    
 })();
 
 
