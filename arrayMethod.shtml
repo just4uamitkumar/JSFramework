@@ -58,7 +58,7 @@
     <!-- Start Filter Data -->
     <div class="col-sm-6">        
         <div class="contentBlock">
-            <h2>var names = ["John", "Peter", "Clark", "Harry", "John", "Alice", "Clark"];</h2>	
+            <h2>var names = ["Amit", "Ajay", "Raj", "Monti", "Amit", "Ajay", "Clark"];</h2>	
             <div class="block">
                 <p>Sort Array : <span id="am4"></span></p>
             </div>       
@@ -67,6 +67,24 @@
     <!-- End Filter Data -->
 </div>
 <!-- end row -->
+    
+<div class="row">
+    <!-- Start Filter Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">
+            <h2>var string = abcdeabcdeabcde;</h2>	
+            <div class="block">
+                <p>Remove Duplicates : <span id="am5"></span></p>
+            </div>       
+        </div>
+    </div>
+    <!-- End Filter Data -->
+
+    
+</div>
+<!-- end row -->
+    
+    
 
 <script src="./js/array/arrayMethod.js"></script>
 

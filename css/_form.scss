@@ -2,7 +2,7 @@
 .form-group {margin-bottom: 10px; overflow: hidden;
     label {width: 28%; margin-right: 10px; display: inline-block}
     .control-label {margin-bottom: 10px; width: 28%}
-    input[type="text"], input[type="number"], .form-group select{ width: 62%; padding:7px;
+    input[type="text"], input[type="number"], select{ width: 62%; padding:7px;
         display: inline-block; color: #000; border: 1px solid #8e8e8e;}
     input[type="checkbox"] {margin-right: 5px}
     input::placeholder,  select{color: #8e8e8e;}
