@@ -21,6 +21,8 @@
       Img.setAttribute('alt', 'gallery-' + (j+1));
       toggleModal[j].appendChild(Img);
   }
+    
+    var winScroll = 'null';
 
   //function to Show Modal
   function showModal(){
@@ -29,7 +31,9 @@
     var imgCount = this.childNodes[0].getAttribute('src').replace('_thumb.jpg','').replace('./images/gallery-', '');
     console.log(imgCount);
     
-    document.body.style.overflow = 'hidden';
+    //document.body.style.overflow = 'hidden';
+      
+    winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     
     var targetVal = mTarget.substr(1);
 
@@ -40,7 +44,11 @@
     //Add Heading inside h4 tag
     var w = activeM.childNodes[1].childNodes[1];
     var w1 = w.childNodes[3];
-    w1.innerHTML = 'Gallery ' + imgCount;  
+    w1.innerHTML = 'Gallery ' + winScroll + ' : '+ imgCount; 
+      
+  document.onscroll = function(){
+      document.body.scrollTop = document.documentElement.scrollTop = winScroll
+  }
    
 
     //Add images inside ModalBody accordingly
@@ -68,7 +76,11 @@
   function hideModal(){        
       var thisModal = this.closest('.gModal');
       thisModal.classList.add('hide');
-      document.body.removeAttribute('style');
+      //document.body.removeAttribute('style');
+      
+      document.onscroll = function(){
+          document.body.scrollTop = document.documentElement.scrollTop = auto
+      }
       
       // remove Shadow
       // select element to unwrap

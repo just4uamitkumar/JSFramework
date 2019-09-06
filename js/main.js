@@ -23,6 +23,7 @@ window.onresize = function() {
 }
 
 
+
 //Timer
 function startTime() {
     var today = new Date();
@@ -119,8 +120,8 @@ function scrollFunction() {
   var height = s - c;
   var scrolled = (winScroll / height) * 100;
   var n = scrolled.toFixed(0)
-    console.log(height);
-    console.log(winScroll);
+    console.log('height' + height);
+    console.log('winScroll' + winScroll);
   document.getElementById("myBar").style.width = scrolled + "%";
   document.getElementsByClassName('scrollVal')[0].classList.add('show');
   document.getElementsByClassName('scrollVal')[0].innerHTML = n + "%";
