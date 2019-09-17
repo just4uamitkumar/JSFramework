@@ -19,9 +19,7 @@
     var obj = Object.assign(obj1, obj2);
     var mergeObj = {...obj1, ...obj2}
     console.log(obj);
-    console.log(mergeObj);
-    
-       
+    console.log(mergeObj);       
 })();
 
 (function(){
