@@ -37,8 +37,6 @@
     
     var merged3 = Object.assign({}, Obj1, Obj2, Obj3, Obj4);  
     console.log(merged3);
-    
-    
 })();
 
 

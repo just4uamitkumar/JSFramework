@@ -3,12 +3,12 @@ var water={quality:'High', amount:"5L", price:0.25}
 document.getElementById('demo1').innerHTML = water.quality+" "+water.amount+" "+water.price;
 
 //Instance of Object
-var objectName = new Object();
-
+//var objectName = new Object();
 var bottle = new Object();
 bottle.volume = '3L';
 bottle.color = 'Grey';
 bottle.company = 'Milton';
+console.log(bottle)
 
 document.getElementById('demo2').innerHTML = bottle.volume+" "+bottle.color+" "+bottle.company;
 

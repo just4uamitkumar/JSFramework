@@ -18,6 +18,7 @@ function getData2(){
   text = localStorage.getItem("testJSON");
   obj = JSON.parse(text);
   document.getElementById("demo2").innerHTML = obj.name;
+    console.log(myJSON)
   
 }
 
@@ -26,4 +27,5 @@ function getData3(){
   var txt = '{"name":"John", "age":30, "city":"New York"}'
   var obj = JSON.parse(txt);
   document.getElementById("demo3").innerHTML = obj.name + ", " + obj.age;
+    console.log(obj)
 }

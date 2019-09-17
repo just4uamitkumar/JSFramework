@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Array Methods 2</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<div class="row">
+    <!-- Start Atm Wrapper -->
+    <div class="col-sm-6">        
+        <div class="contentBlock clearfix">
+            <h2>Combine Two Array</h2> 
+            <div class="">
+                <p>const arr = ["Joy", "Wangari", "Warugu"];</p>
+                <p>const newArr = ["joykare", ...arr];</p>
+                <p>New Array : <span id="arr1"></span></p>
+            </div>                      
+        </div>
+    </div>
+    <!-- End Atm Wrapper-->
+
+    <div class="col-sm-6">
+        <div class="contentBlock">
+            <h2>Pass elements of an array to a function as separate arguments</h2>
+            <p>function add(a, b, c) {
+  return a + b + c ;
+}<br/>
+const args = [1, 2, 3];</p>
+            <p><strong>add(...args)</strong>: <span id="arr2"></span></p>
+            
+        </div>
+    </div>
+</div>
+<!-- end row -->
+    
+<div class="row">
+<!-- Start Atm Wrapper -->
+    <div class="col-sm-6">        
+        <div class="contentBlock clearfix">
+            <h2>Combine Two Array</h2> 
+            <div class="">
+                <p>let arr = ["Ilya", "Kantor"]</p>
+                <p>let [firstName, surname] = arr;</p>
+                <p>firstName : <span id="arr3A"></span>,  surname : <span id="arr3B"></span></p>
+            </div>                      
+        </div>
+    </div>
+    <!-- End Atm Wrapper-->
+
+    <div class="col-sm-6">
+        <div class="contentBlock">
+            <h2>Pass elements of an array to a function as separate arguments</h2>
+            <p>function add(a, b, c) {
+    return a + b + c ;
+    }<br/>
+    const args = [1, 2, 3];</p>
+            <p><strong>add(...args)</strong>: <span id="arr2"></span></p>
+
+        </div>
+    </div>
+</div>
+<!-- end row -->
+
+
+
+<script src="./js/array/arrayMethod3.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
