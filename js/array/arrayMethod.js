@@ -36,7 +36,7 @@
     myNum.sort(function(a, b) {return a - b});
     
     document.getElementById('am3').innerHTML = myNum.reduce((x,y) => x.includes(y) ? x : [...x, y], []);
-    //Resule [1, 2, 4, 5, 7]
+    //Result [3,5,10,11,12]
 })();
 
 
