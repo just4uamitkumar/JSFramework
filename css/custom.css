@@ -517,12 +517,12 @@ h4 {
 
 .tabSelect {
   width: 100%;
-  padding: 4px 9px;
+  padding: 6px 11px;
   font-size: 1rem;
   width: 100%;
   margin: 0 0 10px; }
   .tabSelect option {
-    padding: 4px 9px;
+    padding: 6px 11px;
     color: #f00; }
 
 #demoForm select, #demoForm input[type=text] {

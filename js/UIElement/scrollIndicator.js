@@ -8,7 +8,7 @@
     A.style.left = '0px';
     B.style.left = '460px';
 	
-	document.getElementById('firstLeft').onclick = function (){
+	document.getElementById('firstRight').onclick = function (){
 		if( parseInt(A.style.left) >= 230 ){
 			alert('You have tried enough to the right');
 		}
@@ -18,7 +18,7 @@
 		}			
 	}
 
-	document.getElementById('firstRight').onclick = function (){
+	document.getElementById('firstLeft').onclick = function (){
 		if( parseInt(A.style.left) <= 0 ){
 			alert('No more space left');
 		}
@@ -92,6 +92,7 @@
 	}	
 })();
 
+
 //Array Use
 (function(){
 	var i = 0, len;
@@ -131,19 +132,30 @@
 
 	myBtn1.onclick = function(){
 		xInput = x.childNodes[1].value;
-		var xChars = xInput.split('').reverse().join('');
-		y.childNodes[1].value = xChars
+        if(xInput.length == 0){
+            alert('Please enter some value')
+        }
+        else{
+            var xChars = xInput.split('').reverse().join('');
+		    y.childNodes[1].value = xChars
+        }
+		
 	}
 
 	myBtn2.onclick = function(){
 		var i= 0, z='';
 		yInput = y.childNodes[1].value;
 		var yChars = yInput.split('');
-
-		for (i in yChars) {
+        
+        if(yInput.length == 0){
+            alert('Please enter some value')
+        }
+        else{
+           for (i in yChars) {
 		    z += yChars[i] + "<br>";
 		  }	
-		document.getElementById('myValue').innerHTML = z 
+		  document.getElementById('myValue').innerHTML = z 
+        }		 
 	}
 
 }());

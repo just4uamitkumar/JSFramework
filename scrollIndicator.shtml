@@ -24,7 +24,6 @@
             <h2>Get Distance betwen two points</h2>
             <div class="range-slider">
                 <div class="startPoint"></div>
-                <div class="dragMe"></div>
                 <div class="endPoint"></div>
                 <div class="clearfix"></div>
             </div>
@@ -76,7 +75,7 @@
             </div>
 
             <div class="breakArray form-group">            
-                <input type="text" class="form-control" value="" placeholder="Reverse Value will get here" onfocus="this.placeholder=''" onblur="this.placeholder='Reverse Value will get here'"  />
+                <input type="text" class="form-control" value="" readonly placeholder="Reverse Value will get here" onfocus="this.placeholder=''" onblur="this.placeholder='Reverse Value will get here'"  />
                 <button class="btn btn-primary"><i class="fa fa-send"></i></button>            
             </div>
 

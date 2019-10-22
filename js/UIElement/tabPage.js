@@ -30,7 +30,7 @@
 
     for (i = 0; i < tab.length; i++) { 
         tab[i].addEventListener("click", openTab);            
-    }    
+    } 
 }());
 
 
@@ -43,9 +43,13 @@
 
     var tabArr = ['First Tab', 'Second Tab', 'Third Tab', 'Fourth Tab'];
 
-    for (i = 0; i < eOpt.length; i++) { 
-        eOpt[i].innerHTML = tabArr[i]; 
-    }
+//    for (i = 0; i < eOpt.length; i++) { 
+//        eOpt[i].innerHTML = tabArr[i]; 
+//    }
+    
+    tabArr.forEach((el, i) => {
+        eOpt[i].innerHTML = (i + 1)  + ' : ' + el; ;
+    });
 
     function selectTab(){
         var eValue = e.value;

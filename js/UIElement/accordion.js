@@ -10,8 +10,7 @@
     arrAcc.forEach((elem, index) => {       
         accHead[index].innerHTML = elem; 
         acc[index].innerHTML = elem;
-    });
-    
+    });    
    
     function openAccordion(){
         var accAttr = this.getAttribute("data-acc");        
