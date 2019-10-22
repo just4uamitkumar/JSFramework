@@ -8,8 +8,7 @@
     imgAnchor.setAttribute('href','javascript:void(0);');
     imgAnchor.setAttribute('data-toggle','modal');
     imgAnchor.setAttribute('data-target','#thumb-' + (i + 1));
-    imgThumb[i].appendChild(imgAnchor);  
-    
+    imgThumb[i].appendChild(imgAnchor);    
   }
 
   var toggleModal = document.querySelectorAll('[data-toggle]');

@@ -15,7 +15,7 @@ function resetAmt(){
    resetVal();    
     
     document.getElementById('lastArr').innerHTML = 
-        [...document.querySelectorAll(".currency")].map(e=>e.innerHTML);
+        [...document.querySelectorAll(".currency")].map(e => e.innerHTML);
 };
 
 function atmApp(){

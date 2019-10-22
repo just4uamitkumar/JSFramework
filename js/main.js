@@ -22,8 +22,6 @@ window.onresize = function() {
     pageStyle();
 }
 
-
-
 //Timer
 function startTime() {
     var today = new Date();

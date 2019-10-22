@@ -22,4 +22,4 @@ function isBiggerThan10(element, index, array) {
 }
 
 document.getElementById('some2A').innerHTML = [2, 5, 8, 1, 4].every(isBiggerThan10);  // false
-document.getElementById('some2B').innerHTML = [12, 15, 18, 11, 14].every(isBiggerThan10); // false
+document.getElementById('some2B').innerHTML = [12, 15, 18, 11, 14].every(isBiggerThan10); // true
