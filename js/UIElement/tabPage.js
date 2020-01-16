@@ -48,7 +48,7 @@
 //    }
     
     tabArr.forEach((el, i) => {
-        eOpt[i].innerHTML = (i + 1)  + ' : ' + el; ;
+        eOpt[i].innerHTML = (i + 1)  + ' : ' + el;
     });
 
     function selectTab(){
@@ -121,7 +121,5 @@
             x[i].style.height = xC + 'px';        
         }      
     }
-    
-    
 
 }());

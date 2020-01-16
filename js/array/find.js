@@ -22,7 +22,7 @@ function myFunction2(){
 	const result = inventory.find( fruit => fruit.name === 'cherries' );
 	console.log(result)
 	
-	document.getElementById('find2A').innerHTML = result;
+	document.getElementById('find2A').innerHTML = result.name  + ' : ' + result.quantity;
 	
 })();
 

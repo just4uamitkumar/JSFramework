@@ -20,7 +20,7 @@
 
 	document.getElementById('firstLeft').onclick = function (){
 		if( parseInt(A.style.left) <= 0 ){
-			alert('No more space left');
+			alert('No more space to left');
 		}
 		else{
 			A.style.left = parseInt(A.style.left) - 30 + 'px';
@@ -59,7 +59,8 @@
 	var myArray = ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'];
 	len = myArray.length;
 
-	var x = document.getElementsByClassName('scrollArray')[0].childNodes[3];
+	var x = document.getElementsByClassName('scrollArray')[0].children[1];
+    console.log(x)
 
 	function getElem(i){
 	  x.value = myArray[i];

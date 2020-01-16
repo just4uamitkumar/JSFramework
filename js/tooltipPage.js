@@ -12,6 +12,7 @@ function tooltip(){
         var posT = this.offsetTop;
         var tipWidth = this.clientWidth;
         var tipHeight = this.clientHeight;
+        
 
         var Ttip = document.createElement('div');
         document.body.appendChild(Ttip); 
@@ -20,7 +21,7 @@ function tooltip(){
         Ttip.innerHTML = dataDesc
         var Theight = Ttip.clientHeight;
         var Twidth = Ttip.clientWidth;
-
+       
         if(dataDir == 'left' && posL < Twidth){ 
              dataDir = 'right';        
              Ttip.classList.remove('left');

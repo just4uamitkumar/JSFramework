@@ -9,7 +9,8 @@
 
     for (j = 0; j < level1.length; j++) {
       level1[j].innerHTML = FirstText[j];       
-    }
+    }     
+      
 
     var parArr = ['UI Elements', 'Object', 'Array Method', 'Ajax', 'JSON', 'Timer', 'Local Storage', 'Table'];
     var hasChild = document.getElementsByClassName("has-child");
