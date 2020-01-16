@@ -2,8 +2,8 @@
 (function(){
 
     var ResTabs = document.getElementsByClassName("ResTabs")[0];
-    var ul = document.createElement("ul");//Created ul inside ResTabs
-    ResTabs.appendChild(ul);
+    var ul = document.createElement("ul");//Created ul 
+    ResTabs.appendChild(ul);//Append ul inside ResTabs 
     ul.setAttribute("id", "list");//Set Attribute on ul
 
     var ulList = document.getElementById('list');
@@ -16,10 +16,8 @@
             "</a></li>";
     }
 
-    ulList.innerHTML = text1;
+    ul.innerHTML = text1;
 
-
-  
 
    function insertAfter(el, referenceNode) {
         referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
@@ -65,7 +63,7 @@
     }
     
 
-    function openMyTab(){
+    function openMyTab(){        
         for (l = 0; l < liCount.length; l++) { 
            liCount[l].classList.remove("active");
         }

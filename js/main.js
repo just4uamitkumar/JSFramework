@@ -1,8 +1,7 @@
 
 function pageStyle(){
-    //Add document title as main heading
-    var pageTitle = document.title;
-    document.getElementsByTagName('h1')[0].innerHTML = pageTitle;
+    //Add document title as main heading    
+    document.getElementsByTagName('h1')[0].innerHTML = document.title;
 
     //Sidebar Aligned
     var sidePos = document.getElementsByTagName('header')[0].clientHeight;
@@ -12,7 +11,7 @@ function pageStyle(){
     //Body ClassName
     var pathname = window.location.pathname.replace('/JSFramework/', '').slice(0,-6);
     var body = document.body;
-    //body.classList.add(pathname);
+    body.classList.add(pathname);
     body.classList.replace('index', 'home')  
 }
 
@@ -118,8 +117,8 @@ function scrollFunction() {
   var height = s - c;
   var scrolled = (winScroll / height) * 100;
   var n = scrolled.toFixed(0)
-    console.log('height' + height);
-    console.log('winScroll' + winScroll);
+   // console.log('height' + height);
+   // console.log('winScroll' + winScroll);
   document.getElementById("myBar").style.width = scrolled + "%";
   document.getElementsByClassName('scrollVal')[0].classList.add('show');
   document.getElementsByClassName('scrollVal')[0].innerHTML = n + "%";
