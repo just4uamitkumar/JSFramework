@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Array Methods 4</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<div class="row">
+    <!-- Start array element -->
+    <div class="col-sm-6">        
+        <div class="contentBlock clearfix">
+            <h2>Alphabets Array</h2>            
+            <div class="form-group m-b-10">
+                <label>Add Person Name :</label>
+                <input class="form-control" onblur="this.placeholder = 'Person Name'" onfocus="this.placeholder = ''" placeholder="Person Name" type="text" id="myInput"  >
+                <button class="btn btn-primary" onClick=getVal();>Get Value</button>
+            </div>
+            
+            <p>Original Name : <strong id="newVal">  </strong></p>
+            <p>Updated Name : <strong id="updatedVal">  </strong></p>               
+            
+        </div>
+    </div>
+    <!-- End Atm Wrapper-->
+
+    <!-- Start array element -->
+    <div class="col-sm-6">        
+        <div class="contentBlock clearfix">
+            <h2>Alphabets Array</h2>            
+            <div class="form-group m-b-10">
+                <label>Add Person Name :</label>
+                <input class="form-control" onblur="this.placeholder = 'Person Name'" onfocus="this.placeholder = ''" placeholder="Person Name" type="text" id="textInput"  >
+                <button class="btn btn-danger" onClick=getInput();>Get Value</button>
+            </div>
+            
+            <p>Original Name : <strong id="newInput">  </strong></p>
+            <p>Updated Name : <strong id="updatedInput">  </strong></p>               
+            
+        </div>
+    </div>
+    <!-- End Atm Wrapper-->
+   
+</div>
+<!-- end row -->
+
+
+
+<script src="./js/array/arrayMethod4.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
