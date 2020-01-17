@@ -29,15 +29,16 @@
 	  
 	  <a href="Javascript:void();" class="level1 has-child"></a>
       <div class="collapse">
-		<a href="filter.shtml" class="level2">Filter</a>
-		<a href="map.shtml" class="level2">Map</a> 
-		<a href="find.shtml" class="level2">Find</a> 
-		<a href="some.shtml" class="level2">Some</a>
-		<a href="every.shtml" class="level2">Every</a>
-		<a href="sort.shtml" class="level2">Sort</a>
-		<a href="arrayMethod.shtml" class="level2">Array Methods</a>		
+    		<a href="filter.shtml" class="level2">Filter</a>
+    		<a href="map.shtml" class="level2">Map</a> 
+    		<a href="find.shtml" class="level2">Find</a> 
+    		<a href="some.shtml" class="level2">Some</a>
+    		<a href="every.shtml" class="level2">Every</a>
+    		<a href="sort.shtml" class="level2">Sort</a>
+    		<a href="arrayMethod.shtml" class="level2">Array Methods</a>		
         <a href="arrayMethod2.shtml" class="level2">Array Methods 2</a>
         <a href="arrayMethod3.shtml" class="level2">Array Methods 3</a>
+        <a href="arrayMethod4.shtml" class="level2">Array Methods 4</a>
       </div>
 
       <a href="Javascript:void();" class="level1 has-child"></a>
