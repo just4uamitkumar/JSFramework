@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
-<title>Local Storage 1</title>
+<title>Local Storage 2</title>
 
 <!--| Header File Include Here |-->
 <!--#include virtual="./default/header.shtml" -->
@@ -19,30 +19,23 @@
     
 <div class="row">
     <!-- Start Get Data -->
-    <div class="col-sm-6">        
+    <div class="col-sm-8">        
         <div class="contentBlock">    
-            <h2>HTML5 Web Storage</h2>
+            <h2>Local Storage</h2>
             <div id="demo1" class="m-b-10"></div>
-            <div id="failed1" class="m-b-10"></div>
-            <button type="button" class="btn btn-primary" onclick="getName1()">Get Content</button>
+            <div class="form-group">
+              <input type="text" class="form-control" id="myinput">
+              <button type="button" class="btn btn-primary" onclick="addVal()">Add Item</button>
+              <button type="button" class="btn btn-warning" onclick="removeVal()">Remove Item</button>
+            </div>          
         </div>
     </div>
     <!-- End Get Data -->
-
-    <!-- Start Get Data -->
-    <div class="col-sm-6">        
-        <div class="contentBlock">    
-            <h2>HTML5 Web Storage</h2>
-            <div id="demo2" class="m-b-10"></div>
-             <div id="failed2" class="m-b-10"></div>
-            <button type="button" class="btn btn-primary" onclick="getName2()">Get Content</button>
-        </div>
-    </div>
-    <!-- End Get Data -->
+    
 </div>
 <!-- end row -->
 
-<script src="./js/localStore/localStoreA.js"></script>
+<script src="./js/localStore/localStoreB.js"></script>
 
 
 <!--| Footer File Include Here |-->
