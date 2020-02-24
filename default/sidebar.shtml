@@ -51,6 +51,7 @@
           <a href="Ajax6.shtml" class="level2">Ajax 6</a>
           <a href="Ajax7.shtml" class="level2">Ajax 7</a>
           <a href="Ajax8.shtml" class="level2">Ajax 8</a>      
+          <a href="Ajax9.shtml" class="level2">Ajax 9</a>
       </div>
 
       <a href="Javascript:void();" class="level1 has-child"></a>
