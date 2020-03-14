@@ -1,0 +1,35 @@
+{"emp":[
+{"id":1, "name":"Smith", "dob":"1988-06-14", "design":"Software Developer",
+ "exp":"2 Years", "tech":"PHP", "rate":"Average" },
+
+ { "id":2, "name":"William", "dob":"1987-12-20", "design":"HTML Developer",
+ "exp":"3 Years", "tech":"CSS", "rate":"Good" },
+
+ { "id":3, "name":"Jonson", "dob":"1992-05-24", "design":"Web Developer",
+ "exp":"1 Year", "tech":"HTML", "rate":"Above Average" },
+
+ { "id":4, "name":"Arya Bhushan", "dob":"1990-07-28", 
+ "design":"Graphic Designer", "exp":"5 Year", "tech":"Photoshop", 
+"rate":"Average" },
+
+ { "id":5, "name":"Govind", "dob":"1986-12-14", "design":"Web Developer", 
+ "exp":"4 Year", "tech":"HTML5", "rate":"Good" }
+],
+
+"student":[
+	{"id":1, "name":"Sachin", "dob":"1998-06-14", "sub":"English",
+  "rate":"Average" },
+
+ { "id":2, "name":"Vivek", "dob":"1997-12-20", "sub":"Hindi",
+ "rate":"Good" },
+
+ { "id":3, "name":"Manish", "dob":"1996-05-24", "sub":"Maths",
+"rate":"Above Average" },
+
+ { "id":4, "name":"Arya", "dob":"1999-07-28",  "sub":"HTML",  
+"rate":"Average" },
+
+ { "id":5, "name":"Govind", "dob":"1996-12-14", "sub":"Political Science", 
+ "rate":"Good" }
+]
+}
