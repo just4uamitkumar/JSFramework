@@ -24,8 +24,10 @@
           <a href="object5.shtml" class="level2">Object Example 5</a>
           <a href="object6.shtml" class="level2">Object Example 6</a>
           <a href="object7.shtml" class="level2">Object Example 7</a>
-          <a href="object8.shtml" class="level2">Object Example 8</a>      
+          <a href="object8.shtml" class="level2">Object Example 8</a>
       </div>
+
+      
 	  
 	  <a href="Javascript:void();" class="level1 has-child"></a>
       <div class="collapse">
@@ -50,8 +52,6 @@
           <a href="Ajax5.shtml" class="level2">Ajax 5</a>
           <a href="Ajax6.shtml" class="level2">Ajax 6</a>
           <a href="Ajax7.shtml" class="level2">Ajax 7</a>
-          <a href="Ajax8.shtml" class="level2">Ajax 8</a>      
-          <a href="Ajax9.shtml" class="level2">Ajax 9</a>
       </div>
 
       <a href="Javascript:void();" class="level1 has-child"></a>
@@ -64,6 +64,14 @@
           <a href="json6.shtml" class="level2">JSON 6</a>
           <a href="json7.shtml" class="level2">JSON 7</a>
           <a href="json8.shtml" class="level2">JSON 8</a>      
+      </div>
+
+      <a href="Javascript:void();" class="level1 has-child"></a>
+      <div class="collapse">
+          <a href="fetch1.shtml" class="level2">Fetch 1</a>
+          <a href="fetch2.shtml" class="level2">Fetch 2</a>
+          <a href="fetch3.shtml" class="level2">Fetch 3</a>
+          <a href="fetch4.shtml" class="level2">Fetch 4</a>     
       </div>
 
        <a href="Javascript:void();" class="level1 has-child"></a>

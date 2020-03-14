@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Fetch 2</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+    
+<div class="row">
+<div class="col-sm-12">
+    <div class="contentBlock">    
+    <h2>Get Weather Report of your City</h2>
+    <div class="form-group">
+      <label>Enter your city</label>
+      <input type="text" class="form-control" id="cityName">
+    </div> 
+    <div class="form-group">
+    <label> </label>      
+        <button type="button" class="btn btn-primary"
+        onclick="GetWeather();">Get Detail</button> 
+    </div>
+    <div class="" id="info">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>City ID</th>
+                    <th>Name</th>
+                    <th>Temperature</th>
+                    <th>Description</th>
+                    <th>TimeZone</th>
+                    <th>Wind Speed</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- End Content Block -->
+
+</div>
+
+</div>
+<!-- end row -->
+
+
+
+<script src="./js/fetch/fetch2.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->

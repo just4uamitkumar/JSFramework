@@ -12,7 +12,7 @@
     }     
       
 
-    var parArr = ['UI Elements', 'Object', 'Array Method', 'Ajax', 'JSON', 'Timer', 'Local Storage', 'Table'];
+    var parArr = ['UI Elements', 'Object', 'Array Method', 'Ajax', 'JSON', 'Fetch', 'Timer', 'Local Storage', 'Table'];
     var hasChild = document.getElementsByClassName("has-child");
 
     function expand(){        
