@@ -31,7 +31,7 @@
         onclick="GetWeather();">Get Detail</button> 
     </div>
     <div class="" id="info">
-        <table class="table">
+        <table class="table" id="table1">
             <thead>
                 <tr>
                     <th>City ID</th>
