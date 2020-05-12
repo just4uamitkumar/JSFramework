@@ -70,10 +70,12 @@
     var n, txt ='';
     
     colorNames.forEach( el => {
-        document.getElementById("colorTable").tBodies[0].innerHTML += "<tr><td><div class='color'></div>" + 
-                          "<button class='btn pickColor'><i class='fa fa-eyedropper'></i></button></td><td>" + el + "</td></tr>"
-    });
-    
+        document.getElementById("colorTable").tBodies[0].innerHTML += `<tr>
+        <td><div class='color'></div> 
+          <button class='btn pickColor'><i class='fa fa-eyedropper'></i></button>
+        </td>
+        <td> ${el}</td></tr>`
+    });    
 })();
 
 

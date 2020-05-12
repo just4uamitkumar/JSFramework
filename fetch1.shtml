@@ -32,7 +32,7 @@
         onclick="GetWeather1();">Get Detail</button> 
     </div>
     <div class="" id="info">
-        <table class="table">
+        <table class="table" id="table1">
             <thead>
                 <tr>
                     <th>City ID</th>
@@ -44,6 +44,7 @@
                 </tr>
             </thead>
             <tbody>
+<!--
                 <tr>
                     <td><span id="detail1"></span></td>
                     <td><span id="detail2"></span></td>
@@ -52,6 +53,7 @@
                     <td><span id="detail5"></span></td>
                     <td><span id="detail6"></span></td>
                 </tr>
+-->
             </tbody>
         </table>
     </div>
@@ -77,6 +79,7 @@
                     <th>City Name</th>
                     <th>Temperature</th>
                     <th>Description</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -84,6 +87,7 @@
                     <td><span id="detail10"></span></td>
                     <td><span id="detail11"></span></td>
                     <td><span id="detail12"></span></td>
+                    <td><button type="button" class="btn btn-warning">Delete</button></td>
                 </tr>
             </tbody>
         </table>

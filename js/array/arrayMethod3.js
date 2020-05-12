@@ -5,14 +5,12 @@ document.getElementById('arr1').innerHTML = newArr
 
 
 
-
 function add(a, b, c) {
   return a + b + c ;
 }
 const args = [1, 2, 3];
 
 document.getElementById('arr2').innerHTML = add(...args);
-
 
 
 

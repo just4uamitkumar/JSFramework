@@ -5,28 +5,29 @@
     var calcVal = document.getElementById('calcVal');    
    
     for (i = 0; i < button.length; i++) {       
-        button[i].addEventListener("click", EnterKey);
+        button[i].onclick = function(){
+
+          var btnText = this.name;
+          if(btnText === '=' ){
+              calculate();
+          }
+          
+          else if(btnText === 'C'){
+            reset();
+          }
+          
+          else if(btnText === "CE"){
+              backspace();
+          }
+          
+          else {
+              calcVal.value = calcVal.value + btnText          
+          }  
+
+        }
     }  
     
-    function EnterKey(){        
-        var btnText = this.name;
-        if(btnText === '=' ){
-            calculate();
-        }
-        
-        else if(btnText === 'C'){
-          reset();
-        }
-        
-        else if(btnText === "CE"){
-            backspace();
-        }
-        
-        else {
-            calcVal.value = calcVal.value + btnText          
-        }      
-    }
-
+    
     
    function calculate(){
        try{
