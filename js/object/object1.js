@@ -26,10 +26,7 @@ document.getElementById('demo6').innerHTML = typeof(bag);
 var cityName = ["New Delhi", "Lucknow", "Allahabad"];
 document.getElementById('demo7').innerHTML = typeof(cityName);
 
-//Function
-function myFunc(){
-	//Your code will be here
-}
+
 document.getElementById('demo8').innerHTML = typeof(myFunc);
 
 

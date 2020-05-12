@@ -1,10 +1,7 @@
-
-
 var myInput = document.getElementById('myInput');
 var keyArr = [];
 
 function getVal(){
-
     var inputVal = myInput.value;
     var letters = /^[A-Za-z]+$/;
     var x = inputVal.split('');
@@ -12,8 +9,8 @@ function getVal(){
     if(inputVal.match(letters)){
 
         document.getElementById('newVal').innerHTML = x.map( e =>
-        e.charCodeAt()
-    );
+            e.charCodeAt()
+        );
 
     // x.map(e =>
     //     {
@@ -28,10 +25,8 @@ function getVal(){
     // );
 
 
-     x.map(e =>
-        {
+        x.map(e => {
             switch(e.charCodeAt()){
-
                 case 122:
                 keyArr.push(99);
                 break;
@@ -59,24 +54,18 @@ function getVal(){
                 default:
                 keyArr.push(e.charCodeAt() + 3);
             }
-        }
-    );
-   
+        });   
 
-    const stringArr = keyArr.map(e =>
-       String.fromCharCode(e)
-    );
+        const stringArr = keyArr.map(e =>
+           String.fromCharCode(e)
+        );
 
-    document.getElementById('updatedVal').innerHTML = stringArr.join('');
-
+        document.getElementById('updatedVal').innerHTML = stringArr.join('');
     }
 
     else{
         alert('Please enter only alphabets for name')
     }
-
-     
-
 }
 
 

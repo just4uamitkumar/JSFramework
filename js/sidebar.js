@@ -7,9 +7,14 @@
     var level1 = document.querySelectorAll('.level1:not(.has-child)');
     var collapseDiv = document.querySelectorAll('.collapse');
 
-    for (j = 0; j < level1.length; j++) {
-      level1[j].innerHTML = FirstText[j];       
-    }     
+    // for (j = 0; j < level1.length; j++) {
+    //   level1[j].innerHTML = FirstText[j];       
+    // }  
+
+    FirstText.forEach((e, index) =>  {
+        level1[index].innerHTML = e
+      }
+    )   
       
 
     var parArr = ['UI Elements', 'Object', 'Array Method', 'Ajax', 'JSON', 'Fetch', 'Timer', 'Local Storage', 'Table'];

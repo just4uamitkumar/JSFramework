@@ -39,17 +39,14 @@ posFunc();
 	
 	function bigThanFifty(value){
 		return value >= 50;
-	}
-	
-	function lessThanTen(value){
-		return value < 10
 	}	
+	
 	
 	document.getElementById('filter2A').innerHTML = filtered.filter(isEven);
 	document.getElementById('filter2B').innerHTML = filtered.filter(isOdd);
 	document.getElementById('filter2C').innerHTML = filtered.filter(isMultiThree);
 	document.getElementById('filter2D').innerHTML = filtered.filter(bigThanFifty);
-	document.getElementById('filter2E').innerHTML = filtered.filter(lessThanTen);
+	document.getElementById('filter2E').innerHTML = filtered.filter(e => e < 10);
 	
 	
 })();

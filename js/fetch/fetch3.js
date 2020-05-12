@@ -5,8 +5,8 @@
 
   for (i=0; i < data2.emp.length; i++) {        
     const s = i%2;
-    txt += `<tr id=row_${i} class="${ s === 1 ? 'kc-odd' : 'kc-even' }">
-        <td><input type="checkbox" class="idCheck" /></td>
+    txt += `<tr id=row_${i} class="${ s === 1 ? 'kc-odd mycheck' : 'kc-even mycheck' }">
+        <td><input type="checkbox" class="idCheck" onclick="myFunction()"/></td>
         <td>${data2.emp[i].id}</td>
         <td>${data2.emp[i].name}</td>                
         <td>${data2.emp[i].dob}</td>
@@ -17,7 +17,7 @@
       </tr>`;
     }      
 
-    document.getElementById("table1").tBodies[0].innerHTML = txt;
+    document.getElementById("table1").tBodies[0].innerHTML = txt;    
 
 
     for (i=0; i < data2.student.length; i++) {
@@ -38,3 +38,14 @@
 }
 
 GetData();
+
+var j, k, l
+var element = document.getElementsByClassName('mycheck');
+console.log(element.length)
+
+for(j=0; j< element.length; j++){
+  element[j].onclick = function() {
+    alert('est');
+  // onclick stuff
+  }
+}

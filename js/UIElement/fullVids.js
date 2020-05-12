@@ -29,9 +29,9 @@ function myFunction() {
         exitSpan[i].onclick = closeModal;
     }   
     
-    exitSpan.onclick = function() {
-        exitModal.style.display = "none";
-    }
+    // exitSpan.onclick = function() {
+    //     exitModal.style.display = "none";
+    // }
     
     window.onclick = function(event) {
         if (event.target == exitModal) {
