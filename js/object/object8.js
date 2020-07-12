@@ -6,11 +6,8 @@ function GetData(){
     .then((data) => { return data.json()
     })
     .then( (data2) => {
-
        jsonData = jsonData.concat(data2)
-
-       console.log(jsonData[0].users); //Get Data Here
-      
+       console.log(jsonData[0].users); //Get Data Here      
     });
 
     
@@ -52,16 +49,10 @@ function GetData2(){
 
   const b = myarr.find(({id}) => id === 7)
   
-  console.log(b)
+  //const a = b.map(e => e)
 
-  const inventory = [
-    {name: 'apples', quantity: 2},
-    {name: 'bananas', quantity: 0},
-    {name: 'cherries', quantity: 5}
-  ];
-
-  const result = inventory.find( ({ name }) => name === 'cherries' );
-  console.log(result)
+  document.getElementById("demo2").innerHTML = 
+  `${b.id}, ${b.firstname} ${b.lastname}`;
 
   
 }
