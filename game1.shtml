@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Tic Toe Game</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<style>
+	td{width:100px; height:100px; background:whitesmoke; 
+		font-size: 40px; text-align: center; border-radius: 10px;} 
+	table{margin:20px auto; border-radius: 10px;}
+</style>
+
+<div class="row">
+    <!-- Start Get Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>Get Specific Object</h2>
+            <h3 id="player" class="text-center">Let Play</h3>
+            
+            <div class="table-responsive">
+            	<table>
+            		<tr>
+            			<td id="r1" onclick="printex('1')"></td>
+            			<td id="r2" onclick="printex('2')"></td>
+            			<td id="r3" onclick="printex('3')"></td>
+            		</tr>
+            		<tr>
+            			<td id="r4" onclick="printex('4')"></td>
+            			<td id="r5" onclick="printex('5')"></td>
+            			<td id="r6" onclick="printex('6')"></td>
+            		</tr>
+            		<tr>
+            			<td id="r7" onclick="printex('7')"></td>
+            			<td id="r8" onclick="printex('8')"></td>
+            			<td id="r9" onclick="printex('9')"></td>
+            		</tr>
+            	</table>
+            </div>
+        </div>
+    </div>
+    <!-- End Get Data -->
+
+    
+</div>
+<!-- end row -->
+
+<script src="./js/game/game1.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
