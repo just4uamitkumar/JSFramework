@@ -42,18 +42,7 @@
     </div>
     <!-- End Get Data -->
 
-     <!-- Start Get Data -->
-    <div class="col-sm-6">        
-        <div class="contentBlock">    
-            <h2>Get Specific Object</h2>
-            <p id="demo2"></p>
-            <button class="btn btn-primary" onclick='GetData2();'>
-	            Get It 3
-	        </button>
-        </div>
-    </div>
-    <!-- End Get Data -->
-
+     
 
     
 </div>

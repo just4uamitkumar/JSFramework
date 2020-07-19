@@ -6,16 +6,15 @@ function GetData(){
     .then((data) => { return data.json()
     })
     .then( (data2) => {
-       jsonData = jsonData.concat(data2)
-       console.log(jsonData[0].users); //Get Data Here      
+       jsonData = jsonData.concat(data2)       
+       console.log(jsonData[0].users); //Got Data Here      
     });
-
-    
-   
-   console.log(jsonData[0].users) 
+  
+   console.log(jsonData)
    //Uncaught TypeError: Cannot read property 'users' of undefined
   
 };
+
 
 function GetData2(){
   const jsonData = [];
@@ -53,7 +52,5 @@ function GetData2(){
 
   document.getElementById("demo2").innerHTML = 
   `${b.id}, ${b.firstname} ${b.lastname}`;
-
-  
 }
 
