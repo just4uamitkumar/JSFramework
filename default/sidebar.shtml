@@ -110,8 +110,8 @@
 
       <a href="Javascript:void();" class="level1 has-child"></a>
       <div class="collapse">
-          <a href="game1.shtml" class="level2">Tic Toe</a>
-          <a href="game2.shtml" class="level2">Snake</a>
+          <a href="tictoe.shtml" class="level2">Tic Toe</a>
+          <a href="snake.shtml" class="level2">Snake</a>
       </div>    
        
     </div>
