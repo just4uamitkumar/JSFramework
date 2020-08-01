@@ -57,7 +57,7 @@
 </div>
 <!-- end row -->
 
-<script src="./js/game/game1.js"></script>
+<script src="./js/game/tictoe.js"></script>
 
 <!--| Footer File Include Here |-->
 <!--#include virtual="./default/footer.shtml" -->

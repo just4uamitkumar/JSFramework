@@ -1,6 +1,6 @@
 function GetData(){
 
-    var jsonData = []
+    var jsonData = [];
 
     fetch(`./js/db/user4.json`) //Local Json
     .then((data) => { return data.json()
@@ -10,9 +10,12 @@ function GetData(){
        console.log(jsonData[0].users); //Get Data Here      
     });
 
+    debugger;
     
+   if(jsonData && jsonData.length){
+      console.log(jsonData[0].users);
+   }
    
-   console.log(jsonData[0].users) 
    //Uncaught TypeError: Cannot read property 'users' of undefined
   
 };
