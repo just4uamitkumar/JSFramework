@@ -17,7 +17,8 @@
     )   
       
 
-    var parArr = ['UI Elements', 'Object', 'Array Method', 'Ajax', 'JSON', 'Fetch', 'Timer', 'Local Storage', 'Table', 'Game'];
+    var parArr = ['UI Elements', 'Object', 'Array Method', 'Ajax', 'JSON', 
+    'Fetch', 'Timer', 'Local Storage', 'Table', 'Game', 'Class'];
     var hasChild = document.getElementsByClassName("has-child");
 
     function expand(){        

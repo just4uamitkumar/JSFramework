@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Class A</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<div class="row">
+    <!-- Start Get Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>Car Object</h2>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            
+           
+        </div>
+    </div>
+    <!-- End Get Data -->
+
+    <!-- Start Get Data -->
+    <div class="col-sm-6">        
+        <div class="contentBlock">    
+            <h2>Looping Through an Array</h2>
+            <p>You can access array values by using a for-in loop:</p>
+
+            <button type="button" class="btn btn-primary m-b-10" onclick="getData2()">Get Content</button>
+            <div id="demo2" class="m-b-10"></div>
+        </div>
+    </div>
+    <!-- End Get Data -->
+</div>
+<!-- end row -->
+
+    
+
+
+<script src="./js/class/ClassA.js"></script>
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
