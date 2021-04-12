@@ -1,37 +1,61 @@
-// class Car {
-//   constructor(name, year) {
-//     this.name = name;
-//     this.year = year;
-//   }
+class Employee{
+	constructor(givenName, givenExp, GivenDiv){
+		this.name = givenName;
+		this.experience = givenExp;
+		this.division = GivenDiv
 
-//   age() {
-//     let date = new Date();
-//     return date.getFullYear() - this.year;
-//   }
-// }
+	}
 
+	slogan(){
+		return `I am ${this.name} and this company is best`;
+	}
 
+	joiningYear(){
+		let d = new Date()
+		return d.getFullYear() - this.experience
+	}
 
-// let myCar = new Car("Ford", 2014);
-
-// document.getElementById("demo1").innerHTML =
-// "My car is " + myCar.age() + " years old.";
-
-
-class Car {
-  constructor(name, year) {
-    this.name = name;
-    this.year = year;
-  }
-  age(x) {
-    return x - this.year;
-  }
+	static add(a, b){
+		return a + b;
+	}
 }
 
-let date = new Date();
-let year = date.getFullYear();
+let sunil = new Employee('Sunil', 35, 'MIS')
+console.log(sunil.joiningYear())
 
-let myCar = new Car("Ford", 2012);
-document.getElementById("demo1").innerHTML=
-"My car is " + myCar.age(year) + " years old.";
 
+class Programmer extends Employee{
+	constructor(givenName, givenExp, GivenDiv, language, github){
+		super(givenName, givenExp, GivenDiv, language);
+		this.language = language;
+		this.github = github
+
+	}
+
+	favLang(){
+		if(this.language == 'phyton'){
+			return 'Phyton'
+		}
+		else{
+			return 'JavaScript';
+		}
+	}
+
+	static multiply (a, b){
+		return a * b
+	}
+}
+
+let amit = new Programmer('amit', 6, 'Chetu', 'Hindi', 'repo')
+console.log(amit.favLang());
+
+
+let car = {
+	name:"Maturi",
+	topSpeed:89,
+	run: function(){
+		console.log("Cars is running")
+	}
+}
+
+console.log(car)
