@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Currying Example</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+    
+<div class="row">
+    <!-- Start Get Data -->
+    <div class="col-sm-4">        
+        <div class="contentBlock">    
+            <h2>Currying</h2>
+           
+            <p id="demo"></p>
+        </div>
+    </div>
+    <!-- End Get Data -->
+
+    <!-- Start Get Data -->
+    <div class="col-sm-4">        
+        
+    </div>
+    <!-- End Get Data -->
+
+    <!-- Start Get Data -->
+    <div class="col-sm-4">        
+        
+    </div>
+    <!-- End Get Data -->
+</div>
+<!-- end row -->
+
+<script src="./js/currying.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
