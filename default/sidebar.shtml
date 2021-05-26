@@ -42,6 +42,7 @@
         <a href="arrayMethod2.shtml" class="level2">Array Methods 2</a>
         <a href="arrayMethod3.shtml" class="level2">Array Methods 3</a>
         <a href="arrayMethod4.shtml" class="level2">Array Methods 4</a>
+        <a href="arrayMethod5.shtml" class="level2">Array Methods 5</a>
       </div>
 
       <a href="Javascript:void();" class="level1 has-child"></a>
@@ -107,6 +108,7 @@
 
       
       <a href="HCF2.shtml" class="level1"></a> 
+      <a href="currying.shtml" class="level1"></a> 
 
       <a href="Javascript:void();" class="level1 has-child"></a>
       <div class="collapse">

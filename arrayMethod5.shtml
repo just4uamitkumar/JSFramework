@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<title>Array Methods 5</title>
+
+<!--| Header File Include Here |-->
+<!--#include virtual="./default/header.shtml" -->
+<!--| Header File End Here |-->
+
+<!--| Sidebar File Include Here |-->
+<!--#include virtual="./default/sidebar.shtml" -->
+<!--| Sidebar File End Here |-->
+
+<div class="pageHeader">
+    <h1></h1>
+</div>
+<!--end Page Header -->
+
+<div class="row">
+    <!-- Start array element -->
+    <div class="col-sm-6">        
+        <div class="contentBlock clearfix">
+            <h2>my_variable_name to myVariableName</h2> 
+            <p id="demo1">moto_g_9_power</p>
+            <p id="demo2"></p>             
+            
+        </div>
+    </div>
+    <!-- End Atm Wrapper-->
+
+    <!-- Start array element -->
+    <div class="col-sm-6">        
+        <div class="contentBlock clearfix">
+            <h2>Alphabets Array</h2>            
+            
+        </div>
+    </div>
+    <!-- End Atm Wrapper-->
+   
+</div>
+<!-- end row -->
+
+
+
+<script src="./js/array/arrayMethod5.js"></script>
+
+<!--| Footer File Include Here |-->
+<!--#include virtual="./default/footer.shtml" -->
+<!--| Footer File End Here |-->
