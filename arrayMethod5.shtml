@@ -32,8 +32,9 @@
     <!-- Start array element -->
     <div class="col-sm-6">        
         <div class="contentBlock clearfix">
-            <h2>Alphabets Array</h2>            
-            
+            <h2>Count Element in Array</h2> 
+            <p id="demo3">occurancesofeach</p>
+            <p id="demo4"></p> 
         </div>
     </div>
     <!-- End Atm Wrapper-->
