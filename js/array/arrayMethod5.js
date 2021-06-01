@@ -42,5 +42,23 @@ let y = document.getElementById('demo3').innerHTML;
 document.getElementById('demo4').innerHTML = countChar(y)
 
 
+let mystr = 'amitajayim';
+
+
+var getMax = function (str) {
+ var max = 0,
+     maxChar = '';
+  str.split('').forEach(function(char){
+    if(str.split(char).length > max) {
+        max = str.split(char).length;
+        maxChar = char;
+     }
+  });
+  return maxChar;
+};
+
+console.log(getMax(mystr))
+
+
 
 
