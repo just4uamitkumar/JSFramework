@@ -1,24 +1,24 @@
 //Open add Record Modal
- document.getElementById('addData').onclick = function(e){
-     e.preventDefault();
-     var activeM = document.getElementById('addRecord');
-     
-     //Show Modal
-     activeM.classList.remove('hide');
-     document.body.style.overflow = 'hidden';
-     
-     //Add dark shadow behind modal
-    var mShadow = document.createElement('div');
-    mShadow.setAttribute('class','mShadow');    
-    activeM.parentNode.insertBefore(mShadow, activeM);   
-    mShadow.appendChild(activeM);       
- }
+document.getElementById('addData').onclick = function (e) {
+  e.preventDefault();
+  var activeM = document.getElementById('addRecord');
+
+  //Show Modal
+  activeM.classList.remove('hide');
+  document.body.style.overflow = 'hidden';
+
+  //Add dark shadow behind modal
+  var mShadow = document.createElement('div');
+  mShadow.setAttribute('class', 'mShadow');
+  activeM.parentNode.insertBefore(mShadow, activeM);
+  mShadow.appendChild(activeM);
+}
 
 //Open Delete Row Modal 
 var tRow = 'null';
 
-function deleteModal(event){
-  var x = event.target;  
+function deleteModal(event) {
+  var x = event.target;
   tRow = x.closest('.headRow');
   tRow.classList.add('active');
 
@@ -30,14 +30,14 @@ function deleteModal(event){
 
   // //Add dark shadow behind modal
   var mShadow = document.createElement('div');
-  mShadow.setAttribute('class','mShadow');    
-  activeM.parentNode.insertBefore(mShadow, activeM);   
-  mShadow.appendChild(activeM);   
+  mShadow.setAttribute('class', 'mShadow');
+  activeM.parentNode.insertBefore(mShadow, activeM);
+  mShadow.appendChild(activeM);
 }
 
 
 //Close Modal
-function closeModal(self){
+function closeModal(self) {
   var thisModal = self.closest('.gModal');
 
   thisModal.classList.add('hide');
@@ -51,23 +51,23 @@ function closeModal(self){
   var mParent = mShadow.parentNode;
 
   // move all children out of the element
-  while (mShadow.firstChild) mParent.insertBefore(mShadow.firstChild, mShadow);         
+  while (mShadow.firstChild) mParent.insertBefore(mShadow.firstChild, mShadow);
 
   // remove the empty element
   mParent.removeChild(mShadow);
 
   //Remove active from tRow
-  if(tRow.classList.contains('active')){
+  if (tRow.classList.contains('active')) {
     tRow.classList.remove('active')
   }
 }
 
 //Close Modal
-$("[data-dismiss='modal']").click(function(){  
-   closeModal(this)
+$("[data-dismiss='modal']").click(function () {
+  closeModal(this)
 });
- 
-$(function(){
+
+$(function () {
   var $addTodoForm = $('#addTodo');
   var $tbody = $('tbody');
 
@@ -77,23 +77,23 @@ $(function(){
   var template = Handlebars.compile(source)
 
   //Add TodoList
-  $addTodoForm.on('submit', function(e){
+  $addTodoForm.on('submit', function (e) {
     e.preventDefault();
     var newTodo = $addTodoForm.find('input').val();
-    
+
     $addTodoForm.find('input').val('');
 
     $.ajax({
-      url:url,
-      method:'POST',
+      url: url,
+      method: 'POST',
       data: {
         text: newTodo
       }
-    }).done(function(newTodo){
-      var listItem = template({ text: newTodo.text, id:newTodo.id });
-        
+    }).done(function (newTodo) {
+      var listItem = template({ text: newTodo.text, id: newTodo.id });
+
       $tbody.append(listItem)
-    }).fail(function(){
+    }).fail(function () {
       //Err
     });
 
@@ -105,10 +105,10 @@ $(function(){
 
   //Read
   $.ajax({
-    url:url,
-    method:'GET'
-  }).done(function(data){
-    data.forEach(function(dataitem){
+    url: url,
+    method: 'GET'
+  }).done(function (data) {
+    data.forEach(function (dataitem) {
       var listItem = template({
         text: dataitem.text,
         id: dataitem.id
@@ -117,19 +117,19 @@ $(function(){
       $tbody.append(listItem)
     })
 
-  }).fail(function(){
+  }).fail(function () {
     //Error
   });
 
 
   //Delete
-  $('#deleteRowModal').on('click', '.deleteRow', function(e){    
+  $('#deleteRowModal').on('click', '.deleteRow', function (e) {
     var id = tRow.getAttribute('id')
     tRow.remove();
 
     $.ajax({
-      url:url + '/' + id,
-      method:'DELETE',
+      url: url + '/' + id,
+      method: 'DELETE',
     });
 
     //Close Modal
@@ -137,12 +137,12 @@ $(function(){
   });
 
   var editSource = $('#editTemplate').html();
-  var editTemplate = Handlebars.compile(editSource);  
+  var editTemplate = Handlebars.compile(editSource);
 
   //Edit
-  $tbody.on('click', '.editBtn', function(event){
+  $tbody.on('click', '.editBtn', function (event) {
 
-    var x = event.target;    
+    var x = event.target;
     tRow = $(x).closest('tr');
     tRow.addClass('active');
 
@@ -159,17 +159,17 @@ $(function(){
     var $editTodoForm = $('#editTodo');
 
 
-    $("[data-dismiss='modal']").click(function(){
-  
+    $("[data-dismiss='modal']").click(function () {
+
       var thisModal = this.closest('.gModal');
 
-      thisModal.classList.add('hide');      
+      thisModal.classList.add('hide');
 
       $(tRow).removeClass('active')
 
     });
 
-    $editTodoForm.on('submit', function(e){
+    $editTodoForm.on('submit', function (e) {
       e.preventDefault();
 
       //replace new value with list item content
@@ -189,10 +189,10 @@ $(function(){
       $.ajax({
         url: url + '/' + id,
         method: 'PUT',
-        data:{
-          text:newContent
+        data: {
+          text: newContent
         }
       })
-    });    
+    });
   });
 });
