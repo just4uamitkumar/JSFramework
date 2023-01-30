@@ -48,25 +48,8 @@
 
       <a href="Javascript:void();" class="level1 has-child"></a>
       <div class="collapse">
-          <a href="Ajax1.shtml" class="level2">Ajax 1</a>
-          <a href="Ajax2.shtml" class="level2">Ajax 2</a>
-          <a href="Ajax3.shtml" class="level2">Ajax 3</a>
-          <a href="Ajax4.shtml" class="level2">Ajax 4</a>
-          <a href="Ajax5.shtml" class="level2">Ajax 5</a>
-          <a href="Ajax6.shtml" class="level2">Ajax 6</a>
-          <a href="Ajax7.shtml" class="level2">Ajax 7</a>
-      </div>
-
-      <a href="Javascript:void();" class="level1 has-child"></a>
-      <div class="collapse">
-          <a href="json1.shtml" class="level2">JSON 1</a>
-          <a href="json2.shtml" class="level2">JSON 2</a>
           <a href="json3.shtml" class="level2">JSON 3</a>
-          <a href="json4.shtml" class="level2">JSON 4</a>
-          <a href="json5.shtml" class="level2">JSON 5</a>
-          <a href="json6.shtml" class="level2">JSON 6</a>
-          <a href="json7.shtml" class="level2">JSON 7</a>
-          <a href="json8.shtml" class="level2">JSON 8</a>      
+          <a href="json4.shtml" class="level2">JSON 4</a>    
       </div>
 
       <a href="Javascript:void();" class="level1 has-child"></a>
